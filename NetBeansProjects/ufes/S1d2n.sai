@@ -1,0 +1,67 @@
+
+Numero de nos = 2
+
+
+No 0:     (0.000000)
+
+No 1:     (1.000000)
+
+Numero de elementos = 1
+
+
+Elemento 0:
+  Numero de nos = 2
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 1
+  Propriedade 0 = 2.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.000000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.000000
+  Deslocamentos Nodais
+ x[0] = 0.000000
+ x[1] = 0.000000
+  Forcas Nodais
+ f[0] = 0.000000
+ f[1] = 0.000000
+
+Numero de materiais = 1
+
+
+Material 0:
+Linear Elastico
+Modulo de Elasticidade = 10.000000
+Coeficiente de Poisson = 0.300000
+
+Numero de Condicoes de Contorno = 2
+
+
+Condicao de contorno 0:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 1:
+Forca:
+No[0] => 1
+Grau de Liberdade[0] => 0
+Valor[0] => 3.000000
+
+Matriz de Rigidez = 
+
+	20.000000     	0.000000     
+	-20.000000     	20.000000     
+
+Vetor de forcas = 
+
+f[0]=0.000000
+f[1]=3.000000
+
+Vetor de deslocamentos resultantes = 
+
+u[0]=0.000000
+u[1]=0.150000

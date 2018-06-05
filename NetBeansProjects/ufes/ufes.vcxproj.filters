@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aleatorio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="analise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="analise_incremental.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="analise_termica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barra1d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barra2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="barra3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c_contorno.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elcal1d2n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elcal2d4n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elcal2d4nnl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento2d3n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento2d4n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento2d8n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento2d9n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elemento3d3n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iscal1d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iscal2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="isop2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_linear_elastico.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_termico.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_termico_nao_linear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nlcal2d4n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="no.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="no1d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="no2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="no3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tubo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ufesApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ufesMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viga2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viga3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elcal2d8n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aleatorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="analise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="analise_incremental.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="analise_termica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="barra1d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="barra2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="barra3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="c_contorno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defaleat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elcal1d2n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elcal2d4n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elcal2d4nnl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento2d3n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento2d4n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento2d8n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento2d9n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento3d3n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iscal1d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iscal2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="isop2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_linear_elastico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_termico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_termico_nao_linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nlcal2d4n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="no.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="no1d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="no2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="no3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tubo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ufesApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ufesMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="viga2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="viga3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elcal2d8n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.0.2\samples\sample.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

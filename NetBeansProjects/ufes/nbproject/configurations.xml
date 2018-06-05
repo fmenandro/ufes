@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Arquivos de Cabeçalho"
+                   projectFiles="true">
+      <itemPath>aleatorio.h</itemPath>
+      <itemPath>analise.h</itemPath>
+      <itemPath>analise_incremental.h</itemPath>
+      <itemPath>analise_termica.h</itemPath>
+      <itemPath>barra1d.h</itemPath>
+      <itemPath>barra2d.h</itemPath>
+      <itemPath>barra3d.h</itemPath>
+      <itemPath>c_contorno.h</itemPath>
+      <itemPath>defaleat.h</itemPath>
+      <itemPath>elcal1d2n.h</itemPath>
+      <itemPath>elcal2d4n.h</itemPath>
+      <itemPath>elcal2d4nnl.h</itemPath>
+      <itemPath>elcal2d8n.h</itemPath>
+      <itemPath>elemento.h</itemPath>
+      <itemPath>elemento2d3n.h</itemPath>
+      <itemPath>elemento2d4n.h</itemPath>
+      <itemPath>elemento2d8n.h</itemPath>
+      <itemPath>elemento2d9n.h</itemPath>
+      <itemPath>elemento3d.h</itemPath>
+      <itemPath>elemento3d3n.h</itemPath>
+      <itemPath>iscal1d.h</itemPath>
+      <itemPath>iscal2d.h</itemPath>
+      <itemPath>isop2d.h</itemPath>
+      <itemPath>mat_linear_elastico.h</itemPath>
+      <itemPath>mat_termico.h</itemPath>
+      <itemPath>mat_termico_nao_linear.h</itemPath>
+      <itemPath>material.h</itemPath>
+      <itemPath>nlcal2d4n.h</itemPath>
+      <itemPath>no.h</itemPath>
+      <itemPath>no1d.h</itemPath>
+      <itemPath>no2d.h</itemPath>
+      <itemPath>no3d.h</itemPath>
+      <itemPath>tubo.h</itemPath>
+      <itemPath>ufesApp.h</itemPath>
+      <itemPath>ufesMain.h</itemPath>
+      <itemPath>viga2d.h</itemPath>
+      <itemPath>viga3d.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Arquivos de Código-Fonte"
+                   projectFiles="true">
+      <itemPath>aleatorio.cpp</itemPath>
+      <itemPath>analise.cpp</itemPath>
+      <itemPath>analise_incremental.cpp</itemPath>
+      <itemPath>analise_termica.cpp</itemPath>
+      <itemPath>barra1d.cpp</itemPath>
+      <itemPath>barra2d.cpp</itemPath>
+      <itemPath>barra3d.cpp</itemPath>
+      <itemPath>c_contorno.cpp</itemPath>
+      <itemPath>elcal1d2n.cpp</itemPath>
+      <itemPath>elcal2d4n.cpp</itemPath>
+      <itemPath>elcal2d4nnl.cpp</itemPath>
+      <itemPath>elcal2d8n.cpp</itemPath>
+      <itemPath>elemento.cpp</itemPath>
+      <itemPath>elemento2d3n.cpp</itemPath>
+      <itemPath>elemento2d4n.cpp</itemPath>
+      <itemPath>elemento2d8n.cpp</itemPath>
+      <itemPath>elemento2d9n.cpp</itemPath>
+      <itemPath>elemento3d.cpp</itemPath>
+      <itemPath>elemento3d3n.cpp</itemPath>
+      <itemPath>iscal1d.cpp</itemPath>
+      <itemPath>iscal2d.cpp</itemPath>
+      <itemPath>isop2d.cpp</itemPath>
+      <itemPath>mat_linear_elastico.cpp</itemPath>
+      <itemPath>mat_termico.cpp</itemPath>
+      <itemPath>mat_termico_nao_linear.cpp</itemPath>
+      <itemPath>material.cpp</itemPath>
+      <itemPath>mef.cpp</itemPath>
+      <itemPath>nlcal2d4n.cpp</itemPath>
+      <itemPath>no.cpp</itemPath>
+      <itemPath>no1d.cpp</itemPath>
+      <itemPath>no2d.cpp</itemPath>
+      <itemPath>no3d.cpp</itemPath>
+      <itemPath>tubo.cpp</itemPath>
+      <itemPath>ufesApp.cpp</itemPath>
+      <itemPath>ufesMain.cpp</itemPath>
+      <itemPath>viga2d.cpp</itemPath>
+      <itemPath>viga3d.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Arquivos de Recurso"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Arquivos de Teste"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>elemento_poligonal2d5n.cpp</itemPath>
+    <itemPath>elemento_poligonal2d5n.h</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandLine>`wx-config --cxxflags`</commandLine>
+        </ccTool>
+        <asmTool>
+          <commandLine>`wx-config --libs`</commandLine>
+        </asmTool>
+        <linkerTool>
+          <commandLine>`wx-config --libs`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aleatorio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="aleatorio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise_incremental.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise_incremental.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise_termica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise_termica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="c_contorno.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="c_contorno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="defaleat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal1d2n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal1d2n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d4nnl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d4nnl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d8n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d3n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d3n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d8n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d9n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d9n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento3d3n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento3d3n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d5n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d5n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iscal1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iscal1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iscal2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iscal2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="isop2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isop2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_linear_elastico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_linear_elastico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_termico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_termico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_termico_nao_linear.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_termico_nao_linear.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="material.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="material.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mef.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nlcal2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nlcal2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tubo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tubo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ufesApp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ufesApp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ufesMain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ufesMain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="viga2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="viga2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="viga3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="viga3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>`wx-config --cxxflags`</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>`wx-config --libs`</commandLine>
+        </asmTool>
+        <linkerTool>
+          <commandLine>`wx-config --libs`</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aleatorio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="aleatorio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise_incremental.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise_incremental.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="analise_termica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="analise_termica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="barra3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="barra3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="c_contorno.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="c_contorno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="defaleat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal1d2n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal1d2n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d4nnl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d4nnl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elcal2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elcal2d8n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d3n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d3n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d8n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento2d9n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento2d9n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento3d3n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento3d3n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d5n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d5n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iscal1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iscal1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iscal2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iscal2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="isop2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isop2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_linear_elastico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_linear_elastico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_termico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_termico.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mat_termico_nao_linear.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mat_termico_nao_linear.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="material.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="material.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mef.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nlcal2d4n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nlcal2d4n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no1d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no1d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="no3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="no3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tubo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tubo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ufesApp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ufesApp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ufesMain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ufesMain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="viga2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="viga2d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="viga3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="viga3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
