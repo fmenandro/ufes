@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{97556CB2-7F84-BB33-F657-483B00C67A39}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\wxWidgets-3.0.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\wxWidgets-3.0.2\lib;$(WXWIN)\lib\vc_lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WXMSW__;_WINDOWS;__WXDEBUG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(WXWIN)\include;$(WXWIN)\lib\vc_lib\mswud</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\wxWidgets-3.0.2\include\msvc\wx;C:\wxWidgets-3.0.2\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;wxmsw30ud_core.lib;wxbase30ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxexpatd.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;__WXMSW__;__WXDEBUG__;_WINDOWS;NOPCH</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aleatorio.cpp" />
+    <ClCompile Include="analise.cpp" />
+    <ClCompile Include="analise_incremental.cpp" />
+    <ClCompile Include="analise_termica.cpp" />
+    <ClCompile Include="barra1d.cpp" />
+    <ClCompile Include="barra2d.cpp" />
+    <ClCompile Include="barra3d.cpp" />
+    <ClCompile Include="c_contorno.cpp" />
+    <ClCompile Include="elcal1d2n.cpp" />
+    <ClCompile Include="elcal2d4n.cpp" />
+    <ClCompile Include="elcal2d4nnl.cpp" />
+    <ClCompile Include="elcal2d8n.cpp" />
+    <ClCompile Include="elemento.cpp" />
+    <ClCompile Include="elemento2d3n.cpp" />
+    <ClCompile Include="elemento2d4n.cpp" />
+    <ClCompile Include="elemento2d8n.cpp" />
+    <ClCompile Include="elemento2d9n.cpp" />
+    <ClCompile Include="elemento3d.cpp" />
+    <ClCompile Include="elemento3d3n.cpp" />
+    <ClCompile Include="iscal1d.cpp" />
+    <ClCompile Include="iscal2d.cpp" />
+    <ClCompile Include="isop2d.cpp" />
+    <ClCompile Include="material.cpp" />
+    <ClCompile Include="mat_linear_elastico.cpp" />
+    <ClCompile Include="mat_termico.cpp" />
+    <ClCompile Include="mat_termico_nao_linear.cpp" />
+    <ClCompile Include="nlcal2d4n.cpp" />
+    <ClCompile Include="no.cpp" />
+    <ClCompile Include="no1d.cpp" />
+    <ClCompile Include="no2d.cpp" />
+    <ClCompile Include="no3d.cpp" />
+    <ClCompile Include="tubo.cpp" />
+    <ClCompile Include="ufesApp.cpp" />
+    <ClCompile Include="ufesMain.cpp" />
+    <ClCompile Include="viga2d.cpp" />
+    <ClCompile Include="viga3d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aleatorio.h" />
+    <ClInclude Include="analise.h" />
+    <ClInclude Include="analise_incremental.h" />
+    <ClInclude Include="analise_termica.h" />
+    <ClInclude Include="barra1d.h" />
+    <ClInclude Include="barra2d.h" />
+    <ClInclude Include="barra3d.h" />
+    <ClInclude Include="c_contorno.h" />
+    <ClInclude Include="defaleat.h" />
+    <ClInclude Include="elcal1d2n.h" />
+    <ClInclude Include="elcal2d4n.h" />
+    <ClInclude Include="elcal2d4nnl.h" />
+    <ClInclude Include="elcal2d8n.h" />
+    <ClInclude Include="elemento.h" />
+    <ClInclude Include="elemento2d3n.h" />
+    <ClInclude Include="elemento2d4n.h" />
+    <ClInclude Include="elemento2d8n.h" />
+    <ClInclude Include="elemento2d9n.h" />
+    <ClInclude Include="elemento3d.h" />
+    <ClInclude Include="elemento3d3n.h" />
+    <ClInclude Include="iscal1d.h" />
+    <ClInclude Include="iscal2d.h" />
+    <ClInclude Include="isop2d.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="mat_linear_elastico.h" />
+    <ClInclude Include="mat_termico.h" />
+    <ClInclude Include="mat_termico_nao_linear.h" />
+    <ClInclude Include="nlcal2d4n.h" />
+    <ClInclude Include="no.h" />
+    <ClInclude Include="no1d.h" />
+    <ClInclude Include="no2d.h" />
+    <ClInclude Include="no3d.h" />
+    <ClInclude Include="tubo.h" />
+    <ClInclude Include="ufesApp.h" />
+    <ClInclude Include="ufesMain.h" />
+    <ClInclude Include="viga2d.h" />
+    <ClInclude Include="viga3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.0.2\samples\sample.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

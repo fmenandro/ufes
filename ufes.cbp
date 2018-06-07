@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ufes" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ufes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ufes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option='[[if (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.8.0&quot;)) print(_T(&quot;-Wno-unused-local-typedefs&quot;));]]' />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="aleatorio.cpp" />
+		<Unit filename="aleatorio.h" />
+		<Unit filename="analise.cpp" />
+		<Unit filename="analise.h" />
+		<Unit filename="analise_incremental.cpp" />
+		<Unit filename="analise_incremental.h" />
+		<Unit filename="analise_termica.cpp" />
+		<Unit filename="analise_termica.h" />
+		<Unit filename="barra1d.cpp" />
+		<Unit filename="barra1d.h" />
+		<Unit filename="barra2d.cpp" />
+		<Unit filename="barra2d.h" />
+		<Unit filename="barra3d.cpp" />
+		<Unit filename="barra3d.h" />
+		<Unit filename="c_contorno.cpp" />
+		<Unit filename="c_contorno.h" />
+		<Unit filename="defaleat.h" />
+		<Unit filename="elcal1d2n.cpp" />
+		<Unit filename="elcal1d2n.h" />
+		<Unit filename="elcal2d4n.cpp" />
+		<Unit filename="elcal2d4n.h" />
+		<Unit filename="elcal2d4nnl.cpp" />
+		<Unit filename="elcal2d4nnl.h" />
+		<Unit filename="elemento.cpp" />
+		<Unit filename="elemento.h" />
+		<Unit filename="elemento2d3n.cpp" />
+		<Unit filename="elemento2d3n.h" />
+		<Unit filename="elemento2d4n.cpp" />
+		<Unit filename="elemento2d4n.h" />
+		<Unit filename="elemento2d8n.cpp" />
+		<Unit filename="elemento2d8n.h" />
+		<Unit filename="elemento2d9n.cpp" />
+		<Unit filename="elemento2d9n.h" />
+		<Unit filename="elemento3d.cpp" />
+		<Unit filename="elemento3d.h" />
+		<Unit filename="elemento3d3n.cpp" />
+		<Unit filename="elemento3d3n.h" />
+		<Unit filename="iscal1d.cpp" />
+		<Unit filename="iscal1d.h" />
+		<Unit filename="iscal2d.cpp" />
+		<Unit filename="iscal2d.h" />
+		<Unit filename="isop2d.cpp" />
+		<Unit filename="isop2d.h" />
+		<Unit filename="mat_linear_elastico.cpp" />
+		<Unit filename="mat_linear_elastico.h" />
+		<Unit filename="mat_termico.cpp" />
+		<Unit filename="mat_termico.h" />
+		<Unit filename="mat_termico_nao_linear.cpp" />
+		<Unit filename="mat_termico_nao_linear.h" />
+		<Unit filename="material.cpp" />
+		<Unit filename="material.h" />
+		<Unit filename="mef.cpp" />
+		<Unit filename="nlcal2d4n.cpp" />
+		<Unit filename="nlcal2d4n.h" />
+		<Unit filename="no.cpp" />
+		<Unit filename="no.h" />
+		<Unit filename="no1d.cpp" />
+		<Unit filename="no1d.h" />
+		<Unit filename="no2d.cpp" />
+		<Unit filename="no2d.h" />
+		<Unit filename="no3d.cpp" />
+		<Unit filename="no3d.h" />
+		<Unit filename="tubo.cpp" />
+		<Unit filename="tubo.h" />
+		<Unit filename="ufesApp.cpp" />
+		<Unit filename="ufesApp.h" />
+		<Unit filename="ufesMain.cpp" />
+		<Unit filename="ufesMain.h" />
+		<Unit filename="viga2d.cpp" />
+		<Unit filename="viga2d.h" />
+		<Unit filename="viga3d.cpp" />
+		<Unit filename="viga3d.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
