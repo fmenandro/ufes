@@ -20,10 +20,9 @@
 #include "elemento_poligonal2d5n.h"
 
 elpol2D5N::elpol2D5N()
-: isop2d(nno, ptg)
+: elpol2d(nno)
 {
 }
-
 
 elpol2D5N::~elpol2D5N()
 {
@@ -33,133 +32,35 @@ int elpol2D5N::qnno(){
 	return nno;
 }
 
-int elpol2D5N::qptg(){
-	return ptg;
-}
-void elpol2D5N::pontos_de_gauss(const int p, const int n, double *r,double *s, double *w)
-{
-switch (p)
-{
-case 1:
-   r[0]=0.0;
-   s[0]=0.0;
-   w[0]=n*sin(8*atan(1.0)/n);
-   break;
-}
-}
-
-void elpol2D5N::monta_n()
-{
-#ifdef ALEATORIO
-	aleatorio
-#else
-	double
-#endif
-		r, s, J[2][2], invJ[2][2];
-	double rpg[ptg], spg[ptg], wpg[ptg];
-	int p = ptg;
-	for (int i = 0; i < 2; i++)
-	for (int n = 0; n < 5; n++)
-		dn[2 * n + i] = dN[2 * n + i] = 0.0;
-	pontos_de_gauss(p, nno, rpg, spg, wpg);
-	r = rpg[pg];
-	s = spg[pg];
-	peso = wpg[pg];
-
+void elpol2D5N::funcao_Forma(double r, double s, double *N, double *dn){
 	// RENAN
+	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
 	// Coeficientes para as fun��es de forma(?)
-	// A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity
-	// Usar double em vez de float?
-	float k_a[5][10] = {
-		{ -0.092937, 3.23607, 4, 0, -3.80423, 3.80423, -2.76393, 15.2169, 5.81234, 17.8885 },
-		{ -0.0790569, 3.80423, -3.80423, -2.76393, -3.80423, 3.80423, -2.76393, 15.2169, 5.81234, 17.8885 },
-		{ -0.0790569, 15.2169, 5.81234, -17.8885, 3.80423, -3.80423, -2.76393, -3.80423, 3.80423, -2.76393 },
-		{ 0.092937, 3.23607, 4, 0, 15.2169, 5.81234, -17.8885, 3.80423, -3.80423, -2.76393 },
-		{ 0.0232343, 3.23607, 4, 0, 15.2169, 5.81234, -17.8885, 15.2169, 5.81234, 17.8885 }
-	};
-	float k_b[3] = { 87.05, -12.7004, -12.7004 };
-
-	float b = k_b[0] + k_b[1] * pow(r, 2)  + k_b[2] * pow(s, 2);
-	float a[5];
-	int j = 0;
-
-	// C�lculo das Fun��es de Forma(?) e derivadas
-	for (int i = 0; i < 5; i++){
-		a[i] = k_a[i][0] * (k_a[i][1] + k_a[i][2] * r + k_a[i][3] * s) *
-			(k_a[i][4] + k_a[i][5] * r + k_a[i][6] * s) *
-			(k_a[i][7] + k_a[i][8] * r + k_a[i][9] * s);
-		// Melhor calcular os pacotes de "k"s separadamente? Pois eles se repetem
-
-		N[i] = a[i] / b;
-
-		// Derivada em rela��o a r
-		dn[j] = k_a[i][0] / b * (
-			k_a[i][5] * (k_a[i][7] + k_a[i][8] * r + k_a[i][9] * s) * (k_a[i][1] + k_a[i][2] * r + k_a[i][3] * s) +
-			k_a[i][2] * (k_a[i][7] + k_a[i][8] * r + k_a[i][9] * s) * (k_a[i][4] + k_a[i][5] * r + k_a[i][6] * s) +
-			k_a[i][8] * (k_a[i][1] + k_a[i][2] * r + k_a[i][3] * s) * (k_a[i][4] + k_a[i][5] * r + k_a[i][6] * s)
-			)
-			- 2 * k_b[1] * r * a[i] / pow(b, 2);
-
-		// Derivada em rela��o a s
-		dn[j+1] = k_a[i][0] / b * (
-			k_a[i][6] * (k_a[i][7] + k_a[i][8] * r + k_a[i][9] * s) * (k_a[i][1] + k_a[i][2] * r + k_a[i][3] * s) +
-			k_a[i][3] * (k_a[i][7] + k_a[i][8] * r + k_a[i][9] * s) * (k_a[i][4] + k_a[i][5] * r + k_a[i][6] * s) +
-			k_a[i][9] * (k_a[i][1] + k_a[i][2] * r + k_a[i][3] * s) * (k_a[i][4] + k_a[i][5] * r + k_a[i][6] * s)
-			)
-			- 2 * k_b[2] * s * a[i] / pow(b, 2);
-
-		j = j + 2;
-	}
-
-	// Jacobiano
-	J[0][0] = J[0][1] = J[1][0] = J[1][1] = 0.0;
-	for (int i = 0; i < 2; i++){
-		for (int j = 0; j < 2; j++){
-			for (int n = 0; n < 5; n++){
-				J[i][j] += dn[2 * n + i] * this->pno[n]->qx(j); // N�o entendi esse this -> ...
-			}
-		}
-	}
-	detJ = J[0][0] * J[1][1] - J[1][0] * J[0][1];
-	invJ[0][0] = J[1][1] / detJ;
-	invJ[1][1] = J[0][0] / detJ;
-	invJ[0][1] = -J[0][1] / detJ;
-	invJ[1][0] = -J[1][0] / detJ;
-	for (int i = 0; i<2; i++)
-	for (int j = 0; j<2; j++)
-	for (int n = 0; n<5; n++)
-		dN[2 * n + i] += invJ[i][j] * dn[2 * n + j];
-	peso *= detJ; // ?
+	// Expressões que se repetem
+	double A, B, C, D, E, den, den2;
+	A = (0.8090169943749475 + 1.*r);
+	B = (-1. + 1.*r - 0.7265425280053609*s);
+	C = (2.6180339887498953 + 1.*r + 3.077683537175254*s);
+	D = (-1. + 1.*r + 0.7265425280053609*s);
+	E = (2.6180339887498953 + 1.*r - 3.077683537175254*s);
+	den = (122.60990336999416 - 17.888543819998326*pow(r, 2) - 17.88854381999832*pow(s, 2));
+	den2 = pow(122.60990336999416 - 17.888543819998326*pow(r, 2) - 17.88854381999832*pow(s, 2), 2);
+	// Funcao de forma
+	N[0] = (-11.577708763999665*A*B*C) / den;
+	N[1] = (9.366563145999496*B*D*C) / den;
+	N[2] = (9.366563145999496*E*B*D) / den;
+	N[3] = (-11.577708763999665*A*E*D) / den;
+	N[4] = (4.422291236000336*A*E*C) / den;
+	// Derivada em relação a r
+	dn[0] = (-414.2167011199733*r*A*B*C) / den2 - (11.577708763999665*A*B) / den - (11.577708763999665*A*C) / den - (11.577708763999665*B*C) / den;
+	dn[2] = (335.1083505599867*r*B*D*C) / den2 + (9.366563145999496*B*D) / den + (9.366563145999496*B*C) / den + (9.366563145999496*D*C) / den;
+	dn[4] = (335.1083505599867*r*E*B*D) / den2 + (9.366563145999496*E*B) / den + (9.366563145999496*E*D) / den + (9.366563145999496*B*D) / den;
+	dn[6] = (-414.2167011199733*r*A*E*D) / den2 - (11.577708763999665*A*E) / den - (11.577708763999665*A*D) / den - (11.577708763999665*E*D) / den;
+	dn[8] = (158.21670111997315*r*A*E*C) / den2 + (4.422291236000336*A*E) / den + (4.422291236000336*A*C) / den + (4.422291236000336*E*C) / den;
+	// Derivada em relação a s
+	dn[1] = (-414.21670111997315*A*B*s*C) / den2 - (35.632523661171426*A*B) / den + (8.41169779390614*A*C) / den;
+	dn[3] = (335.1083505599866*B*D*s*C) / den2 + (28.827317194355103*B*D) / den + (6.80520646681632*B*C) / den - (6.80520646681632*D*C) / den;
+	dn[5] = (335.1083505599866*E*B*D*s) / den2 + (6.80520646681632*E*B) / den - (6.80520646681632*E*D) / den - (28.827317194355103*B*D) / den;
+	dn[7] = (-414.21670111997315*A*E*D*s) / den2 - (8.41169779390614*A*E) / den + (35.632523661171426*A*D) / den;
+	dn[9] = (158.21670111997307*A*E*s*C) / den2 + (13.61041293363264*A*E) / den - (13.61041293363264*A*C) / den;
 }
-void elpol2D5N::monta_rigidez()
-{
-#ifdef ALEATORIO
-   aleatorio *xx,*yy;
-   xx=new aleatorio[qnno()];
-   yy=new aleatorio[qnno()];
-#else
-   double *xx,*yy;
-   xx=new double[qnno()];
-   yy=new double[qnno()];
-#endif
-   double *rpg,*spg,*wpg;
-   rpg=new double[qptg()];
-   spg=new double[qptg()];
-   wpg=new double[qptg()];
-   for (int i=0;i<qnno()*qipn();i++)
-      for (int j=0;j<qnno()*qipn();j++)
-         this->k[qnno()*qipn()*i+j]=0.0;
-   pontos_de_gauss(qptg(),nno,rpg,spg,wpg);
-   for (pg=0;pg<qptg();pg++)
-   {
-      monta_b();
-      monta_c();
-      for (int i=0;i<qnno()*qipn();i++)
-         for (int j=0;j<qnlb();j++)
-            for (int l=0;l<qnlb();l++)
-               for (int m=0;m<qnno()*qipn();m++)
-                  k[qnno()*qipn()*i+m]+=
-                     b[qnno()*qipn()*j+i]*c[qnlb()*j+l]*b[qnno()*qipn()*l+m]*peso;
-
-   }
-};
