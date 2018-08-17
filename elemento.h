@@ -53,6 +53,7 @@ protected:
 public:
    elemento();
    elemento(int,int,int,int,int,int);
+   elemento(int, int, int, int, int, int, int); // Adicionado por Renan
    ~elemento();
    void aponta_no(int, class no*);
    void aponta_mat(class material*);

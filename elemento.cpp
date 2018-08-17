@@ -70,6 +70,52 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 #endif
 };
 
+// Adicionado por Renan
+elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int poli)
+{
+	// poli: quando existente (= 1) indica que o elemento é poligonal 2d
+	no = new int[nno];
+	pno = new class no*[nno];
+	material = 0;
+	ro = 0.5;
+	p = 3.0;
+	dc = 0.0;
+	dcn = 0.0;
+	pmaterial = NULL;
+#ifdef ALEATORIO
+	prop = new class aleatorio[prp];
+	k = new class aleatorio[nno*ipn*nno*ipn];
+	b = new class aleatorio[nlb*nno*ipn];
+	c = new class aleatorio[nlb*nlb];
+	x = new class aleatorio[nno*ipn];
+	f = new class aleatorio[nno*ipn];
+	ten = new class aleatorio[dim*nlb*ptg];
+	def = new class aleatorio[dim*nlb*ptg];
+#else
+	prop = new double[prp];
+	k = new double[nno*ipn*nno*ipn];
+	b = new double[nlb*nno*ipn];
+	c = new double[nlb*nlb];
+	x = new double[nno*ipn];
+	f = new double[nno*ipn];
+	if (dim == 1)
+	{
+		ten = new double[nlb*ptg];
+		def = new double[nlb*ptg];
+	}
+	else if (dim == 2)
+	{
+		ten = new double[nlb*ptg*nno];	// A diferenca está aqui
+		def = new double[nlb*ptg*nno];
+	}
+	else
+	{
+		ten = new double[nlb*ptg*ptg*ptg];
+		def = new double[nlb*ptg*ptg*ptg];
+	}
+#endif
+};
+
 elemento::~elemento(){delete no;delete pno;delete prop;delete k;delete b;};
 
 void elemento::aponta_no(int i,class no *gno)
@@ -412,12 +458,13 @@ istream& operator>>(istream& ci, elemento& e)
    return ci;
 };
 
+// RENAN COMENTOU PARA O ELEMENTO POLIGONAL, DEPOIS VOLTAR AO ORIGINAL
 wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 {
    co<<"  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
    for(int i=0;i<e.qnno();i++)
       co<<"\n    No "<<i<<" = "<<e.no[i];
-   for(int i=0;i<e.qprp();i++)
+   /*for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Deformacao calculada";
    int lpg=e.qptg();
@@ -441,7 +488,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
       co<<"\n x["<<i<<"] = "<<e.x[i];
    co<<"\n  Forcas Nodais";
    for(int i=0;i<e.qnno()*e.qipn();i++)
-      co<<"\n f["<<i<<"] = "<<e.f[i];
+      co<<"\n f["<<i<<"] = "<<e.f[i];*/
    return co;
 };
 
