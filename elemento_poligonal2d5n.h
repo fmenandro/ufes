@@ -22,10 +22,6 @@ public:
 
 	int qnno();
 	void funcao_Forma(double, double, double*, double*);
-	//int qptg();
-	
-	//void p_processa(double*);
-	//void posprocessa();
 };
 
 #endif

@@ -22,8 +22,6 @@
 elpol2d::elpol2d(int nno)
 : isop2d(nno, ptg, 1)
 {
-	//this->nno = nno;
-	//this->ptg = ptg;
 }
 
 elpol2d::~elpol2d()
@@ -315,12 +313,11 @@ void elpol2d::monta_n()
 	funcao_Forma(r, s, N, dn);
 
 	// Matriz Jacobiana e Jacobiano
-	// Esse Jacobiano está certo? J2 com essa mudança de coordenadas é mesmo J2?
 	J[0][0] = J[0][1] = J[1][0] = J[1][1] = 0.0;
 	for (i = 0; i < 2; i++){
 		for (j = 0; j < 2; j++){
 			for (n = 0; n < qnno(); n++){
-				J[i][j] += dn[2 * n + i] * this->pno[n]->qx(j); // N�o entendi esse this -> ...
+				J[i][j] += dn[2 * n + i] * this->pno[n]->qx(j);
 			}
 		}
 	}
@@ -366,11 +363,7 @@ void elpol2d::monta_rigidez()
 		this->k[qnno()*qipn()*i + j] = 0.0;
 	pontos_de_gauss(qptg(), rpg, spg, wpg);
 	for (tri = 0; tri < qnno(); tri++){	// Para cada triangulo dentro do elemento
-		// ATENCAO: quando estava somente tri < nno, o valor de tri = 5 entrava no loop nao sei o porquê.
 		for (pg = 0; pg < qptg(); pg++){
-			// Revisar se os pontos de Gauss são escolhidos no elemento ou no triangulo.
-			// Se forem dentro do triangulo, acho que o loop tri deve estar acima dos pontos de Gauss
-			// (ou nao faz diferenca)
 			monta_b();
 			monta_c();
 			for (int i = 0; i < qnno()*qipn(); i++)
@@ -381,10 +374,6 @@ void elpol2d::monta_rigidez()
 				b[qnno()*qipn()*j + i] * c[qnlb()*j + l] * b[qnno()*qipn()*l + m] * peso;
 		}
 	}
-	//// Nao da pra fazer assim, pois o monta_rigidez zeraria o k a cada entrada no loop do tri
-	//for (tri = 0; tri < nno; tri++){
-	//	isop2d::monta_rigidez();
-	//}
 };
 
 
