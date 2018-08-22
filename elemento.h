@@ -105,9 +105,9 @@ public:
    virtual void monta_c();
    virtual void monta_massa();
 #ifdef ALEATORIO
-   void p_processa(aleatorio*);
+   virtual void p_processa(aleatorio*);
 #else
-   void p_processa(double*);
+   virtual void p_processa(double*); // virtual para a sobrecarga do el. poligonal funcionar
 #endif
    friend ostream& operator<<(ostream&,elemento&);
    friend istream& operator>>(istream&,elemento&);
