@@ -15,6 +15,8 @@ public:
 	double *yg;
 	void p_processa(double*);
 #endif
+	double *rpg, *spg, *wpg;
+
 	elpol2d();
 	elpol2d(int);
 	~elpol2d();

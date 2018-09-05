@@ -22,6 +22,9 @@
 elpol2d::elpol2d(int nno)
 : isop2d(nno, ptg, 1)
 {
+	rpg = new double[qptg()];
+	spg = new double[qptg()];
+	wpg = new double[qptg()];
 }
 
 elpol2d::~elpol2d()
@@ -278,8 +281,6 @@ void elpol2d::monta_n()
 #endif
 	// Inicializacao de variaveis ---
 		r, s, J[2][2], invJ[2][2];
-	double rpg[ptg], spg[ptg], wpg[ptg];
-	int p = ptg;
 	double r1[2], r2[2];
 	double detJ1;
 	const double pi = 3.14159265358979323846;
@@ -303,7 +304,6 @@ void elpol2d::monta_n()
 	// Pontos de Gauss estão no sistema de coordenadas do triangulo,
 	//entao, ele sao transformados para o sistema de coordenadas do elemento.
 	// r e s: pontos de Gauss nas coordenadas do elemento.
-	pontos_de_gauss(p, rpg, spg, wpg);	// Tem necessidade de chamar esse método de novo? (já é chamado em monta_rigidez)
 	r = r1[0] * rpg[pg] + r1[1] * spg[pg];
 	s = r2[0] * rpg[pg] + r2[1] * spg[pg];
 	peso = wpg[pg];
@@ -354,10 +354,6 @@ void elpol2d::monta_rigidez()
 	xx = new double[qnno()];
 	yy = new double[qnno()];
 #endif
-	double *rpg, *spg, *wpg;
-	rpg = new double[qptg()];
-	spg = new double[qptg()];
-	wpg = new double[qptg()];
 	for (int i = 0; i<qnno()*qipn(); i++)
 	for (int j = 0; j<qnno()*qipn(); j++)
 		this->k[qnno()*qipn()*i + j] = 0.0;
