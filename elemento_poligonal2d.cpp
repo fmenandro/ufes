@@ -421,7 +421,8 @@ void elpol2d::p_processa(double *xx)
 			for (int i = 0; i < qnlb(); i++)
 			{
 				for (int j = 0; j < qnlb(); j++)
-					ten[pg*qnlb() + i + tri*qptg()*qnlb()] += c[i*qnlb() + j] * def[j];
+					// Revisar se é def[...+j+...]
+					ten[pg*qnlb() + i + tri*qptg()*qnlb()] += c[i*qnlb() + j] * def[pg*qnlb() + j + tri*qptg()*qnlb()];
 			}
 		}
 	}
