@@ -464,12 +464,13 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
    co<<"  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
    for(int i=0;i<e.qnno();i++)
       co<<"\n    No "<<i<<" = "<<e.no[i];
-   /*for(int i=0;i<e.qprp();i++)
+   for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Deformacao calculada";
-   int lpg=e.qptg();
+  /* int lpg=e.qptg();
    if (e.qdim()==2) lpg*=lpg;
-   if (e.qdim()==3) lpg*=lpg*lpg;
+   if (e.qdim()==3) lpg*=lpg*lpg;*/
+   int lpg = e.qptg()*e.qnno(); // Para elemento poligonal
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
@@ -488,7 +489,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
       co<<"\n x["<<i<<"] = "<<e.x[i];
    co<<"\n  Forcas Nodais";
    for(int i=0;i<e.qnno()*e.qipn();i++)
-      co<<"\n f["<<i<<"] = "<<e.f[i];*/
+      co<<"\n f["<<i<<"] = "<<e.f[i];
    return co;
 };
 

@@ -377,7 +377,6 @@ void elpol2d::monta_rigidez()
 };
 
 
-
 #ifdef ALEATORIO
 void elpol2d::p_processa(aleatorio *xx)
 {
