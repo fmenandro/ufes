@@ -69,6 +69,7 @@ public:
     friend wxTextInputStream& operator>>(wxTextInputStream&,c_contorno&);
     virtual void draw(wxDC&,double,double,double,double)=0;
     virtual void draw(wxDC&,double,double,int,double,double,double*)=0;
+    void draw(wxDC&,double,double,int,double,double,double*,int);
 };
 class apoio : public c_contorno
 {

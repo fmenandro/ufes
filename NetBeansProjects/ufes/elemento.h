@@ -53,6 +53,7 @@ protected:
 public:
    elemento();
    elemento(int,int,int,int,int,int);
+   elemento(int, int, int, int, int, int, int); // Adicionado por Renan
    ~elemento();
    void aponta_no(int, class no*);
    void aponta_mat(class material*);
@@ -104,9 +105,9 @@ public:
    virtual void monta_c();
    virtual void monta_massa();
 #ifdef ALEATORIO
-   void p_processa(aleatorio*);
+   virtual void p_processa(aleatorio*);
 #else
-   void p_processa(double*);
+   virtual void p_processa(double*);
 #endif
    friend ostream& operator<<(ostream&,elemento&);
    friend istream& operator>>(istream&,elemento&);

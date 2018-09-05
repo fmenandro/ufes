@@ -44,6 +44,9 @@
 #include "nlcal2d4n.h"
 #include "elcal1d2n.h"
 #include "elemento_poligonal2d5n.h"
+#include "elemento_poligonal2d6n.h"
+#include "elemento_poligonal2d7n.h"
+#include "elemento_poligonal2d8n.h"
 #include "c_contorno.h"
 
 #include <iostream>
@@ -72,12 +75,13 @@ using namespace std;
 class analise
 {
 public:
-   int nn,ne,nm,nc,ndof;
+   int nn,ne,nm,nc,ndof,nccc;
    int fn,fe,fcc,fnn,fne,fnc,fnm,fro;
    class no **nos;
    class elemento **elementos;
    class c_contorno **cc;
    class material **materiais;
+   int *ccc;
    double view[6];
    double ro,rm,ch_lim;
 #ifdef ALEATORIO

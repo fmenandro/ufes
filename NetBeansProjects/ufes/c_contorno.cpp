@@ -60,7 +60,29 @@ void c_contorno::aponta_no(int i,class no *gno)
 {
       this->pno[i]=gno;
 };
-
+void c_contorno::draw(wxDC& dc, double xmed, double ymed, int d, double ddif, double zoom, double* view, int cc)
+{
+    wxCoord w,h;
+    dc.GetSize(&w,&h);
+    int dim=pno[0]->qdim(), nn=qnno();
+    dc.SetPen( wxPen( wxColor(0,0,0), 3 ) ); // black line, 3 pixels thick
+    int x,y;
+    wxString CC;
+    CC<<cc;
+    this->draw(dc,xmed,ymed,d,ddif,zoom,view);
+    switch(dim)
+    {
+    case 1:
+        x=w/2.+(view[0]*pno[0]->qx(0)-xmed)*zoom*d/ddif;
+        y=h/2.-(view[3]*pno[0]->qx(0)-ymed)*zoom*d/ddif;
+       break;
+    case 2:
+        x=w/2.+(view[0]*pno[0]->qx(0)+view[1]*pno[0]->qx(1)-xmed)*zoom*d/ddif;
+        y=h/2.-(view[3]*pno[0]->qx(0)+view[4]*pno[0]->qx(1)-ymed)*zoom*d/ddif;
+      break;
+    }
+    dc.DrawText( CC,x,y );
+};
 int apoio::nno=1;
 int apoio::ngl=1;
 int apoio::nvl=0;

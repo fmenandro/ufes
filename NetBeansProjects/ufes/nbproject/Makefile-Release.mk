@@ -54,7 +54,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/elemento2d9n.o \
 	${OBJECTDIR}/elemento3d.o \
 	${OBJECTDIR}/elemento3d3n.o \
+	${OBJECTDIR}/elemento_poligonal2d.o \
 	${OBJECTDIR}/elemento_poligonal2d5n.o \
+	${OBJECTDIR}/elemento_poligonal2d6n.o \
+	${OBJECTDIR}/elemento_poligonal2d7n.o \
+	${OBJECTDIR}/elemento_poligonal2d8n.o \
 	${OBJECTDIR}/iscal1d.o \
 	${OBJECTDIR}/iscal2d.o \
 	${OBJECTDIR}/isop2d.o \
@@ -194,10 +198,30 @@ ${OBJECTDIR}/elemento3d3n.o: elemento3d3n.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento3d3n.o elemento3d3n.cpp
 
+${OBJECTDIR}/elemento_poligonal2d.o: elemento_poligonal2d.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento_poligonal2d.o elemento_poligonal2d.cpp
+
 ${OBJECTDIR}/elemento_poligonal2d5n.o: elemento_poligonal2d5n.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento_poligonal2d5n.o elemento_poligonal2d5n.cpp
+
+${OBJECTDIR}/elemento_poligonal2d6n.o: elemento_poligonal2d6n.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento_poligonal2d6n.o elemento_poligonal2d6n.cpp
+
+${OBJECTDIR}/elemento_poligonal2d7n.o: elemento_poligonal2d7n.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento_poligonal2d7n.o elemento_poligonal2d7n.cpp
+
+${OBJECTDIR}/elemento_poligonal2d8n.o: elemento_poligonal2d8n.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/elemento_poligonal2d8n.o elemento_poligonal2d8n.cpp
 
 ${OBJECTDIR}/iscal1d.o: iscal1d.cpp 
 	${MKDIR} -p ${OBJECTDIR}

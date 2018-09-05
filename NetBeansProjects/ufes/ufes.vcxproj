@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,12 +18,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -102,6 +102,11 @@
     <ClCompile Include="elemento2d9n.cpp" />
     <ClCompile Include="elemento3d.cpp" />
     <ClCompile Include="elemento3d3n.cpp" />
+    <ClCompile Include="elemento_poligonal2d.cpp" />
+    <ClCompile Include="elemento_poligonal2d5n.cpp" />
+    <ClCompile Include="elemento_poligonal2d6n.cpp" />
+    <ClCompile Include="elemento_poligonal2d7n.cpp" />
+    <ClCompile Include="elemento_poligonal2d8n.cpp" />
     <ClCompile Include="iscal1d.cpp" />
     <ClCompile Include="iscal2d.cpp" />
     <ClCompile Include="isop2d.cpp" />
@@ -141,6 +146,11 @@
     <ClInclude Include="elemento2d9n.h" />
     <ClInclude Include="elemento3d.h" />
     <ClInclude Include="elemento3d3n.h" />
+    <ClInclude Include="elemento_poligonal2d.h" />
+    <ClInclude Include="elemento_poligonal2d5n.h" />
+    <ClInclude Include="elemento_poligonal2d6n.h" />
+    <ClInclude Include="elemento_poligonal2d7n.h" />
+    <ClInclude Include="elemento_poligonal2d8n.h" />
     <ClInclude Include="iscal1d.h" />
     <ClInclude Include="iscal2d.h" />
     <ClInclude Include="isop2d.h" />

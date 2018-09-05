@@ -43,6 +43,7 @@ public:
    double *N,*dn,*dN,detJ,*xg,*wg,peso;
 #endif
     isop2d(int,int);
+	isop2d(int, int, int);	// Adicionado por Renan, temporario
     ~isop2d();
    int qdim(){return(dim);};
    int qipn(){return(ipn);};

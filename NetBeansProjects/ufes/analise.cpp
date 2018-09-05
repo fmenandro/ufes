@@ -314,7 +314,7 @@ istream& operator>>(istream& ci, analise& n)
 }
 wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
 {
-  ci>>n.nn>>n.ne>>n.nm>>n.nc;
+  ci>>n.nn>>n.ne>>n.nm>>n.nc>>n.nccc;
    n.fn=n.fe=n.fcc=1;
    n.fnn=n.fne=n.fnc=n.fnm=0;
   n.materiais=new class material*[n.nm];
@@ -425,6 +425,16 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
 	case 15:
            n.elementos[i]=new class elpol2D5N;
            break;
+	case 16:
+		n.elementos[i] = new class elpol2D6N;
+		break;
+	case 17:
+		n.elementos[i] = new class elpol2D7N;
+		break;
+	case 18:
+		n.elementos[i] = new class elpol2D8N;
+		break;
+
         case 106:
             int nx,ny;
             ci>>nx>>ny;
@@ -475,18 +485,22 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
      ci>>*n.cc[i];
        for(int j=0;j<n.cc[i]->qnno();j++)
         n.cc[i]->aponta_no(j,n.nos[n.cc[i]->qno(j)]);
-}
+  }
+  n.ccc=new int[n.nccc+1];
+  n.ccc[n.nccc]=n.nc;
+  for (int i=0;i<n.nccc;i++)
+      ci>>n.ccc[i];
   n.ndof=n.nn*n.elementos[0]->qipn();
   #ifdef ALEATORIO
-   n.x = new aleatorio[n.ndof];
-   n.f = new aleatorio[n.ndof];
+   n.x = new aleatorio[n.ndof*n.nccc];
+   n.f = new aleatorio[n.ndof*n.nccc];
    n.K = new aleatorio[n.ndof*n.ndof];
 #else
-   n.x = new double[n.ndof];
-   n.f = new double[n.ndof];
+   n.x = new double[n.ndof*n.nccc];
+   n.f = new double[n.ndof*n.nccc];
    n.K = new double[n.ndof*n.ndof];
 #endif
-for (int i=0;i<n.ndof;i++)
+for (int i=0;i<n.ndof*n.nccc;i++)
   {
       n.x[i]=n.f[i]=0.0;
   }
@@ -536,16 +550,30 @@ void analise::montaroK()
 }
 void analise::impoeCC()
 {
-   for (int c=0;c<nc;c++)
+   for (int lc=0;lc<nccc;lc++)
    {
-      if(!strcmp(cc[c]->qtipo(),"Forca"))
-         cc[c]->impor(K,f,ndof/nn,ndof);
-   }
-   for (int c=0;c<nc;c++)
-   {
+      for (int c=0;c<ccc[0];c++)
+      {
+         if(!strcmp(cc[c]->qtipo(),"Forca"))
+            cc[c]->impor(K,&f[lc*ndof],ndof/nn,ndof);
+      }
+      for (int c=0;c<ccc[0];c++)
+      {
+         if(strcmp(cc[c]->qtipo(),"Forca"))
+            cc[c]->impor(K,&f[lc*ndof],ndof/nn,ndof);
+      }
+      for (int c=ccc[lc];c<ccc[lc+1];c++)
+      {
+         if(!strcmp(cc[c]->qtipo(),"Forca"))
+            cc[c]->impor(K,&f[lc*ndof],ndof/nn,ndof);
+      }
+      for (int c=ccc[lc];c<ccc[lc+1];c++)
+      {
       if(strcmp(cc[c]->qtipo(),"Forca"))
-         cc[c]->impor(K,f,ndof/nn,ndof);
+         cc[c]->impor(K,&f[lc*ndof],ndof/nn,ndof);
+      }
    }
+
 }
 void analise::resolve()
 /* Resolve um sistema de equacoes [K]{x} = {f},
@@ -557,7 +585,7 @@ void analise::resolve()
 #else
    double Kpivo, fator;
 #endif
-   for(k=0;k<ndof;k++)
+   for(k=0;k<ndof*nccc;k++)
       x[k]=f[k];
    for(k=0;k<ndof-1;k++)
    {
@@ -594,9 +622,12 @@ void analise::resolve()
             K[qpos(k,j)]=K[qpos(pivo,j)];
             K[qpos(pivo,j)]=fator;
          }
-         fator=x[k];
-         x[k]=x[pivo];
-         x[pivo]=fator;
+         for (int c=0;c<nccc;c++)
+         {
+            fator=x[k+c*ndof];
+            x[k+c*ndof]=x[pivo+c*ndof];
+            x[pivo+c*ndof]=fator;
+         }
       }
 #ifdef ALEATORIO
       if (Kpivo.aabs(Kpivo)<tolerancia)
@@ -613,7 +644,10 @@ void analise::resolve()
          {
             K[qpos(i,j)] -= fator*K[qpos(k,j)];
          }
-         x[i] -= fator*x[k];
+         for (int c=0;c<nccc;c++)
+         {
+            x[i+c*ndof] -= fator*x[k+c*ndof];
+         }
       }
 /*   if (k>=96)
 {
@@ -637,12 +671,15 @@ void analise::resolve()
    {
       cout<<"O sistema e' singular! (analise 2)";
    }
-   x[ndof-1] /= K[qpos(ndof-1,ndof-1)];
+   for (int c=0;c<nccc;c++)
+   {   
+   x[ndof-1+c*ndof] /= K[qpos(ndof-1,ndof-1)];
    for (i=ndof-2;i>=0;i--)
    {
       for (j=i+1;j<ndof;j++)
-         x[i] -= x[j]*K[qpos(i,j)];
-      x[i] /= K[qpos(i,i)];
+         x[i+c*ndof] -= x[j+c*ndof]*K[qpos(i,j)];
+      x[i+c*ndof] /= K[qpos(i,i)];
+   }
    }
 }/* Fim de gauss */
 double analise::ofsa()
@@ -652,12 +689,15 @@ double analise::ofsa()
    {
       class elemento *el=elementos[e];
       el->monta_rigidez();
-      el->p_processa(x);
       double ce=0.0;
       double dce=0.0;
-      for(int i=0;i<el->qnno()*el->qipn();i++)
-         for(int j=0;j<el->qnno()*el->qipn();j++)
-            ce+=el->qx(i)*el->qk(i,j)*el->qx(j);
+      for(int c=0;c<nccc;c++)
+      {
+         el->p_processa(&x[c*ndof]);
+         for(int i=0;i<el->qnno()*el->qipn();i++)
+            for(int j=0;j<el->qnno()*el->qipn();j++)
+               ce+=el->qx(i)*el->qk(i,j)*el->qx(j);
+      }
       c+=pow(el->qro(),el->qp())*ce;
       el->updc(-el->qp()*pow(el->qro(),el->qp()-1.0)*ce);
    }
@@ -964,7 +1004,12 @@ void analise::draw(wxDC& dc)
 //    co<<"\nCondicao de contorno "<<i<<":\n"<<*a.cc[i]<<"\n";
        if(fcc)
            for (int i=0;i<nc;i++)
-               cc[i]->draw(dc, wxmed, wymed, d, ddif, zoom, view);
+           {
+               if(fnc)
+                  cc[i]->draw(dc, wxmed, wymed, d, ddif, zoom, view, i);
+               else
+                  cc[i]->draw(dc, wxmed, wymed, d, ddif, zoom, view);
+           }
 //               cc[i]->draw(dc,xmed, xdif, ymed, ydif);
 
 //  co<<"\nVetor de forcas = \n\n";

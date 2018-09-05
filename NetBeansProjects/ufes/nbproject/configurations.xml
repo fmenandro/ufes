@@ -24,6 +24,11 @@
       <itemPath>elemento2d9n.h</itemPath>
       <itemPath>elemento3d.h</itemPath>
       <itemPath>elemento3d3n.h</itemPath>
+      <itemPath>elemento_poligonal2d.h</itemPath>
+      <itemPath>elemento_poligonal2d5n.h</itemPath>
+      <itemPath>elemento_poligonal2d6n.h</itemPath>
+      <itemPath>elemento_poligonal2d7n.h</itemPath>
+      <itemPath>elemento_poligonal2d8n.h</itemPath>
       <itemPath>iscal1d.h</itemPath>
       <itemPath>iscal2d.h</itemPath>
       <itemPath>isop2d.h</itemPath>
@@ -64,6 +69,11 @@
       <itemPath>elemento2d9n.cpp</itemPath>
       <itemPath>elemento3d.cpp</itemPath>
       <itemPath>elemento3d3n.cpp</itemPath>
+      <itemPath>elemento_poligonal2d.cpp</itemPath>
+      <itemPath>elemento_poligonal2d5n.cpp</itemPath>
+      <itemPath>elemento_poligonal2d6n.cpp</itemPath>
+      <itemPath>elemento_poligonal2d7n.cpp</itemPath>
+      <itemPath>elemento_poligonal2d8n.cpp</itemPath>
       <itemPath>iscal1d.cpp</itemPath>
       <itemPath>iscal2d.cpp</itemPath>
       <itemPath>isop2d.cpp</itemPath>
@@ -98,8 +108,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>elemento_poligonal2d5n.cpp</itemPath>
-    <itemPath>elemento_poligonal2d5n.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -198,9 +206,25 @@
       </item>
       <item path="elemento3d3n.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="elemento_poligonal2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="elemento_poligonal2d5n.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="elemento_poligonal2d5n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d6n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d6n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d7n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d7n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d8n.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="iscal1d.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -376,9 +400,25 @@
       </item>
       <item path="elemento3d3n.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="elemento_poligonal2d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="elemento_poligonal2d5n.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="elemento_poligonal2d5n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d6n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d6n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d7n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d7n.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d8n.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="elemento_poligonal2d8n.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="iscal1d.cpp" ex="false" tool="1" flavor2="0">
       </item>

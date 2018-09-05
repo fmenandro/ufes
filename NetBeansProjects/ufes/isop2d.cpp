@@ -55,6 +55,35 @@ wg- pesos de Gauss associados aos pontos
    detJ=0.0;
 };
 
+// ADICIONADO POR RENAN, temporario. Para avisar que e poligonal
+isop2d::isop2d(int nno, int ptg, int poli)
+: elemento(dim, ipn, nno, prp, ptg, nlb, poli)
+{
+	// poli: quando existente (= 1) indica que o elemento é poligonal
+
+	/* Alocação de memória
+	N - função de interpolação de deslocamento (função de forma para elemento isoparamétrico)
+	dn- derivadas das funções N nas coordenadas r e s.
+	dN- derivadas das funções N nas coordenadas x e y.
+	xg- coordenadas dos pontos de Gauss (para uma dimensão)
+	wg- pesos de Gauss associados aos pontos
+	*/
+#ifdef ALEATORIO
+	N = new class aleatorio[nno];
+	dn = new class aleatorio[nno * 2];
+	dN = new class aleatorio[nno * 2];
+	xg = new class aleatorio[dim];
+	wg = new class aleatorio[dim];
+#else
+	N = new double[nno];
+	dn = new double[nno * 2];
+	dN = new double[nno * 2];
+	xg = new double[dim];
+	wg = new double[dim];
+#endif
+	// Inicialização da variável DetJ (Determinante da matriz Jacobiano)
+	detJ = 0.0;
+};
 
 isop2d::~isop2d()
 {
