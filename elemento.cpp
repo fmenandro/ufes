@@ -28,6 +28,7 @@ elemento::elemento()
 
 elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 {
+   poli = 0; // (= 0) indica que o elemento nao eh poligonal 2d
    no=new int[nno];
    pno=new class no*[nno];
    material=0;
@@ -74,6 +75,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int poli)
 {
 	// poli: quando existente (= 1) indica que o elemento é poligonal 2d
+	this->poli = 1;
 	no = new int[nno];
 	pno = new class no*[nno];
 	material = 0;
@@ -461,16 +463,20 @@ istream& operator>>(istream& ci, elemento& e)
 // RENAN COMENTOU PARA O ELEMENTO POLIGONAL, DEPOIS VOLTAR AO ORIGINAL
 wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 {
+   int lpg;
    co<<"  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
    for(int i=0;i<e.qnno();i++)
       co<<"\n    No "<<i<<" = "<<e.no[i];
    for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Deformacao calculada";
-  /* int lpg=e.qptg();
-   if (e.qdim()==2) lpg*=lpg;
-   if (e.qdim()==3) lpg*=lpg*lpg;*/
-   int lpg = e.qptg()*e.qnno(); // Para elemento poligonal
+   if (e.poli)
+	   lpg = e.qptg()*e.qnno(); // Para elemento poligonal
+   else{
+	   lpg = e.qptg();
+	   if (e.qdim() == 2) lpg *= lpg;
+	   if (e.qdim() == 3) lpg *= lpg*lpg;
+   }
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";

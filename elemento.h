@@ -43,6 +43,7 @@ class elemento
 {
 protected:
    int *no,material,pg;
+   int poli;	// Se = 0, nao eh poligonal; se = 1, eh poligonal. Add. por Renan
    class no **pno;
    class material *pmaterial;
 #ifdef ALEATORIO
