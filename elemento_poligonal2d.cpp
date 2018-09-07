@@ -35,8 +35,6 @@ int elpol2d::qptg(){
 	return ptg;
 }
 
-void elpol2d::funcao_Forma(double r, double s, double *N, double *dn){};
-
 void elpol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	switch (p){
 	case 1:
