@@ -50,6 +50,7 @@ protected:
    class aleatorio *k,*prop,*b,*c,*x,*f,*ten,*def,ro;
 #else
    double *k,*prop,*b,*c,*x,*f,*ten,*def,ro,rov,p,dc,dcn;
+   double *pt;
 #endif
 public:
    elemento();

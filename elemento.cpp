@@ -57,16 +57,19 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
    {
       ten = new double[nlb*ptg];
       def = new double[nlb*ptg];
+	  pt = new double[ptg];
    }
    else if (dim==2)
    {
       ten = new double[nlb*ptg*ptg];
       def = new double[nlb*ptg*ptg];
+	  pt = new double[ptg*ptg];
    }
    else
    {
       ten = new double[nlb*ptg*ptg*ptg];
       def = new double[nlb*ptg*ptg*ptg];
+	  pt = new double[ptg*ptg*ptg];
    }
 #endif
 };
@@ -100,20 +103,15 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	c = new double[nlb*nlb];
 	x = new double[nno*ipn];
 	f = new double[nno*ipn];
-	if (dim == 1)
-	{
-		ten = new double[nlb*ptg];
-		def = new double[nlb*ptg];
-	}
-	else if (dim == 2)
+	
+	if (dim == 2)
 	{
 		ten = new double[nlb*ptg*nno];	// A diferenca está aqui
 		def = new double[nlb*ptg*nno];
+		pt = new double[ptg*nno];
 	}
 	else
 	{
-		ten = new double[nlb*ptg*ptg*ptg];
-		def = new double[nlb*ptg*ptg*ptg];
 	}
 #endif
 };
