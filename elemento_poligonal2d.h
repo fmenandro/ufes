@@ -7,7 +7,6 @@ class elpol2d : public isop2d
 {
 private:
 	const static int ptg = 4;
-	double r_pol, s_pol; // pontos de Gauss nas coordenadas do elemento de referencia
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;

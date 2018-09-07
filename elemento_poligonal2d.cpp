@@ -278,7 +278,7 @@ void elpol2d::monta_n()
 	double
 #endif
 	// Inicializacao de variaveis ---
-		J[2][2], invJ[2][2];
+		r, s, J[2][2], invJ[2][2];
 	double r1[2], r2[2];
 	double detJ1;
 	const double pi = 3.14159265358979323846;
@@ -302,13 +302,13 @@ void elpol2d::monta_n()
 	// Pontos de Gauss estão no sistema de coordenadas do triangulo,
 	//entao, ele sao transformados para o sistema de coordenadas do elemento.
 	// r e s: pontos de Gauss nas coordenadas do elemento.
-	r_pol = r1[0] * rpg[pg] + r1[1] * spg[pg];
-	s_pol = r2[0] * rpg[pg] + r2[1] * spg[pg];
+	r = r1[0] * rpg[pg] + r1[1] * spg[pg];
+	s = r2[0] * rpg[pg] + r2[1] * spg[pg];
 	peso = wpg[pg];
 	// -----------------------------------------------------------------------
 
 	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
-	funcao_Forma(r_pol, s_pol, N, dn);
+	funcao_Forma(r, s, N, dn);
 
 	// Matriz Jacobiana e Jacobiano
 	J[0][0] = J[0][1] = J[1][0] = J[1][1] = 0.0;
