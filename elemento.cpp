@@ -412,8 +412,8 @@ void elemento::p_processa(double *xx)
       monta_c();
       for (int i=0;i<qnlb(); i++)
       {
-         for (int j=0;j<qnlb();j++)
-            ten[pg*qnlb()+i]+=c[i*qnlb()+j]*def[j];
+		  for (int j = 0; j < qnlb(); j++)
+			  ten[pg*qnlb() + i] += c[i*qnlb() + j] * def[pg*qnlb() + j];
       }
    }
 };

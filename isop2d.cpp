@@ -192,7 +192,7 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 		for (int i = 0; i<qnlb(); i++)
 		{
 			for (int j = 0; j<qnlb(); j++)
-				ten[pg*qnlb() + i] += c[i*qnlb() + j] * def[j];
+				ten[pg*qnlb() + i] += c[i*qnlb() + j] * def[pg*qnlb() + j];
 		}
 	}
 };
