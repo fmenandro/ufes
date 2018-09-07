@@ -378,10 +378,6 @@ void elpol2d::p_processa(aleatorio *xx)
 void elpol2d::p_processa(double *xx)
 {
 #endif
-	double *xpg, *ypg, *wpg;
-	xpg = new double[qptg()];
-	ypg = new double[qptg()];	// Nao havia esta linha
-	wpg = new double[qptg()];
 	pg = qptg();
 	for (int i = 0; i<qnno()*qipn(); i++)
 	{
@@ -393,10 +389,7 @@ void elpol2d::p_processa(double *xx)
 	for (int n = 0; n<qnno(); n++)
 	for (int i = 0; i<qipn(); i++)
 		x[n*qipn() + i] = xx[qno(n)*qipn() + i];
-	pontos_de_gauss(pg, xpg, ypg, wpg);
-	//int lpg = qptg();
-	//if (qdim() == 2) lpg *= lpg;
-	//if (qdim() == 3) lpg *= lpg*lpg;
+
 	for (tri = 0; tri < qnno(); tri++){
 		//for (pg = 0; pg < lpg; pg++)
 		for (pg = 0; pg < qptg(); pg++)
