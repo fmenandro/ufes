@@ -395,6 +395,13 @@ void elpol2d::p_processa(double *xx)
 		for (pg = 0; pg < qptg(); pg++)
 		{
 			monta_b();
+			// Calculo das coordenados dos pontos de Gauss no dominio "real"
+			ptx[pg + tri*qptg()] = pty[pg + tri*qptg()] = 0;
+			for (int n = 0; n < qnno(); n++){
+				ptx[pg + tri*qptg()] += N[n] * pno[n]->qx(0);
+				pty[pg + tri*qptg()] += N[n] * pno[n]->qx(1);
+			}
+			//
 			for (int i = 0; i < qnlb(); i++)
 			{
 				// Adicionei o  + tri*qptg()*qnlb() para computar os pontos de Gauss em cada triângulo

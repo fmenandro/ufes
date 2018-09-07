@@ -50,7 +50,7 @@ protected:
    class aleatorio *k,*prop,*b,*c,*x,*f,*ten,*def,ro;
 #else
    double *k,*prop,*b,*c,*x,*f,*ten,*def,ro,rov,p,dc,dcn;
-   double *pt;
+   double *ptx, *pty; // Pontos de Gauss no domínio real
 #endif
 public:
    elemento();
