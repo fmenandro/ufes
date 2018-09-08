@@ -390,6 +390,16 @@ void elpol2d::p_processa(double *xx)
 	for (int i = 0; i<qipn(); i++)
 		x[n*qipn() + i] = xx[qno(n)*qipn() + i];
 
+	// Calculo do centro do elemento
+	for (int i = 0; i < qdim(); i++){
+		ptm[i] = 0;
+		for (int n = 0; n < qnno(); n++){
+			ptm[i] += pno[n]->qx(i);	// Media aritimetica
+		}
+		ptm[i] = ptm[i] / qnno();	// Media aritimetica
+	}
+	////////////////////////////////
+
 	for (tri = 0; tri < qnno(); tri++){
 		//for (pg = 0; pg < lpg; pg++)
 		for (pg = 0; pg < qptg(); pg++)
@@ -419,5 +429,13 @@ void elpol2d::p_processa(double *xx)
 					ten[pg*qnlb() + i + tri*qptg()*qnlb()] += c[i*qnlb() + j] * def[pg*qnlb() + j + tri*qptg()*qnlb()];
 			}
 		}
+	}
+	// Tensao media
+	double lpg = ptg*qnno();
+	for (int i = 0; i < qnlb(); i++){
+		tenM[i] = 0;
+		for (pg = 0; pg < lpg; pg++)
+			tenM[i] += ten[pg*qnlb() + i];
+		tenM[i] = tenM[i] / lpg;
 	}
 };
