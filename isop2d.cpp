@@ -206,12 +206,12 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 		}
 	}
 	// Tensao media
-	tenM = 0;
-	for (pg = 0; pg < lpg; pg++){
-		for (int i = 0; i < qnlb(); i++)
-			tenM += ten[pg*qnlb() + i];
+	for (int i = 0; i < qnlb(); i++){
+	tenM[i] = 0;
+	for (pg = 0; pg < lpg; pg++)
+		tenM[i] += ten[pg*qnlb() + i];
+	tenM[i] = tenM[i] / lpg;
 	}
-	tenM = tenM / qnno();
 };
 
 /* Em diferentes */

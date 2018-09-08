@@ -38,6 +38,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
    dcn=0.0;
    pmaterial=NULL;
    ptm = new double[dim];
+   tenM = new double[nlb];
 #ifdef ALEATORIO
    prop=new class aleatorio[prp];
    k = new class aleatorio[nno*ipn*nno*ipn];
@@ -91,6 +92,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	dcn = 0.0;
 	pmaterial = NULL;
 	ptm = new double[dim];
+	tenM = new double[nlb];
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
 	k = new class aleatorio[nno*ipn*nno*ipn];
@@ -480,6 +482,15 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
       co<<"\n    No "<<i<<" = "<<e.no[i];
    for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
+
+   co << "\n  Tensão média";
+   // Centro do elemento
+   co << "\n  ";
+   for (int i = 0; i < e.qdim(); i++)
+	   co << e.ptm[i] << " ";
+   // Tensao média
+   for (int i = 0; i < e.qnlb(); i++)
+	   co << "\n  " << e.tenM[i];
    co<<"\n  Deformacao calculada";
    for(int pg=0;pg<lpg;pg++)
    {
