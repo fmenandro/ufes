@@ -158,27 +158,37 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 	xpg = new double[qptg()];
 	wpg = new double[qptg()];
 	pg = qptg();
-	for (int i = 0; i<qnno()*qipn(); i++)
+	for (int i = 0; i < qnno()*qipn(); i++)
 	{
 		f[i] = 0.0;
-		for (int n = 0; n<qnno(); n++)
-		for (int j = 0; j<qipn(); j++)
+		for (int n = 0; n < qnno(); n++)
+		for (int j = 0; j < qipn(); j++)
 			f[j] += qk(i, n*qipn() + j)*xx[qno(n)*qipn() + j];
 	}
-	for (int n = 0; n<qnno(); n++)
-	for (int i = 0; i<qipn(); i++)
+	for (int n = 0; n < qnno(); n++)
+	for (int i = 0; i < qipn(); i++)
 		x[n*qipn() + i] = xx[qno(n)*qipn() + i];
 	pontos_de_gauss(pg, xpg, wpg);
 	int lpg = qptg();
 	if (qdim() == 2) lpg *= lpg;
 	if (qdim() == 3) lpg *= lpg*lpg;
+
+	// Calculo do centro do elemento
+	for (int i = 0; i < dim; i++){
+		ptm[i] = 0;
+		for (int n = 0; n < qnno(); n++){
+			ptm[i] += pno[n]->qx(i);	// Media aritimetica
+		}
+		ptm[i] = ptm[i] / qnno();	// Media aritimetica
+	}
+	////////////////////////////////
 	for (pg = 0; pg<lpg; pg++)
 	{
 		monta_b();
 		// Calculo das coordenados dos pontos de Gauss no dominio "real"
-		ptx[pg] = pty[pg] = 0;
+		ptx[pg] = pty[pg] = 0;		
 		for (int n = 0; n < qnno(); n++){
-			ptx[pg] += N[n] * pno[n]->qx(0);
+			ptx[pg] += N[n] * pno[n]->qx(0); 
 			pty[pg] += N[n] * pno[n]->qx(1);
 		}
 		//
@@ -195,6 +205,13 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 				ten[pg*qnlb() + i] += c[i*qnlb() + j] * def[pg*qnlb() + j];
 		}
 	}
+	// Tensao media
+	tenM = 0;
+	for (pg = 0; pg < lpg; pg++){
+		for (int i = 0; i < qnlb(); i++)
+			tenM += ten[pg*qnlb() + i];
+	}
+	tenM = tenM / qnno();
 };
 
 /* Em diferentes */

@@ -37,6 +37,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
    dc=0.0;
    dcn=0.0;
    pmaterial=NULL;
+   ptm = new double[dim];
 #ifdef ALEATORIO
    prop=new class aleatorio[prp];
    k = new class aleatorio[nno*ipn*nno*ipn];
@@ -89,6 +90,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	dc = 0.0;
 	dcn = 0.0;
 	pmaterial = NULL;
+	ptm = new double[dim];
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
 	k = new class aleatorio[nno*ipn*nno*ipn];

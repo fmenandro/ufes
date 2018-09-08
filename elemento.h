@@ -50,7 +50,10 @@ protected:
    class aleatorio *k,*prop,*b,*c,*x,*f,*ten,*def,ro;
 #else
    double *k,*prop,*b,*c,*x,*f,*ten,*def,ro,rov,p,dc,dcn;
+   // Add Renan
    double *ptx, *pty; // Pontos de Gauss no domínio real
+   double *ptm;	// Ponto do centro do elemento
+   double tenM;	// Tensao média do elemento
 #endif
 public:
    elemento();
