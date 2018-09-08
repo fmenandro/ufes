@@ -465,12 +465,6 @@ istream& operator>>(istream& ci, elemento& e)
 wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 {
    int lpg;
-   co<<"  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
-   for(int i=0;i<e.qnno();i++)
-      co<<"\n    No "<<i<<" = "<<e.no[i];
-   for(int i=0;i<e.qprp();i++)
-      co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
-   co<<"\n  Deformacao calculada";
    if (e.poli)
 	   lpg = e.qptg()*e.qnno(); // Para elemento poligonal
    else{
@@ -478,10 +472,17 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 	   if (e.qdim() == 2) lpg *= lpg;
 	   if (e.qdim() == 3) lpg *= lpg*lpg;
    }
+   co << "  Numero de pontos de Gauss = " << lpg;
+   co<<"\n  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
+   for(int i=0;i<e.qnno();i++)
+      co<<"\n    No "<<i<<" = "<<e.no[i];
+   for(int i=0;i<e.qprp();i++)
+      co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
+   co<<"\n  Deformacao calculada";
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
-	  co << "\n      " << e.ptx[pg] << ", " << e.pty[pg]; // Coordenadas do ponto
+	  co << "\n      " << e.ptx[pg] << " " << e.pty[pg]; // Coordenadas do ponto
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.def[pg*e.qnlb()+i];
    }
