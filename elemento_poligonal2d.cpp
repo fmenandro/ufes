@@ -390,16 +390,8 @@ void elpol2d::p_processa(double *xx)
 	for (int i = 0; i<qipn(); i++)
 		x[n*qipn() + i] = xx[qno(n)*qipn() + i];
 
-	// Calculo do centro do elemento
-	for (int i = 0; i < qdim(); i++){
-		ptm[i] = 0;
-		for (int n = 0; n < qnno(); n++){
-			ptm[i] += pno[n]->qx(i);	// Media aritimetica
-		}
-		ptm[i] = ptm[i] / qnno();	// Media aritimetica
-	}
-	////////////////////////////////
-
+	// Calculo da area (Ae) e do centro (ptm) do elemento
+	area_centro();
 	for (tri = 0; tri < qnno(); tri++){
 		//for (pg = 0; pg < lpg; pg++)
 		for (pg = 0; pg < qptg(); pg++)

@@ -173,15 +173,8 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 	if (qdim() == 2) lpg *= lpg;
 	if (qdim() == 3) lpg *= lpg*lpg;
 
-	// Calculo do centro do elemento
-	for (int i = 0; i < dim; i++){
-		ptm[i] = 0;
-		for (int n = 0; n < qnno(); n++){
-			ptm[i] += pno[n]->qx(i);	// Media aritimetica
-		}
-		ptm[i] = ptm[i] / qnno();	// Media aritimetica
-	}
-	////////////////////////////////
+	// Calculo da area (Ae) e do centro (ptm) do elemento
+	area_centro();
 	for (pg = 0; pg<lpg; pg++)
 	{
 		monta_b();
@@ -213,6 +206,23 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 	tenM[i] = tenM[i] / lpg;
 	}
 };
+
+void isop2d::area_centro(){
+	int i, n;
+	// Area
+	Ae = 0;
+	for (n = 0; n < qnno() - 1; n++)
+		Ae += pno[n]->qx(0)*pno[n + 1]->qx(1) - pno[n]->qx(1)*pno[n + 1]->qx(0);
+	Ae = 0.5 * abs(Ae + pno[qnno()-1]->qx(0)*pno[0]->qx(1) - pno[qnno()-1]->qx(1)*pno[0]->qx(0));
+	// Centro
+	for (i = 0; i < dim; i++){
+		ptm[i] = 0;
+		for (n = 0; n < qnno(); n++){
+			ptm[i] += pno[n]->qx(i);	// Media aritimetica
+		}
+		ptm[i] = ptm[i] / qnno();	// Media aritimetica
+	}
+}
 
 /* Em diferentes */
 void isop2d::monta_n(){};

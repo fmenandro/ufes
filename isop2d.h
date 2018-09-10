@@ -62,7 +62,8 @@ virtual int qptg()=0;
    void monta_c();
    void monta_massa(){};
    void p_processa(double*);
-virtual void monta_n();
+   virtual void monta_n();
+   void area_centro();
 };
 
 #endif

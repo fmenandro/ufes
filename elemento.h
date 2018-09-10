@@ -54,6 +54,7 @@ protected:
    double *ptx, *pty; // Pontos de Gauss no domínio real
    double *ptm;	// Ponto do centro do elemento
    double *tenM;	// Tensao média do elemento
+   double Ae;
 #endif
 public:
    elemento();
@@ -109,6 +110,7 @@ public:
    virtual void monta_b();
    virtual void monta_c();
    virtual void monta_massa();
+   virtual void area_centro(){}; // Calcula a area e o centro do elemento
 #ifdef ALEATORIO
    virtual void p_processa(aleatorio*);
 #else
