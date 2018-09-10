@@ -392,6 +392,9 @@ void elpol2d::p_processa(double *xx)
 
 	// Calculo da area (Ae) e do centro (ptm) do elemento
 	area_centro();
+	// Zera tensao media
+	for (int i = 0; i < qnlb(); i++)
+		tenM[i] = 0;
 	for (tri = 0; tri < qnno(); tri++){
 		//for (pg = 0; pg < lpg; pg++)
 		for (pg = 0; pg < qptg(); pg++)
@@ -419,15 +422,19 @@ void elpol2d::p_processa(double *xx)
 				for (int j = 0; j < qnlb(); j++)
 					// Revisar se é def[...+j+...]
 					ten[pg*qnlb() + i + tri*qptg()*qnlb()] += c[i*qnlb() + j] * def[pg*qnlb() + j + tri*qptg()*qnlb()];
+				tenM[i] += ten[pg*qnlb() + i + tri*qptg()*qnlb()] * peso;
 			}
 		}
 	}
-	// Tensao media
-	double lpg = ptg*qnno();
-	for (int i = 0; i < qnlb(); i++){
-		tenM[i] = 0;
-		for (pg = 0; pg < lpg; pg++)
-			tenM[i] += ten[pg*qnlb() + i];
-		tenM[i] = tenM[i] / lpg;
-	}
+	for (int i = 0; i < qnlb(); i++)
+		tenM[i] = tenM[i] / Ae;
+
+	//// Tensao media
+	//double lpg = ptg*qnno();
+	//for (int i = 0; i < qnlb(); i++){
+	//	tenM[i] = 0;
+	//	for (pg = 0; pg < lpg; pg++)
+	//		tenM[i] += ten[pg*qnlb() + i];
+	//	tenM[i] = tenM[i] / lpg;
+	//}
 };

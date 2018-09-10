@@ -175,6 +175,9 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 
 	// Calculo da area (Ae) e do centro (ptm) do elemento
 	area_centro();
+	// Zera tensao media
+	for (int i = 0; i < qnlb(); i++)
+		tenM[i] = 0;
 	for (pg = 0; pg<lpg; pg++)
 	{
 		monta_b();
@@ -196,15 +199,19 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 		{
 			for (int j = 0; j<qnlb(); j++)
 				ten[pg*qnlb() + i] += c[i*qnlb() + j] * def[pg*qnlb() + j];
+			tenM[i] += ten[pg*qnlb() + i] * peso;
 		}
 	}
-	// Tensao media
-	for (int i = 0; i < qnlb(); i++){
-	tenM[i] = 0;
-	for (pg = 0; pg < lpg; pg++)
-		tenM[i] += ten[pg*qnlb() + i];
-	tenM[i] = tenM[i] / lpg;
-	}
+	for (int i = 0; i < qnlb(); i++)
+		tenM[i] = tenM[i] / Ae;
+
+	//// Tensao media
+	//for (int i = 0; i < qnlb(); i++){
+	//	tenM[i] = 0;
+	//	for (pg = 0; pg < lpg; pg++)
+	//		tenM[i] += ten[pg*qnlb() + i];
+	//	tenM[i] = tenM[i] / lpg;
+	//}
 };
 
 void isop2d::area_centro(){
