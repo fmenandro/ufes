@@ -401,6 +401,7 @@ void elpol2d::p_processa(double *xx)
 		{
 			monta_b();
 			// Calculo das coordenados dos pontos de Gauss no dominio "real"
+			Peso[pg + tri*qptg()] = peso;
 			ptx[pg + tri*qptg()] = pty[pg + tri*qptg()] = 0;
 			for (int n = 0; n < qnno(); n++){
 				ptx[pg + tri*qptg()] += N[n] * pno[n]->qx(0);

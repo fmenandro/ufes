@@ -500,6 +500,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
 	  co << "\n      " << e.ptx[pg] << " " << e.pty[pg]; // Coordenadas do ponto
+	  co << "\n      Peso = " << e.Peso[pg]; // Peso do ponto de Gauss
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.def[pg*e.qnlb()+i];
    }
