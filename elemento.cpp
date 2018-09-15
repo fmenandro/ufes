@@ -489,18 +489,21 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 
    co << "\n  Tensão média";
    // Centro do elemento
-   co << "\n  ";
+   co << "\n      ";
    for (int i = 0; i < e.qdim(); i++)
 	   co << e.ptm[i] << " ";
    // Tensao média
    for (int i = 0; i < e.qnlb(); i++)
-	   co << "\n  " << e.tenM[i];
+	   co << "\n      " << e.tenM[i];
+   // Informacoes pontos de Gauss
+   co << "\n  Pontos de Gauss (x, y, peso):";
+   for (int pg = 0; pg < lpg; pg++){
+	   co << "\n      " << e.ptx[pg] << " " << e.pty[pg] << " " << e.Peso[pg]; // Coordenadas do ponto
+   }
    co<<"\n  Deformacao calculada";
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
-	  co << "\n      " << e.ptx[pg] << " " << e.pty[pg]; // Coordenadas do ponto
-	  co << "\n      Peso = " << e.Peso[pg]; // Peso do ponto de Gauss
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.def[pg*e.qnlb()+i];
    }
