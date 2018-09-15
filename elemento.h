@@ -55,6 +55,7 @@ protected:
    double *ptm;	// Ponto do centro do elemento
    double *tenM;	// Tensao média do elemento
    double Ae;
+   double *Peso; // Peso de cada ponto de Gauss no elemento
 #endif
 public:
    elemento();
