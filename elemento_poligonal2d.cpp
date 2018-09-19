@@ -403,12 +403,14 @@ void elpol2d::p_processa(double *xx)
 			// Calculo das coordenados dos pontos de Gauss no dominio "real"
 			// e deslocamentos nos pontos de Gauss
 			Peso[pg + tri*qptg()] = peso;
-			ptx[pg + tri*qptg()] = pty[pg + tri*qptg()] = des[pg + tri*qptg()] = 0;
+			ptx[pg + tri*qptg()] = pty[pg + tri*qptg()] = 0;
+			for (int i = 0; i < qipn(); i++)
+				des[(pg + tri*qptg())*qipn() + i] = 0;
 			for (int n = 0; n < qnno(); n++){
 				ptx[pg + tri*qptg()] += N[n] * pno[n]->qx(0);
 				pty[pg + tri*qptg()] += N[n] * pno[n]->qx(1);
-				des[pg*qipn() + tri*qptg()] += N[n] * x[n*qipn()];
-				des[pg*qipn() + tri*qptg() + 1] += N[n] * x[n*qipn() + 1];
+				des[(pg + tri*qptg())*qipn()] += N[n] * x[n*qipn()];
+				des[(pg + tri*qptg())*qipn() + 1] += N[n] * x[n*qipn() + 1];
 			}
 			//
 			for (int i = 0; i < qnlb(); i++)
