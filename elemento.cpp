@@ -61,6 +61,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
       def = new double[nlb*ptg];
 	  ptx = new double[ptg];
 	  Peso = new double[ptg];
+	  des = new double[ptg];
    }
    else if (dim==2)
    {
@@ -69,6 +70,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 	  ptx = new double[ptg*ptg];
 	  pty = new double[ptg*ptg];
 	  Peso = new double[ptg*ptg];
+	  des = new double[ptg*ptg];
    }
    else
    {
@@ -77,6 +79,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 	  ptx = new double[ptg*ptg*ptg];
 	  pty = new double[ptg*ptg*ptg];
 	  Peso = new double[ptg*ptg*ptg];
+	  des = new double[ptg*ptg*ptg];
    }
 #endif
 };
@@ -120,6 +123,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 		ptx = new double[ptg*nno];
 		pty = new double[ptg*nno];
 		Peso = new double[ptg*nno];
+		des = new double[ptg*nno];
 	}
 	else
 	{
