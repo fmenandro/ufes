@@ -70,7 +70,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 	  ptx = new double[ptg*ptg];
 	  pty = new double[ptg*ptg];
 	  Peso = new double[ptg*ptg];
-	  des = new double[ptg*ptg];
+	  des = new double[ptg*ptg*dim];
    }
    else
    {
@@ -79,7 +79,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 	  ptx = new double[ptg*ptg*ptg];
 	  pty = new double[ptg*ptg*ptg];
 	  Peso = new double[ptg*ptg*ptg];
-	  des = new double[ptg*ptg*ptg];
+	  des = new double[ptg*ptg*ptg*dim];
    }
 #endif
 };
@@ -123,7 +123,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 		ptx = new double[ptg*nno];
 		pty = new double[ptg*nno];
 		Peso = new double[ptg*nno];
-		des = new double[ptg*nno];
+		des = new double[ptg*nno*dim];
 	}
 	else
 	{
@@ -517,6 +517,12 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.ten[pg*e.qnlb()+i];
+   }
+   co << "\n  Deslocamentos nos p. de Gauss (x, y, z)";
+   for (int pg = 0; pg<lpg; pg++){
+	   co << "\n   ";
+	   for (int i = 0; i < e.qipn(); i++)
+		   co << " " << e.des[pg*e.qipn() + i];
    }
    co<<"\n  Deslocamentos Nodais";
    for(int i=0;i<e.qnno()*e.qipn();i++)

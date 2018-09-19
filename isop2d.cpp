@@ -184,7 +184,9 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 		// Calculo das coordenados dos pontos de Gauss no dominio "real"
 		// e deslocamentos nos pontos de Gauss
 		Peso[pg] = peso;
-		ptx[pg] = pty[pg] = des[pg] = 0;	
+		ptx[pg] = pty[pg] = 0;	
+		for (int i = 0; i < qipn(); i++)
+			des[pg*qipn() + i] = 0;
 		for (int n = 0; n < qnno(); n++){
 			ptx[pg] += N[n] * pno[n]->qx(0); 
 			pty[pg] += N[n] * pno[n]->qx(1);
