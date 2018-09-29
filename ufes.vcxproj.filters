@@ -123,6 +123,9 @@
     <ClCompile Include="elcal2d8n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="elemento_poligonal2d5n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aleatorio.h">
@@ -234,6 +237,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="elcal2d8n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elemento_poligonal2d5n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
