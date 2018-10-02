@@ -476,7 +476,7 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
        for(int j=0;j<n.cc[i]->qnno();j++)
         n.cc[i]->aponta_no(j,n.nos[n.cc[i]->qno(j)]);
 }
-  n.ndof=n.nn*n.elementos[0]->qipn();
+ n.ndof=n.nn*n.elementos[0]->qipn();
   #ifdef ALEATORIO
    n.x = new aleatorio[n.ndof];
    n.f = new aleatorio[n.ndof];
@@ -795,9 +795,19 @@ void analise::visao(wxString vetor)
     view[4]=cz*cx+sz*sy*sx;
     view[5]=cz*sx-sz*sy*cx;
 
-//	for(int i=0;i<3;i++)
+//	for(int i=0;i<3;i+ +)
 //		vetor>>v[i];
 
+}
+void analise::chcc(wxString vetor)
+{
+	int ccm, nom, ddm;
+	double value;
+	sscanf(vetor, "%d %d %d %lf", &ccm, &nom, &ddm, &value);
+	cc[ccm]->no[0] = nom;	
+	cc[ccm]->gl[0] = ddm;	
+	cc[ccm]->valor[0] = value;
+	cc[ccm]->aponta_no(0, nos[nom]);
 }
 void analise::draw(wxDC& dc)
 {

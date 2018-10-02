@@ -141,7 +141,7 @@ void apoio::draw(wxDC& dc, double xmed, double xdif, double ymed, double ydif)
 {
     wxCoord w,h;
     dc.GetSize(&w,&h);
-    dc.SetPen( wxPen( wxColor(0,0,255), 1 ) ); // blue line, 1 pixel thick
+    dc.SetPen( wxPen( wxColor(0, 0,255), 1 ) ); // blue line, 1 pixel thick
     int tri=5;
     if(gl[0]==1)
     {
@@ -311,7 +311,7 @@ void deslocamento::draw(wxDC& dc, double xmed, double xdif, double ymed, double 
 {
     wxCoord w,h;
     dc.GetSize(&w,&h);
-    dc.SetPen( wxPen( wxColour(0,255,0), 1 ,wxPENSTYLE_SOLID) ); // green line, 1 pixel thick, solid
+    dc.SetPen( wxPen( wxColour(0,255,0), 1) ); // green line, 1 pixel thick, solid
     int tri=5;
     if(gl[0]==1)
     {
@@ -344,7 +344,7 @@ void deslocamento::draw(wxDC& dc, double xmed, double ymed, int d, double ddif, 
 {
     wxCoord w,h;
     dc.GetSize(&w,&h);
-    dc.SetPen( wxPen( wxColour(0,255,0), 1 ,wxPENSTYLE_SOLID) ); // green line, 1 pixel thick, solid
+    dc.SetPen( wxPen( wxColour(0,255,0), 1) ); // green line, 1 pixel thick, solid
     int tri=5;
     wxCoord wx[6], wy[6];
     wx[0]=w/2.+(view[0]*pno[0]->qx(0)
@@ -426,44 +426,50 @@ void forca::draw(wxDC& dc, double xmed, double xdif, double ymed, double ydif)
 {
     wxCoord w,h;
     dc.GetSize(&w,&h);
-    dc.SetPen( wxPen( wxColour(255,0,0), 1 ,wxPENSTYLE_SOLID) ); // red line, 1 pixel thick, solid
+    dc.SetPen( wxPen( wxColour(255,0,0), 1) ); // red line, 1 pixel thick, solid
     int tri=5;
     if(gl[0]==1)
     {
         if(xdif/w>ydif/h)
         {
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-3*tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif-3*tri, w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)-tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-2*tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-3*tri, w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-2*tri ); // draw line across the rectangle
+           dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)    ,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-3*tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif        );
+           dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)-tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-2*tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif-3*tri  );
+           dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-2*tri,  w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-3*tri);
+
         }
         else
         {
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-3*tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif-3*tri, w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)-tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-2*tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-3*tri, w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-2*tri ); // draw line across the rectangle
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)    ,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-3*tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif        );
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)-tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-2*tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif-3*tri  );
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-2*tri,  w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif),  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-3*tri);
+
         }
     }
     else
     {
         if(xdif/w>ydif/h)
         {
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif) ); // draw line across the rectangle
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif+3*tri,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif), w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)+tri ); // draw line across the rectangle
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)    ,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif        ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif   );
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)-tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*w)/xdif+3*tri  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*w)/xdif   );
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif)+tri,  w/2.+((pno[0]->qx(0)-xmed)*(0.9*w)/xdif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*w)/xdif) );
+
         }
         else
         {
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif) ); // draw line across the rectangle
-            dc.DrawLine( w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif+3*tri,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif, w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-tri ); // draw line across the rectangle
-            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif), w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)+tri ); // draw line across the rectangle
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)    ,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif        ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif   );
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)-tri,  w/2.+(pno[0]->qx(0)-xmed)*(0.9*h)/ydif+3*tri  ,  h/2.-(pno[0]->qx(1)-ymed)*(0.9*h)/ydif   );  
+            dc.DrawLine( w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+2*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif)+tri,  w/2.+((pno[0]->qx(0)-xmed)*(0.9*h)/ydif)+3*tri,  h/2.-((pno[0]->qx(1)-ymed)*(0.9*h)/ydif) );
+
+
         }        
     }
 }
+   
 void forca::draw(wxDC& dc, double xmed, double ymed, int d, double ddif, double zoom, double* view)
 {
     wxCoord w,h;
     dc.GetSize(&w,&h);
-    dc.SetPen( wxPen( wxColour(255,0,0), 1 ,wxPENSTYLE_SOLID) ); // red line, 1 pixel thick, solid
+    dc.SetPen( wxPen( wxColour(255,0,0), 1) ); // red line, 1 pixel thick, solid
     int tri=5;
     wxCoord wx[6], wy[6];
     wx[0]=w/2.+(view[0]*pno[0]->qx(0)
@@ -471,8 +477,8 @@ void forca::draw(wxDC& dc, double xmed, double ymed, int d, double ddif, double 
                +view[2]*pno[0]->qx(2)-xmed)*(zoom*d)/ddif;
     wy[0]=h/2.-(view[3]*pno[0]->qx(0)
                +view[4]*pno[0]->qx(1)
-               +view[5]*pno[0]->qx(2)-ymed)*(zoom*d)/ddif;
-    switch(gl[0])
+               +view[5]*pno[0]->qx(2)-ymed)*(zoom*d)/ddif
+;    switch(gl[0])
     {
         case 0:
             wx[1]=wx[0]+view[0]*3*tri;
@@ -511,11 +517,31 @@ void forca::draw(wxDC& dc, double xmed, double ymed, int d, double ddif, double 
             wy[5]=wy[0]-view[3]*tri-view[5]*2*tri;
             break;
     }
-    dc.DrawLine(wx[0],wy[0],wx[1],wy[1]);  
-    dc.DrawLine(wx[1],wy[1],wx[2],wy[2]);  
-    dc.DrawLine(wx[1],wy[1],wx[3],wy[3]);  
-    dc.DrawLine(wx[1],wy[1],wx[4],wy[4]);  
-    dc.DrawLine(wx[1],wy[1],wx[5],wy[5]);  
+    // Variável sinal: ela será "1" se a orientação da força for positiva, ou "-1" se a orientação da mesma for negativa
+    // sinal[0]: Orientação x
+    // sinal[1]: Orientação y
+    // sinal[2]: Orientação z
+
+    double sinal[3] = { 0, 0, 0};
+    for (int i = 0; i < 3; ++i){
+      sinal[i] = valor[i] / abs(valor[i]);
+    }
+    
+    if ( sinal[0] == 1  &&  sinal[1] == 1   ){
+      dc.DrawLine(wx[0],wy[0],wx[1],wy[1]);  
+      dc.DrawLine(wx[1],wy[1],wx[2],wy[2]);  
+      dc.DrawLine(wx[1],wy[1],wx[3],wy[3]);  
+      dc.DrawLine(wx[1],wy[1],wx[4],wy[4]);  
+      dc.DrawLine(wx[1],wy[1],wx[5],wy[5]);
+    }
+
+    else{
+      dc.DrawLine(wx[0],wy[0],wx[1],wy[1]);  
+      dc.DrawLine(wx[0],wy[0],wx[2],wy[2]);  
+      dc.DrawLine(wx[0],wy[0],wx[3],wy[3]);  
+      dc.DrawLine(wx[0],wy[0],wx[4],wy[4]);  
+      dc.DrawLine(wx[0],wy[0],wx[5],wy[5]);
+    }  
 }
 
 mista::mista():c_contorno(1,1,3){nno=ngl=1;nvl=3;}

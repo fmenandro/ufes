@@ -110,6 +110,7 @@ public:
    void posprocessa();
    int qpos(int, int);
    void visao(class wxString);
+   void chcc(class wxString);
 #ifdef ALEATORIO
    friend bool operator>(aleatorio&, aleatorio&);
    friend bool operator<(aleatorio&, aleatorio&);

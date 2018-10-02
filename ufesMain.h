@@ -50,6 +50,7 @@ class ufesFrame: public wxFrame
             idMenuChro,
             idMenuChrm,
             idMenuChcl,
+			idMenuChte,
             idMenuRun,
             idMenuOpt,
             idMenuAbout
@@ -71,6 +72,7 @@ class ufesFrame: public wxFrame
         void OnChro(wxCommandEvent& event);
         void OnChrm(wxCommandEvent& event);
         void OnChcl(wxCommandEvent& event);
+		void OnChte(wxCommandEvent& event);
         void OnRun(wxCommandEvent& event);
         void OnOpt(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);

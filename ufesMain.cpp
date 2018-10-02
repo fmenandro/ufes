@@ -69,9 +69,11 @@ BEGIN_EVENT_TABLE(ufesFrame, wxFrame)
     EVT_MENU(idMenuChro, ufesFrame::OnChro)
     EVT_MENU(idMenuChrm, ufesFrame::OnChrm)
     EVT_MENU(idMenuChcl, ufesFrame::OnChcl)
+	EVT_MENU(idMenuChte, ufesFrame::OnChte)
     EVT_MENU(idMenuRun, ufesFrame::OnRun)
     EVT_MENU(idMenuOpt, ufesFrame::OnOpt)
     EVT_MENU(idMenuAbout, ufesFrame::OnAbout)
+
 END_EVENT_TABLE()
 
 BEGIN_EVENT_TABLE(viewComboBox, wxComboBox)
@@ -107,6 +109,7 @@ ufesFrame::ufesFrame(wxFrame *frame, const wxString& title)
     changeMenu->Append(idMenuChro, _("&Densidades\tF5"), _("Alterar densidades"));
     changeMenu->Append(idMenuChrm, _("&Raio minimo\tF6"), _("Alterar raio minimo"));
     changeMenu->Append(idMenuChcl, _("&Limite de otimizacao\tF7"), _("Alterar limite"));
+	changeMenu->Append(idMenuChte, _("&Valor da(s) forca(s)\tF10"), _("Alterar valor"));
      mbar->Append(changeMenu, _("&Alterar"));
 
     wxMenu* runMenu = new wxMenu(_T(""));
@@ -459,7 +462,7 @@ void ufesFrame::OnChrm(wxCommandEvent &event)
     wxString RM;
     RM<<job.rm;
 wxTextEntryDialog dialog(this,
-wxT("Novo valor desejado para o raio minimo,\n"),
+wxT("Novo valor desejado para o raio minimo\n"),
 wxT("Entre um numero:"), RM, 
 wxOK | wxCANCEL);
 if (dialog.ShowModal() == wxID_OK)
@@ -482,6 +485,7 @@ if (dialog.ShowModal() == wxID_OK)
 }
 Refresh();
 }
+
 void ufesFrame::OnChcl(wxCommandEvent &event)
 {
     wxCoord w,h;
@@ -512,6 +516,22 @@ if (dialog.ShowModal() == wxID_OK)
 //job.rm=value;
 }
 Refresh();
+}
+
+void ufesFrame::OnChte(wxCommandEvent &event)
+{
+	wxCoord w, h;
+	int d;
+	this->GetSize(&w, &h);
+	wxString TE1;
+	TE1 << job.ch_lim;
+	wxTextEntryDialog dialog(this,
+		wxT("Novo valor desejado para a forca\n"),
+		wxT("Entre um numero:"), TE1,
+		wxOK | wxCANCEL);
+	if (dialog.ShowModal() == wxID_OK)
+		job.chcc(dialog.GetValue());
+	Refresh();
 }
 
 void ufesFrame::OnRun(wxCommandEvent &event)
