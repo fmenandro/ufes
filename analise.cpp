@@ -146,6 +146,7 @@ ostream& operator<<(ostream& co, analise& a)
   co<<"\nVetor de deslocamentos resultantes = \n\n";
   for (int i=0;i<a.ndof;i++)
      co<<"u["<<i<<"]="<<a.x[i]<<"\n";
+  co << "\n\nTempo decorrido (ms): " << a.qtempo();
   return co;
 }
 wxTextOutputStream& operator<<(wxTextOutputStream& co, analise& a)
@@ -781,6 +782,17 @@ void analise::posprocessa()
       class elemento *el=elementos[e];
       el->p_processa(x);
    }
+}
+
+// Renan
+void analise::iniciarTempo() {
+	tempo = clock();
+}
+void analise::finalizarTempo() {
+	tempo = clock() - tempo;
+}
+int analise::qtempo() {
+	return tempo;
 }
 
 int analise::qpos(int i, int j)

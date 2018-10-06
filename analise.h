@@ -55,6 +55,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <time.h> // Para marcar o tempo (Renan)
 #ifdef ALEATORIO
 #include <aleatorio.h>
 #else
@@ -74,6 +75,8 @@ using namespace std;
 
 class analise
 {
+private:
+	clock_t tempo; // Tempo decorrido
 public:
    int nn,ne,nm,nc,ndof;
    int fn,fe,fcc,fnn,fne,fnc,fnm,fro;
@@ -113,6 +116,10 @@ public:
    void posprocessa();
    int qpos(int, int);
    void visao(class wxString);
+   // Para marcar tempo (Renan)
+   void iniciarTempo();
+   void finalizarTempo();
+   int qtempo();
 #ifdef ALEATORIO
    friend bool operator>(aleatorio&, aleatorio&);
    friend bool operator<(aleatorio&, aleatorio&);
