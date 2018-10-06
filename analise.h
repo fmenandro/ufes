@@ -119,7 +119,7 @@ public:
    // Para marcar tempo (Renan)
    void iniciarTempo();
    void finalizarTempo();
-   int qtempo();
+   clock_t qtempo();
 #ifdef ALEATORIO
    friend bool operator>(aleatorio&, aleatorio&);
    friend bool operator<(aleatorio&, aleatorio&);

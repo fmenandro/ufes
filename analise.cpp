@@ -146,7 +146,6 @@ ostream& operator<<(ostream& co, analise& a)
   co<<"\nVetor de deslocamentos resultantes = \n\n";
   for (int i=0;i<a.ndof;i++)
      co<<"u["<<i<<"]="<<a.x[i]<<"\n";
-  co << "\n\nTempo decorrido (ms): " << a.qtempo();
   return co;
 }
 wxTextOutputStream& operator<<(wxTextOutputStream& co, analise& a)
@@ -176,6 +175,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co, analise& a)
   co<<"\nVetor de deslocamentos resultantes = \n\n";
   for (int i=0;i<a.ndof;i++)
      co<<"u["<<i<<"]="<<a.x[i]<<"\n";
+  co << "\n\nTempo decorrido (ms): " << a.qtempo();
   return co;
 }
 
@@ -791,7 +791,7 @@ void analise::iniciarTempo() {
 void analise::finalizarTempo() {
 	tempo = clock() - tempo;
 }
-int analise::qtempo() {
+clock_t analise::qtempo() {
 	return tempo;
 }
 
