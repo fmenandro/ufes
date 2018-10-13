@@ -162,13 +162,13 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co, analise& a)
   co<<"\nNumero de Condicoes de Contorno = "<<a.nc<<"\n\n";
   for (int i=0;i<a.nc;i++)
     co<<"\nCondicao de contorno "<<i<<":\n"<<*a.cc[i]<<"\n";
-  co<<"\nMatriz de Rigidez = \n\n";
+  /*co<<"\nMatriz de Rigidez = \n\n";
   for (int i=0;i<a.ndof;i++)
   {
      for (int j=0;j<a.ndof;j++)
         co<<"\t"<<a.K[a.qpos(i,j)]<<"     ";
      co<<"\n";
-  }
+  }*/
   co<<"\nVetor de forcas = \n\n";
   for (int i=0;i<a.ndof;i++)
      co<<"f["<<i<<"]="<<a.f[i]<<"\n";
