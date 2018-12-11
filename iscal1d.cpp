@@ -139,10 +139,7 @@ ostream& operator<<(ostream& co,iscal1d& e)
    for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Fluxo calculado";
-   int lpg=e.qptg();
-   if (e.qdim()==2) lpg*=lpg;
-   if (e.qdim()==3) lpg*=lpg*lpg;
-   for(int pg=0;pg<lpg;pg++)
+   for(int pg=0;pg<e.qlpg();pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)

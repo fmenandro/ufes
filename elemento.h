@@ -57,7 +57,7 @@ protected:
    double Ae;		// Area do elemento
    double *Peso;	// Peso de cada ponto de Gauss no elemento
    double *des;		// Deslocamentos nos pontos de Gauss
-   int lpg2;		// Numero total de pontos de Gauss no elemento
+   int lpg;		// Numero total de pontos de Gauss no elemento
 #endif
 public:
    elemento();

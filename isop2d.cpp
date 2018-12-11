@@ -169,16 +169,13 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 	for (int i = 0; i < qipn(); i++)
 		x[n*qipn() + i] = xx[qno(n)*qipn() + i];
 	pontos_de_gauss(pg, xpg, wpg);
-	int lpg = qptg();
-	if (qdim() == 2) lpg *= lpg;
-	if (qdim() == 3) lpg *= lpg*lpg;
 
 	// Calculo da area (Ae) e do centro (ptm) do elemento
 	area_centro();
 	// Zera tensao media
 	for (int i = 0; i < qnlb(); i++)
 		tenM[i] = 0;
-	for (pg = 0; pg<lpg; pg++)
+	for (pg = 0; pg<qlpg(); pg++)
 	{
 		monta_b();
 		// Calculo das coordenados dos pontos de Gauss no dominio "real"
@@ -210,14 +207,6 @@ void isop2d::p_processa(double *xx) // Sobrecarga de elemento
 	}
 	for (int i = 0; i < qnlb(); i++)
 		tenM[i] = tenM[i] / Ae;
-
-	//// Tensao media
-	//for (int i = 0; i < qnlb(); i++){
-	//	tenM[i] = 0;
-	//	for (pg = 0; pg < lpg; pg++)
-	//		tenM[i] += ten[pg*qnlb() + i];
-	//	tenM[i] = tenM[i] / lpg;
-	//}
 };
 
 void isop2d::area_centro(){
