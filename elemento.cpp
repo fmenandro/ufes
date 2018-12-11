@@ -39,6 +39,10 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
    pmaterial=NULL;
    ptm = new double[dim];
    tenM = new double[nlb];
+   // (R)
+   lpg2 = ptg;
+   if (dim == 2) lpg2 *= lpg2;
+   if (dim == 3) lpg2 *= lpg2 * lpg2;
 #ifdef ALEATORIO
    prop=new class aleatorio[prp];
    k = new class aleatorio[nno*ipn*nno*ipn];
@@ -57,29 +61,29 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
    f = new double[nno*ipn];
    if (dim==1)
    {
-      ten = new double[nlb*ptg];
-      def = new double[nlb*ptg];
-	  ptx = new double[ptg];
-	  Peso = new double[ptg];
-	  des = new double[ptg];
+      ten = new double[nlb*lpg2];
+      def = new double[nlb*lpg2];
+	  ptx = new double[lpg2];
+	  Peso = new double[lpg2];
+	  des = new double[lpg2];
    }
    else if (dim==2)
    {
-      ten = new double[nlb*ptg*ptg];
-      def = new double[nlb*ptg*ptg];
-	  ptx = new double[ptg*ptg];
-	  pty = new double[ptg*ptg];
-	  Peso = new double[ptg*ptg];
-	  des = new double[ptg*ptg*dim];
+      ten = new double[nlb*lpg2];
+      def = new double[nlb*lpg2];
+	  ptx = new double[lpg2];
+	  pty = new double[lpg2];
+	  Peso = new double[lpg2];
+	  des = new double[lpg2*dim];
    }
    else
    {
-      ten = new double[nlb*ptg*ptg*ptg];
-      def = new double[nlb*ptg*ptg*ptg];
-	  ptx = new double[ptg*ptg*ptg];
-	  pty = new double[ptg*ptg*ptg];
-	  Peso = new double[ptg*ptg*ptg];
-	  des = new double[ptg*ptg*ptg*dim];
+      ten = new double[nlb*lpg2];
+      def = new double[nlb*lpg2];
+	  ptx = new double[lpg2];
+	  pty = new double[lpg2];
+	  Peso = new double[lpg2];
+	  des = new double[lpg2*dim];
    }
 #endif
 };
@@ -99,6 +103,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	pmaterial = NULL;
 	ptm = new double[dim];
 	tenM = new double[nlb];
+	lpg2 = ptg * nno;
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
 	k = new class aleatorio[nno*ipn*nno*ipn];
@@ -116,18 +121,13 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	x = new double[nno*ipn];
 	f = new double[nno*ipn];
 	
-	if (dim == 2)
-	{
-		ten = new double[nlb*ptg*nno];	// A diferenca está aqui
-		def = new double[nlb*ptg*nno];
-		ptx = new double[ptg*nno];
-		pty = new double[ptg*nno];
-		Peso = new double[ptg*nno];
-		des = new double[ptg*nno*dim];
-	}
-	else
-	{
-	}
+	//if (dim == 2) {
+	ten = new double[nlb*lpg2];	// A diferenca está aqui
+	def = new double[nlb*lpg2];
+	ptx = new double[lpg2];
+	pty = new double[lpg2];
+	Peso = new double[lpg2];
+	des = new double[lpg2*dim];
 #endif
 };
 
@@ -273,6 +273,9 @@ int elemento::qpos(int i, int j)
 {
    return(i*qnno()*qipn()+j);
 };
+int elemento::qlpg() {
+	return lpg2;
+} // (R)
 void elemento::pontos_de_gauss(const int p,double *x, double *w)
 {
 switch (p)
@@ -476,15 +479,7 @@ istream& operator>>(istream& ci, elemento& e)
 // RENAN COMENTOU PARA O ELEMENTO POLIGONAL, DEPOIS VOLTAR AO ORIGINAL
 wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 {
-   int lpg;
-   if (e.poli)
-	   lpg = e.qptg()*e.qnno(); // Para elemento poligonal
-   else{
-	   lpg = e.qptg();
-	   if (e.qdim() == 2) lpg *= lpg;
-	   if (e.qdim() == 3) lpg *= lpg*lpg;
-   }
-   co << "  Numero de pontos de Gauss = " << lpg;
+   co << "  Numero de pontos de Gauss = " << e.qlpg();
    co<<"\n  Numero de nos = "<<e.qnno()<<"\n  Material => "<<e.material<<"\n  Nos =>";
    for(int i=0;i<e.qnno();i++)
       co<<"\n    No "<<i<<" = "<<e.no[i];
@@ -501,25 +496,25 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 	   co << "\n      " << e.tenM[i];
    // Informacoes pontos de Gauss
    co << "\n  Pontos de Gauss (x, y, peso):";
-   for (int pg = 0; pg < lpg; pg++){
+   for (int pg = 0; pg < e.qlpg(); pg++){
 	   co << "\n      " << e.ptx[pg] << " " << e.pty[pg] << " " << e.Peso[pg]; // Coordenadas do ponto
    }
    co<<"\n  Deformacao calculada";
-   for(int pg=0;pg<lpg;pg++)
+   for(int pg=0;pg<e.qlpg();pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.def[pg*e.qnlb()+i];
    }
    co<<"\n  Tensao calculada";
-   for(int pg=0;pg<lpg;pg++)
+   for(int pg=0;pg<e.qlpg();pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)
          co<<"\n      Componente "<<i<<" = "<<e.ten[pg*e.qnlb()+i];
    }
    co << "\n  Deslocamentos nos p. de Gauss (x, y, z)";
-   for (int pg = 0; pg<lpg; pg++){
+   for (int pg = 0; pg<e.qlpg(); pg++){
 	   co << "\n   ";
 	   for (int i = 0; i < e.qipn(); i++)
 		   co << " " << e.des[pg*e.qipn() + i];

@@ -54,9 +54,10 @@ protected:
    double *ptx, *pty; // Pontos de Gauss no domínio real
    double *ptm;		// Ponto do centro do elemento
    double *tenM;	// Tensao média do elemento
-   double Ae;
+   double Ae;		// Area do elemento
    double *Peso;	// Peso de cada ponto de Gauss no elemento
    double *des;		// Deslocamentos nos pontos de Gauss
+   int lpg2;		// Numero total de pontos de Gauss no elemento
 #endif
 public:
    elemento();
@@ -74,6 +75,7 @@ public:
    virtual int qptg()=0;
    virtual int qnlb()=0;
    virtual double qvol()=0;
+   int qlpg(); // (R)
 #ifdef ALEATORIO
    class aleatorio qk(int,int);
 #else
