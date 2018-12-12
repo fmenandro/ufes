@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="elemento" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KgA4AIIgARBQAQDUCY6AoBMCAACQQEiQgUFEIWBAIAM=</HashCode>
+      <FileName>elemento.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="isop2d" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAMAhADAQAABQgAyAAQICIAAQQUgAAAAgADABAQA=</HashCode>
+      <FileName>isop2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elpol2d" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAAUACAAAIAAAAQAEEAAIAAiCEAAAA=</HashCode>
+      <FileName>elemento_poligonal2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barra1D" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgADAAAABAAAwAAAACAAAARUgAAAAgACABCAA=</HashCode>
+      <FileName>barra1d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barra2D" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgADAAAABAAAwAAAACAAAARUgAAAAgACABAQA=</HashCode>
+      <FileName>barra2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Barra3D" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgADAAAABAAAwAAAACAAAARUgAAAAgACABAgA=</HashCode>
+      <FileName>barra3d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elcal1d2n" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAAAABAAAAAAAASAAAAAAAAAQEABAAAAAAAAAAA=</HashCode>
+      <FileName>elcal1d2n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elcal2d4n" Collapsed="true">
+    <Position X="16.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAABAAAAAAAACAAAAAAABAQEAAAAAAAAAAAAA=</HashCode>
+      <FileName>elcal2d4n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elcal2d4nnl" Collapsed="true">
+    <Position X="16.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>elcal2d4nnl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elcal2d8n" Collapsed="true">
+    <Position X="18.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQAgAABAAAAAAAACAAAAAAAAAQEAAAAAAAAAAAAA=</HashCode>
+      <FileName>elcal2d8n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento2D3N" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgCDAAAABAAAwAAAACAAAAQUgACAAgACABAAA=</HashCode>
+      <FileName>elemento2d3n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento2D4N" Collapsed="true">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAAAAACAAAAAAQAAQEAACAAAAAAAAAA=</HashCode>
+      <FileName>elemento2d4n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento2D8N" Collapsed="true">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAAAAACAAAAAAAAAQEAACAAAEAAAAAA=</HashCode>
+      <FileName>elemento2d8n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento2D9N" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAAAAACAAAAAAAAAQECACAAAAAAAAAA=</HashCode>
+      <FileName>elemento2d9n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento3D" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>elemento3d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="elemento3D3N" Collapsed="true">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>elemento3d3n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iscal1d" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAhADAQCABQgAyAAQACIAAAQUgAAgAgADAFAAA=</HashCode>
+      <FileName>iscal1d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iscal2d" Collapsed="true">
+    <Position X="16.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAhADAQCABQgAyAAQACIAAAQUgAAgAgADADAAA=</HashCode>
+      <FileName>iscal2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mat_linear_elastico" Collapsed="true">
+    <Position X="7.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgQAAAEAAAAAAAFAAABAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>mat_linear_elastico.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mat_termico" Collapsed="true">
+    <Position X="12" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAEQAABAAAAAAAAAEEAAAAAAAAAIA=</HashCode>
+      <FileName>mat_termico.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mat_termico_nao_linear" Collapsed="true">
+    <Position X="9.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAIAQAEAAABAAAAAAAAAEEAAAAAAAAAAA=</HashCode>
+      <FileName>mat_termico_nao_linear.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="material" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgAAAgEAAIQAAAAAAABAAAAAAEAQEEAAAAAABAAAA=</HashCode>
+      <FileName>material.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nlcal2d4n" Collapsed="true">
+    <Position X="18.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAgAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>nlcal2d4n.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="no" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAAAAAAABAAAIAIAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>no.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="no1D" Collapsed="true">
+    <Position X="5.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>no1d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="no2D" Collapsed="true">
+    <Position X="0.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAABAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>no2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="no3D" Collapsed="true">
+    <Position X="3" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAABAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>no3d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tubo" Collapsed="true">
+    <Position X="23.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgADAAAABAAAwEAAACAAAAQUgAAAAgACABAgA=</HashCode>
+      <FileName>tubo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Viga2D" Collapsed="true">
+    <Position X="21.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAgADAAAABAAAwAAAACAAAAQUgAAAAgACABAAA=</HashCode>
+      <FileName>viga2d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Viga3D" Collapsed="true">
+    <Position X="19" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAgADAAIABAAAwAAAACAAAAQUgAAAAgACABAAA=</HashCode>
+      <FileName>viga3d.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
