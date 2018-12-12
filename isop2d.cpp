@@ -140,7 +140,7 @@ void isop2d::monta_rigidez()
       for (int j=0;j<qnno()*qipn();j++)
          this->k[qnno()*qipn()*i+j]=0.0;
    pontos_de_gauss(qptg(),xpg,wpg);
-   for (pg=0;pg<qdim()*qptg();pg++)
+   for (pg = 0; pg < qlpg(); pg++) // qlpg() (R)
    {
       monta_b();
       monta_c();

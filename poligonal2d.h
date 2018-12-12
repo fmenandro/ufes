@@ -6,7 +6,6 @@
 class pol2d : public isop2d
 {
 private:
-	//const static int ptg = 25;
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;
@@ -23,8 +22,8 @@ public:
 
 	virtual int qptg() = 0;
 	virtual void pontos_de_gauss(int, double*, double*, double*);
-	void monta_rigidez();
 	void monta_n();
+	void monta_rigidez();
 	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
 };
 

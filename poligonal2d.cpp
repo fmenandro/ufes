@@ -388,7 +388,7 @@ void pol2d::monta_rigidez()
 };
 
 #ifdef ALEATORIO
-void pol2d::p_processa(aleatorio *xx)
+void elpol2d::p_processa(aleatorio *xx)
 {
 #else
 void pol2d::p_processa(double *xx)
@@ -448,13 +448,4 @@ void pol2d::p_processa(double *xx)
 	}
 	for (int i = 0; i < qnlb(); i++)
 		tenM[i] = tenM[i] / Ae;
-
-	//// Tensao media
-	//double lpg = ptg*qnno();
-	//for (int i = 0; i < qnlb(); i++){
-	//	tenM[i] = 0;
-	//	for (pg = 0; pg < lpg; pg++)
-	//		tenM[i] += ten[pg*qnlb() + i];
-	//	tenM[i] = tenM[i] / lpg;
-	//}
 };
