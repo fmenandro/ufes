@@ -138,21 +138,6 @@
     <ClCompile Include="elemento_poligonal2d8n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="elemento_poligonal2d_NC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d7n_NC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d8n_NC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d5n_NC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d6n_NC.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aleatorio.h">
@@ -279,21 +264,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="elemento_poligonal2d8n.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d_NC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d5n_NC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d6n_NC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d7n_NC.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d8n_NC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
