@@ -20,7 +20,7 @@
 #include "elpol_quad_2d.h"
 
 elpol_quad_2d::elpol_quad_2d(int nno)
-: isop2d(nno, ptg, 1)
+: isop2d(nno, ptg, 2)
 {
 	xpg = new double[qptg()];
 	wpg = new double[qptg()];
@@ -230,13 +230,4 @@ void elpol_quad_2d::p_processa(double *xx)
 	}
 	for (int i = 0; i < qnlb(); i++)
 		tenM[i] = tenM[i] / Ae;
-
-	//// Tensao media
-	//double lpg = ptg*qnno();
-	//for (int i = 0; i < qnlb(); i++){
-	//	tenM[i] = 0;
-	//	for (pg = 0; pg < lpg; pg++)
-	//		tenM[i] += ten[pg*qnlb() + i];
-	//	tenM[i] = tenM[i] / lpg;
-	//}
 };

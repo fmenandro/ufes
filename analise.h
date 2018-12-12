@@ -51,6 +51,10 @@
 #include "poligonal2d6n.h"
 #include "poligonal2d7n.h"
 #include "poligonal2d8n.h"
+#include "elpol_quad_2d5n.h"
+#include "elpol_quad_2d6n.h"
+#include "elpol_quad_2d7n.h"
+#include "elpol_quad_2d8n.h"
 #include "c_contorno.h"
 
 #include <iostream>
