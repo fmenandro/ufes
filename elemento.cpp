@@ -83,7 +83,10 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	pmaterial = NULL;
 	ptm = new double[dim];
 	tenM = new double[nlb];
-	lpg = ptg * nno;	// A diferenca esta aqui
+	if (poli == 1) // A diferenca esta aqui
+		lpg = ptg ;
+	else
+		lpg = ptg * nno;
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
 	k = new class aleatorio[nno*ipn*nno*ipn];

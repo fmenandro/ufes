@@ -1,27 +1,23 @@
-#include "elemento_poligonal2d8n.h"
+#include "poligonal2d8n.h"
 
-elpol2D8N::elpol2D8N()
-: elpol2d(nno, ptg, ptg_tot)
+pol2D8N::pol2D8N()
+: pol2d(nno, ptg)
 {
 }
 
-elpol2D8N::~elpol2D8N()
+pol2D8N::~pol2D8N()
 {
 }
 
-int elpol2D8N::qnno(){
+int pol2D8N::qnno(){
 	return nno;
 }
 
-int elpol2D8N::qptg(){
+int pol2D8N::qptg(){
 	return ptg;
 }
 
-int elpol2D8N::qptg_tot() {
-	return ptg_tot;
-}
-
-void elpol2D8N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void pol2D8N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	// Pontos de Gauss-Legendre encontrados para octogono
 	switch (p) {
 	case 4: // polinomio ordem 3
@@ -152,7 +148,7 @@ void elpol2D8N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void elpol2D8N::funcao_Forma(double r, double s, double *N, double *dn){
+void pol2D8N::funcao_Forma(double r, double s, double *N, double *dn){
 	// RENAN
 	// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 	// A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity

@@ -30,7 +30,6 @@ class pol2D6N : public pol2d
 private:
 	const static int nno = 6;  //Numero de nos
 	const static int ptg = 12;
-	const static int ptg_tot = ptg;
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;

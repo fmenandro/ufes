@@ -17,21 +17,21 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
-#include "elemento_poligonal2d.h"
+#include "poligonal2d.h"
 
-elpol2d::elpol2d(int nno, int ptg, int ptg_tot)
-: isop2d(nno, ptg, ptg_tot, 1)
+pol2d::pol2d(int nno, int ptg)
+: isop2d(nno, ptg, 1)
 {
 	rpg = new double[ptg];
 	spg = new double[ptg];
 	wpg = new double[ptg];
 }
 
-elpol2d::~elpol2d()
+pol2d::~pol2d()
 {
 }
 
-void elpol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void pol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	switch (p){
 	case 1:
 		r[0] = 1.0 / 3;
@@ -316,7 +316,7 @@ void elpol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void elpol2d::monta_n()
+void pol2d::monta_n()
 {
 #ifdef ALEATORIO
 	aleatorio
@@ -360,7 +360,7 @@ void elpol2d::monta_n()
 	peso *= abs(detJ);	// peso = peso * (detJ)
 }
 
-void elpol2d::monta_rigidez()
+void pol2d::monta_rigidez()
 {
 #ifdef ALEATORIO
 	aleatorio *xx, *yy;
@@ -388,10 +388,10 @@ void elpol2d::monta_rigidez()
 };
 
 #ifdef ALEATORIO
-void elpol2d::p_processa(aleatorio *xx)
+void pol2d::p_processa(aleatorio *xx)
 {
 #else
-void elpol2d::p_processa(double *xx)
+void pol2d::p_processa(double *xx)
 {
 #endif
 	pg = qptg();

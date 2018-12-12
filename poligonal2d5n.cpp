@@ -17,30 +17,26 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
-#include "elemento_poligonal2d5n.h"
+#include "poligonal2d5n.h"
 
-elpol2D5N::elpol2D5N()
-: elpol2d(nno, ptg, ptg_tot)
+pol2D5N::pol2D5N()
+: pol2d(nno, ptg)
 {
 }
 
-elpol2D5N::~elpol2D5N()
+pol2D5N::~pol2D5N()
 {
 }
 
-int elpol2D5N::qptg(){
+int pol2D5N::qptg(){
 	return ptg;
 }
 
-int elpol2D5N::qnno(){
+int pol2D5N::qnno(){
 	return nno;
 }
 
-int elpol2D5N::qptg_tot() {
-	return ptg_tot;
-}
-
-void elpol2D5N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void pol2D5N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	// Pontos de Gauss-Legendre encontrados para pentagono
 	switch (p){
 	case 4: // polinomio ordem 3
@@ -168,7 +164,7 @@ void elpol2D5N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void elpol2D5N::funcao_Forma(double r, double s, double *N, double *dn){
+void pol2D5N::funcao_Forma(double r, double s, double *N, double *dn){
 	// RENAN
 	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
 	// Coeficientes para as fun��es de forma(?)
