@@ -120,6 +120,11 @@
     <ClCompile Include="no1d.cpp" />
     <ClCompile Include="no2d.cpp" />
     <ClCompile Include="no3d.cpp" />
+    <ClCompile Include="poligonal2d.cpp" />
+    <ClCompile Include="poligonal2d5n.cpp" />
+    <ClCompile Include="poligonal2d6n.cpp" />
+    <ClCompile Include="poligonal2d7n.cpp" />
+    <ClCompile Include="poligonal2d8n.cpp" />
     <ClCompile Include="tubo.cpp" />
     <ClCompile Include="ufesApp.cpp" />
     <ClCompile Include="ufesMain.cpp" />
@@ -164,6 +169,11 @@
     <ClInclude Include="no1d.h" />
     <ClInclude Include="no2d.h" />
     <ClInclude Include="no3d.h" />
+    <ClInclude Include="poligonal2d.h" />
+    <ClInclude Include="poligonal2d5n.h" />
+    <ClInclude Include="poligonal2d6n.h" />
+    <ClInclude Include="poligonal2d7n.h" />
+    <ClInclude Include="poligonal2d8n.h" />
     <ClInclude Include="tubo.h" />
     <ClInclude Include="ufesApp.h" />
     <ClInclude Include="ufesMain.h" />
