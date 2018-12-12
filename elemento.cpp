@@ -30,7 +30,6 @@ elemento::elemento()
 
 elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 {
-   poli = 0; // (= 0) indica que o elemento nao eh poligonal 2d
    no=new int[nno];
    pno=new class no*[nno];
    material=0;
@@ -71,11 +70,9 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb)
 #endif
 };
 
-// Adicionado por Renan
+// Caso elemento poligonal, entra nesse constructor (R)
 elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int poli)
 {
-	// poli: quando existente (= 1) indica que o elemento é poligonal 2d
-	this->poli = 1;
 	no = new int[nno];
 	pno = new class no*[nno];
 	material = 0;
@@ -86,7 +83,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	pmaterial = NULL;
 	ptm = new double[dim];
 	tenM = new double[nlb];
-	lpg = ptg * nno;
+	lpg = ptg * nno;	// A diferenca esta aqui
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
 	k = new class aleatorio[nno*ipn*nno*ipn];
@@ -104,8 +101,7 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	x = new double[nno*ipn];
 	f = new double[nno*ipn];
 	
-	//if (dim == 2) {
-	ten = new double[nlb*lpg];	// A diferenca está aqui
+	ten = new double[nlb*lpg];
 	def = new double[nlb*lpg];
 	ptx = new double[lpg];
 	pty = new double[lpg];

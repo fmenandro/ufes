@@ -29,7 +29,7 @@
 class elpol2d : public isop2d
 {
 private:
-	const static int ptg = 12;
+	const static int ptg = 6;
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;
