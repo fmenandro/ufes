@@ -21,7 +21,7 @@ public:
 	~pol2d();
 
 	virtual int qptg() = 0;
-	virtual void pontos_de_gauss(int, double*, double*, double*);
+	virtual void pontos_de_gauss(int, double*, double*, double*) = 0;
 	void monta_n();
 	void monta_rigidez();
 	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
