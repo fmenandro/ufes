@@ -426,16 +426,16 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
            n.elementos[i]=new class elcal2d8n;
            break;
 	case 15:
-           n.elementos[i]=new class elpol2D5N;
+           n.elementos[i]=new class pol2D5N;
            break;
 	case 16:
-		n.elementos[i] = new class elpol2D6N;
+		n.elementos[i] = new class pol2D6N;
 		break;
 	case 17:
-		n.elementos[i] = new class elpol2D7N;
+		n.elementos[i] = new class pol2D7N;
 		break;
 	case 18:
-		n.elementos[i] = new class elpol2D8N;
+		n.elementos[i] = new class pol2D8N;
 		break;
 
         case 106:

@@ -47,6 +47,10 @@
 #include "elemento_poligonal2d6n.h"
 #include "elemento_poligonal2d7n.h"
 #include "elemento_poligonal2d8n.h"
+#include "poligonal2d5n.h"
+#include "poligonal2d6n.h"
+#include "poligonal2d7n.h"
+#include "poligonal2d8n.h"
 #include "c_contorno.h"
 
 #include <iostream>
