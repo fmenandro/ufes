@@ -153,6 +153,21 @@
     <ClCompile Include="poligonal2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="elpol_quad_2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_quad_2d5n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_quad_2d6n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_quad_2d7n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_quad_2d8n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aleatorio.h">
@@ -294,6 +309,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="poligonal2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_quad_2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_quad_2d5n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_quad_2d6n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_quad_2d7n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_quad_2d8n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

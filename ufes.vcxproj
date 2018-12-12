@@ -108,6 +108,11 @@
     <ClCompile Include="elemento_poligonal2d6n.cpp" />
     <ClCompile Include="elemento_poligonal2d7n.cpp" />
     <ClCompile Include="elemento_poligonal2d8n.cpp" />
+    <ClCompile Include="elpol_quad_2d.cpp" />
+    <ClCompile Include="elpol_quad_2d5n.cpp" />
+    <ClCompile Include="elpol_quad_2d6n.cpp" />
+    <ClCompile Include="elpol_quad_2d7n.cpp" />
+    <ClCompile Include="elpol_quad_2d8n.cpp" />
     <ClCompile Include="iscal1d.cpp" />
     <ClCompile Include="iscal2d.cpp" />
     <ClCompile Include="isop2d.cpp" />
@@ -157,6 +162,11 @@
     <ClInclude Include="elemento_poligonal2d6n.h" />
     <ClInclude Include="elemento_poligonal2d7n.h" />
     <ClInclude Include="elemento_poligonal2d8n.h" />
+    <ClInclude Include="elpol_quad_2d.h" />
+    <ClInclude Include="elpol_quad_2d5n.h" />
+    <ClInclude Include="elpol_quad_2d6n.h" />
+    <ClInclude Include="elpol_quad_2d7n.h" />
+    <ClInclude Include="elpol_quad_2d8n.h" />
     <ClInclude Include="iscal1d.h" />
     <ClInclude Include="iscal2d.h" />
     <ClInclude Include="isop2d.h" />
