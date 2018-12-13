@@ -21,6 +21,15 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
+/**************************************************************************
+* Elemento Poligonal 2D dividindo o poligono em quadrilateros			  *
+*																		  *
+* REF:	THOMES, R.L. Elemento Finito Poligonal: Comparacao dos metodos de *
+*		integracao da matriz de rigidez.                                  *
+*		TALISCHI, C. et al. Polygonal finite elements for incompressible  *
+*		fluid flow.														  *
+***************************************************************************/
+
 #ifndef ELPOL_QUAD_2D_H
 #define ELPOL_QUAD_2D_H
 

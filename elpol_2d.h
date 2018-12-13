@@ -21,6 +21,14 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
+/**************************************************************************
+* Elemento Poligonal 2D utilizando a quadratura de Gauss-Legendre no      *
+* dominio Poligonal (GLP)												  *
+*																		  *
+* REF:	THOMES, R.L. Elemento Finito Poligonal: Comparacao dos metodos de *
+*		integracao da matriz de rigidez.                                  *
+***************************************************************************/
+
 #ifndef POLIGONAL2D_H
 #define POLIGONAL2D_H
 

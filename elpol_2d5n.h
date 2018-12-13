@@ -30,7 +30,7 @@ class elpol_2D5N : public elpol_2d
 {
 private:
 	const static int nno = 5;  //Numero de nos
-	const static int ptg = 11; // N. pontos de Gauss do elemento
+	const static int ptg = 16; // N. pontos de Gauss do elemento
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;

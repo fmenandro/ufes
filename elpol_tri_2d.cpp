@@ -356,6 +356,8 @@ void elpol_tri_2d::monta_n()
 void elpol_tri_2d::map2(double *r, double *s, double *detJ1) {
 	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do triângulo
 	// padrao para o elemento padrao.
+	// Poderia-se melhorar o tempo calculando todos os vertices das 
+	// sub-divisoes uma unica vez
 	double r1[2], r2[2];
 	const double pi = 3.14159265358979323846;
 	int i;

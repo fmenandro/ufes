@@ -21,6 +21,15 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
+/**************************************************************************
+* Elemento Poligonal 2D dividindo o poligono em triangulos				  *
+*																		  *
+* REF:	THOMES, R.L. Elemento Finito Poligonal: Comparacao dos metodos de *
+*		integracao da matriz de rigidez.                                  *
+*		TABARRAEI, A.; SUKUMAR, N. Application of Polygonal Finite		  *
+*		Elements in Linear Elasticity.									  *
+***************************************************************************/
+
 #ifndef ELPOL_TRI_2D_H
 #define ELPOL_TRI_2D_H
 

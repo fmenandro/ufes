@@ -86,7 +86,9 @@ void elpol_quad_2d::monta_n()
 
 void elpol_quad_2d::map2(double *r, double *s, double *detJ1) {
 	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do quadrado
-	// padrao para o elemento padrao (Mapeamento nivel 2)
+	// padrao para o elemento padrao (Mapeamento nivel 2).
+	// Poderia-se melhorar o tempo calculando todos os vertices das 
+	// sub-divisoes uma unica vez
 	double r1[4], r2[4], phi[4], dphi[8], J1[2][2];
 	const double pi = 3.14159265358979323846;
 	int p;
