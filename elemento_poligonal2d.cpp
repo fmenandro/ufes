@@ -316,33 +316,17 @@ void elpol2d::monta_n()
 #endif
 	// Inicializacao de variaveis ---
 		r, s, J[2][2], invJ[2][2];
-	double r1[2], r2[2];
 	double detJ1;
-	const double pi = 3.14159265358979323846;
 	int i, j, n;
 	i = j = n = 0;
+	// Zerar dn e dN
 	for (i = 0; i < 2; i++)
 	for (n = 0; n < qnno(); n++)
 		dn[2 * n + i] = dN[2 * n + i] = 0.0;
-	// -------------------------------
-
-	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do triângulo
-	// padrao para o elemento padrao ----------------------------------------
-	// Pontos das extremidades do triangulo (coordenadas do elemento padrao)
-	for (i = 0; i < 2; i++){
-		r1[i] = cos(2 * pi*(tri + i + 1) / qnno());
-		r2[i] = sin(2 * pi*(tri + i + 1) / qnno());
-	}
-	detJ1 = r1[0] * r2[1] - r2[0] * r1[1];
-	// Esse determinante nao muda conforme o ponto de Gauss, so depende do triangulo
-
-	// Pontos de Gauss estão no sistema de coordenadas do triangulo,
-	//entao, ele sao transformados para o sistema de coordenadas do elemento.
-	// r e s: pontos de Gauss nas coordenadas do elemento.
-	r = r1[0] * rpg[pg] + r1[1] * spg[pg];
-	s = r2[0] * rpg[pg] + r2[1] * spg[pg];
-	peso = wpg[pg];
-	// -----------------------------------------------------------------------
+	
+	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do triangulo
+	// padrao para o elemento padrao. Atencao: peso alterado nessa funcao
+	map2(&r, &s, &detJ1);
 
 	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
 	funcao_Forma(r, s, N, dn);
@@ -358,15 +342,6 @@ void elpol2d::monta_n()
 	}
 	detJ = J[0][0] * J[1][1] - J[1][0] * J[0][1];
 
-	//if (detJ > 100 || detJ < 0.001){
-	//	ofstream myfile;
-	//	string str;
-	//	str = "Entradas e Saídas/Debug_" + to_string(qnno()) + "n.txt";
-	//	myfile.open(str);			
-	//	myfile << "detJ = " << detJ << "\npg = " << pg << "\ntri = " << tri;
-	//	myfile.close();
-	//}
-
 	invJ[0][0] = J[1][1] / detJ;
 	invJ[1][1] = J[0][0] / detJ;
 	invJ[0][1] = -J[0][1] / detJ;
@@ -376,6 +351,28 @@ void elpol2d::monta_n()
 	for (n = 0; n < qnno(); n++)
 		dN[2 * n + i] += invJ[i][j] * dn[2 * n + j];
 	peso *= abs(detJ) * abs(detJ1);	// peso = peso * (detJ * detJ1)
+}
+
+void elpol2d::map2(double *r, double *s, double *detJ1) {
+	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do triângulo
+	// padrao para o elemento padrao.
+	double r1[2], r2[2];
+	const double pi = 3.14159265358979323846;
+	int i;
+	// Pontos das extremidades do triangulo (coordenadas do elemento padrao)
+	for (i = 0; i < 2; i++) {
+		r1[i] = cos(2 * pi*(tri + i + 1) / qnno());
+		r2[i] = sin(2 * pi*(tri + i + 1) / qnno());
+	}
+	*detJ1 = r1[0] * r2[1] - r2[0] * r1[1];
+	// Esse determinante nao muda conforme o ponto de Gauss, so depende do triangulo
+
+	// Pontos de Gauss estão no sistema de coordenadas do triangulo,
+	// entao, ele sao transformados para o sistema de coordenadas do elemento.
+	// r e s: pontos de Gauss nas coordenadas do elemento.
+	*r = r1[0] * rpg[pg] + r1[1] * spg[pg];
+	*s = r2[0] * rpg[pg] + r2[1] * spg[pg];
+	peso = wpg[pg];
 }
 
 void elpol2d::monta_rigidez()

@@ -48,6 +48,7 @@ public:
 	void pontos_de_gauss(int, double*, double*, double*);
 	void monta_rigidez();
 	void monta_n();
+	void map2(double *r, double *s, double *detJ1);
 	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
 	int tri; // Contador da sub-divisao
 };
