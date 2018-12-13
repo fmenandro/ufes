@@ -36,9 +36,8 @@ int elpol2D7N::qnno(){
 	return nno;
 }
 
+// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 void elpol2D7N::funcao_Forma(double r, double s, double *N, double *dn){
-	// RENAN
-	// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 	double b, b2, dbdr, dbds, A, B, C, D, E, F, G;
 	// Expressoes que se repetem	
 	A = (0.9009688679024191 + 1.*r);

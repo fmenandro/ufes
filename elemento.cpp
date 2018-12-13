@@ -83,9 +83,9 @@ elemento::elemento(int dim, int ipn, int nno, int prp, int ptg, int nlb, int pol
 	pmaterial = NULL;
 	ptm = new double[dim];
 	tenM = new double[nlb];
-	if (poli == 1) // A diferenca esta aqui
+	if (poli == 1)	// El. poligonal sem mapeamento em 2 niveis (pontos GLP)
 		lpg = ptg ;
-	else
+	else			// El. poligonal com mapeamento em 2 niveis (Quad. e Tri.)
 		lpg = ptg * nno;
 #ifdef ALEATORIO
 	prop = new class aleatorio[prp];
@@ -452,7 +452,7 @@ istream& operator>>(istream& ci, elemento& e)
    return ci;
 };
 
-// RENAN COMENTOU PARA O ELEMENTO POLIGONAL, DEPOIS VOLTAR AO ORIGINAL
+// RENAN adicionou alguns cálculos
 wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
 {
    co << "  Numero de pontos de Gauss = " << e.qlpg();

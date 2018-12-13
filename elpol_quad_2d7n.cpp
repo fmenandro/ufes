@@ -1,7 +1,10 @@
 ﻿/***************************************************************************
-*   Copyright (C) 2005 by Fernando C�sar Meira Menandro   *
-*   menandro@localhost.localdomain   *
-*                                                                         *
+*   Copyright (C) 2005 by Fernando Cesar Meira Menandro                   *
+*   fcmm@npd.ufes.br                                                      *
+*																		  *
+*	Created: 12-Dec-18	Renan Lima Thomes, renanlthomes@hotmail.com       *
+*	Supervised by:		Fernando Cesar Meira Menandro                     *
+*																		  *
 *   This program is free software; you can redistribute it and/or modify  *
 *   it under the terms of the GNU General Public License as published by  *
 *   the Free Software Foundation; either version 2 of the License, or     *
@@ -17,6 +20,7 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
+
 #include "elpol_quad_2d7n.h"
 
 elpol_quad_2D7N::elpol_quad_2D7N()

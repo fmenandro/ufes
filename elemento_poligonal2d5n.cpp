@@ -36,10 +36,8 @@ int elpol2D5N::qnno(){
 	return nno;
 }
 
+// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 void elpol2D5N::funcao_Forma(double r, double s, double *N, double *dn){
-	// RENAN
-	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
-	// Coeficientes para as fun��es de forma(?)
 	// Expressões que se repetem
 	double A, B, C, D, E, den, den2;
 	A = (0.8090169943749475 + 1.*r);

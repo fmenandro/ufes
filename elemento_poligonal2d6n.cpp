@@ -36,10 +36,9 @@ int elpol2D6N::qnno(){
 	return nno;
 }
 
+// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
+// A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity
 void elpol2D6N::funcao_Forma(double r, double s, double *N, double *dn){
-	// RENAN
-	// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
-	// A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity
 	double raiz3 = sqrt(3);
 	double A, B, C, D, E, F, G, H, I, c, e, den;
 	// Expres~soes que se repetem

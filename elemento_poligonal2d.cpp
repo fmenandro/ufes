@@ -24,7 +24,7 @@
 #include "elemento_poligonal2d.h"
 
 elpol2d::elpol2d(int nno)
-: isop2d(nno, ptg, 2)
+: isop2d(nno, ptg, 2) // 2 indica mapeamento em 2 niveis
 {
 	rpg = new double[qptg()];
 	spg = new double[qptg()];

@@ -26,9 +26,6 @@
 
 #include "elemento_poligonal2d.h"
 
-/**
-@author Fernando Cesar Meira Menandro
-*/
 class elpol2D5N : public elpol2d
 {
 private:

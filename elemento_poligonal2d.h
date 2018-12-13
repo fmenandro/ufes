@@ -29,7 +29,7 @@
 class elpol2d : public isop2d
 {
 private:
-	const static int ptg = 6;
+	const static int ptg = 6; // Numero de pontos de Gauss por sub-divisao
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;
@@ -49,7 +49,7 @@ public:
 	void monta_rigidez();
 	void monta_n();
 	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
-	int tri;
+	int tri; // Contador da sub-divisao
 };
 
 #endif
