@@ -17,9 +17,9 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
-#include "poligonal2d.h"
+#include "elpol_2d.h"
 
-pol2d::pol2d(int nno, int ptg)
+elpol_2d::elpol_2d(int nno, int ptg)
 : isop2d(nno, ptg, 1)
 {
 	rpg = new double[ptg];
@@ -27,11 +27,11 @@ pol2d::pol2d(int nno, int ptg)
 	wpg = new double[ptg];
 }
 
-pol2d::~pol2d()
+elpol_2d::~elpol_2d()
 {
 }
 
-void pol2d::monta_n()
+void elpol_2d::monta_n()
 {
 #ifdef ALEATORIO
 	aleatorio
@@ -75,7 +75,7 @@ void pol2d::monta_n()
 	peso *= abs(detJ);	// peso = peso * (detJ)
 }
 
-void pol2d::monta_rigidez()
+void elpol_2d::monta_rigidez()
 {
 #ifdef ALEATORIO
 	aleatorio *xx, *yy;
@@ -103,10 +103,10 @@ void pol2d::monta_rigidez()
 };
 
 #ifdef ALEATORIO
-void elpol2d::p_processa(aleatorio *xx)
+void elpol_2d::p_processa(aleatorio *xx)
 {
 #else
-void pol2d::p_processa(double *xx)
+void elpol_2d::p_processa(double *xx)
 {
 #endif
 	pg = qptg();

@@ -17,26 +17,26 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
-#include "poligonal2d6n.h"
+#include "elpol_2d6n.h"
 
-pol2D6N::pol2D6N()
-: pol2d(nno, ptg)
+elpol_2D6N::elpol_2D6N()
+: elpol_2d(nno, ptg)
 {
 }
 
-pol2D6N::~pol2D6N()
+elpol_2D6N::~elpol_2D6N()
 {
 }
 
-int pol2D6N::qptg(){
+int elpol_2D6N::qptg(){
 	return ptg;
 }
 
-int pol2D6N::qnno(){
+int elpol_2D6N::qnno(){
 	return nno;
 }
 
-void pol2D6N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void elpol_2D6N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	// Pontos de Gauss-Legendre encontrados para o hexagono
 	switch (p){
 	case 4: // polinomio ordem 3
@@ -164,7 +164,7 @@ void pol2D6N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void pol2D6N::funcao_Forma(double r, double s, double *N, double *dn){
+void elpol_2D6N::funcao_Forma(double r, double s, double *N, double *dn){
 	// RENAN
 	// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 	// A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity

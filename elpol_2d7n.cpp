@@ -17,26 +17,26 @@
 *   Free Software Foundation, Inc.,                                       *
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
-#include "poligonal2d7n.h"
+#include "elpol_2d7n.h"
 
-pol2D7N::pol2D7N()
-: pol2d(nno, ptg)
+elpol_2D7N::elpol_2D7N()
+: elpol_2d(nno, ptg)
 {
 }
 
-pol2D7N::~pol2D7N()
+elpol_2D7N::~elpol_2D7N()
 {
 }
 
-int pol2D7N::qnno(){
+int elpol_2D7N::qnno(){
 	return nno;
 }
 
-int pol2D7N::qptg(){
+int elpol_2D7N::qptg(){
 	return ptg;
 }
 
-void pol2D7N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void elpol_2D7N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	// Pontos de Gauss-Legendre encontrados para heptagono
 	switch (p) {
 	case 4: // polinomio ordem 3
@@ -167,7 +167,7 @@ void pol2D7N::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void pol2D7N::funcao_Forma(double r, double s, double *N, double *dn){
+void elpol_2D7N::funcao_Forma(double r, double s, double *N, double *dn){
 	// RENAN
 	// CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 	double b, b2, dbdr, dbds, A, B, C, D, E, F, G;

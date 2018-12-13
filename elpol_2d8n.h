@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *   Copyright (C) 2005 by Fernando Cesar Meira Menandro                   *
 *   fcmm@npd.ufes.br                                                      *
 *																		  *
@@ -21,15 +21,15 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#ifndef POLIGONAL2D6N_H
-#define POLIGONAL2D6N_H
+#ifndef POLIGONAL2D8N_H
+#define POLIGONAL2D8N_H
 
-#include "poligonal2d.h"
+#include "elpol_2d.h"
 
-class pol2D6N : public pol2d
+class elpol_2D8N : public elpol_2d
 {
 private:
-	const static int nno = 6;  //Numero de nos
+	const static int nno = 8;  //Numero de nos
 	const static int ptg = 12; // N. pontos de Gauss do elemento
 public:
 #ifdef ALEATORIO
@@ -37,12 +37,11 @@ public:
 #else
 	double *yg;
 #endif
-	pol2D6N();
-	~pol2D6N();
+	elpol_2D8N();
+	~elpol_2D8N();
 
 	int qptg();
 	int qnno();
-	int qptg_tot();
 	void funcao_Forma(double, double, double*, double*);
 	void pontos_de_gauss(int, double*, double*, double*);
 };

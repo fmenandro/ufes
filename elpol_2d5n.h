@@ -21,33 +21,29 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#ifndef POLIGONAL2D_H
-#define POLIGONAL2D_H
+#ifndef POLIGONAL2D5N_H
+#define POLIGONAL2D5N_H
 
-#include "isop2d.h"
+#include "elpol_2d.h"
 
-class pol2d : public isop2d
+class elpol_2D5N : public elpol_2d
 {
 private:
+	const static int nno = 5;  //Numero de nos
+	const static int ptg = 11; // N. pontos de Gauss do elemento
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;
-	void p_processa(aleatorio*);
 #else
 	double *yg;
-	void p_processa(double*);
 #endif
-	double *rpg, *spg, *wpg;
+	elpol_2D5N();
+	~elpol_2D5N();
 
-	pol2d();
-	pol2d(int, int);
-	~pol2d();
-
-	virtual int qptg() = 0;
-	virtual void pontos_de_gauss(int, double*, double*, double*) = 0;
-	void monta_n();
-	void monta_rigidez();
-	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
+	int qptg();
+	int qnno();
+	void funcao_Forma(double, double, double*, double*);
+	void pontos_de_gauss(int, double*, double*, double*);
 };
 
 #endif

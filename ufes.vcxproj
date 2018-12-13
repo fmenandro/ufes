@@ -103,6 +103,11 @@
     <ClCompile Include="elemento2d9n.cpp" />
     <ClCompile Include="elemento3d.cpp" />
     <ClCompile Include="elemento3d3n.cpp" />
+    <ClCompile Include="elpol_2d.cpp" />
+    <ClCompile Include="elpol_2d5n.cpp" />
+    <ClCompile Include="elpol_2d6n.cpp" />
+    <ClCompile Include="elpol_2d7n.cpp" />
+    <ClCompile Include="elpol_2d8n.cpp" />
     <ClCompile Include="elpol_quad_2d.cpp" />
     <ClCompile Include="elpol_quad_2d5n.cpp" />
     <ClCompile Include="elpol_quad_2d6n.cpp" />
@@ -125,11 +130,6 @@
     <ClCompile Include="no1d.cpp" />
     <ClCompile Include="no2d.cpp" />
     <ClCompile Include="no3d.cpp" />
-    <ClCompile Include="poligonal2d.cpp" />
-    <ClCompile Include="poligonal2d5n.cpp" />
-    <ClCompile Include="poligonal2d6n.cpp" />
-    <ClCompile Include="poligonal2d7n.cpp" />
-    <ClCompile Include="poligonal2d8n.cpp" />
     <ClCompile Include="tubo.cpp" />
     <ClCompile Include="ufesApp.cpp" />
     <ClCompile Include="ufesMain.cpp" />
@@ -157,6 +157,11 @@
     <ClInclude Include="elemento2d9n.h" />
     <ClInclude Include="elemento3d.h" />
     <ClInclude Include="elemento3d3n.h" />
+    <ClInclude Include="elpol_2d.h" />
+    <ClInclude Include="elpol_2d5n.h" />
+    <ClInclude Include="elpol_2d6n.h" />
+    <ClInclude Include="elpol_2d7n.h" />
+    <ClInclude Include="elpol_2d8n.h" />
     <ClInclude Include="elpol_quad_2d.h" />
     <ClInclude Include="elpol_quad_2d5n.h" />
     <ClInclude Include="elpol_quad_2d6n.h" />
@@ -179,11 +184,6 @@
     <ClInclude Include="no1d.h" />
     <ClInclude Include="no2d.h" />
     <ClInclude Include="no3d.h" />
-    <ClInclude Include="poligonal2d.h" />
-    <ClInclude Include="poligonal2d5n.h" />
-    <ClInclude Include="poligonal2d6n.h" />
-    <ClInclude Include="poligonal2d7n.h" />
-    <ClInclude Include="poligonal2d8n.h" />
     <ClInclude Include="tubo.h" />
     <ClInclude Include="ufesApp.h" />
     <ClInclude Include="ufesMain.h" />
