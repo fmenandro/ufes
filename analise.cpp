@@ -426,8 +426,8 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
            n.elementos[i]=new class elcal2d8n;
            break;
 	case 15:
-           n.elementos[i]=new class elpol_2D5N;
-           break;
+        n.elementos[i]=new class elpol_2D5N;
+        break;
 	case 16:
 		n.elementos[i] = new class elpol_2D6N;
 		break;
@@ -436,6 +436,30 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
 		break;
 	case 18:
 		n.elementos[i] = new class elpol_2D8N;
+		break;
+	case 25:
+		n.elementos[i] = new class elpol_quad_2D5N;
+		break;
+	case 26:
+		n.elementos[i] = new class elpol_quad_2D6N;
+		break;
+	case 27:
+		n.elementos[i] = new class elpol_quad_2D7N;
+		break;
+	case 28:
+		n.elementos[i] = new class elpol_quad_2D8N;
+		break;
+	case 35:
+		n.elementos[i] = new class elpol_tri_2D5N;
+		break;
+	case 36:
+		n.elementos[i] = new class elpol_tri_2D6N;
+		break;
+	case 37:
+		n.elementos[i] = new class elpol_tri_2D7N;
+		break;
+	case 38:
+		n.elementos[i] = new class elpol_tri_2D8N;
 		break;
 
         case 106:
