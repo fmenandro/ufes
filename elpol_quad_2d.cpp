@@ -47,65 +47,17 @@ void elpol_quad_2d::monta_n()
 #endif
 	// Inicializacao de variaveis ---
 		r, s, J[2][2], invJ[2][2];
-	double r1[4], r2[4], phi[4], dphi[8], J1[2][2];
 	double detJ1;
-	const double pi = 3.14159265358979323846;
 	int i, j, n;
-	int p;
 	i = j = n = 0;
+	// Zerar dn e dN
 	for (i = 0; i < 2; i++)
 	for (n = 0; n < qnno(); n++)
 		dn[2 * n + i] = dN[2 * n + i] = 0.0;
-	// -------------------------------
 
 	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do quadrado
-	// padrao para o elemento padrao ----------------------------------------
-	// Pontos das extremidades do quadrado (coordenadas do elemento padrao)
-	r1[1] = cos(2 * pi*(tri + 1) / qnno()); // Ponto do meio
-	r2[1] = sin(2 * pi*(tri + 1) / qnno());
-	r1[0] = (r1[1] + cos(2 * pi*tri / qnno())) / 2; // Ponto da direita
-	r2[0] = (r2[1] + sin(2 * pi*tri / qnno())) / 2;
-	r1[2] = (r1[1] + cos(2 * pi*(tri + 2) / qnno())) / 2; // Ponto da esquerda
-	r2[2] = (r2[1] + sin(2 * pi*(tri + 2) / qnno())) / 2;
-	r1[3] = r2[3] = 0; // Ponto central
-	// Truque para obter os pontos de Gauss no quadrado padrão
-	p = sqrt(qptg());
-	r = xpg[pg%p];
-	s = xpg[pg / p];
-	peso = wpg[pg%p];
-	peso *= wpg[pg / p];
-	// Funcoes de forma 2 e derivadas
-	phi[0] = (1 + r)*(1 + s) *0.25;
-	phi[1] = (1 - r)*(1 + s) *0.25;
-	phi[2] = (1 - r)*(1 - s) *0.25;
-	phi[3] = (1 + r)*(1 - s) *0.25;
-	dphi[0] = (1 + s) *0.25;
-	dphi[1] = (1 + r) *0.25;
-	dphi[2] = -(1 + s) *0.25;
-	dphi[3] = (1 - r) *0.25;
-	dphi[4] = -(1 - s) *0.25;
-	dphi[5] = -(1 - r) *0.25;
-	dphi[6] = (1 - s) *0.25;
-	dphi[7] = -(1 + r) *0.25;
-	// Determinante 2
-	J1[0][0] = J1[0][1] = J1[1][0] = J1[1][1] = 0.0;
-	for (int i = 0; i < 2; i++) {
-		for (int n = 0; n < 4; n++) {
-			J1[i][0] += dphi[2 * n + i] * r1[n];
-			J1[i][1] += dphi[2 * n + i] * r2[n];
-		}
-	}
-	detJ1 = J1[0][0] * J1[1][1] - J1[1][0] * J1[0][1];
-
-	// Pontos de Gauss estão no sistema de coordenadas do quadrado,
-	// entao, eles sao transformados para o sistema de coordenadas do elemento.
-	// r e s: pontos de Gauss nas coordenadas do elemento.
-	r = 0; s = 0;
-	for (int n = 0; n < 4; n++) {
-		r += r1[n] * phi[n];
-		s += r2[n] * phi[n];
-	}
-	// -----------------------------------------------------------------------
+	// padrao para o elemento padrao. Atnecao: peso alterado nessa funcao
+	map2(&r, &s, &detJ1);
 
 	// Calcula N e dn para os pontos r e s (geralmente, os pontos de Gauss nas coordenadas do elemento)
 	funcao_Forma(r, s, N, dn);
@@ -121,15 +73,6 @@ void elpol_quad_2d::monta_n()
 	}
 	detJ = J[0][0] * J[1][1] - J[1][0] * J[0][1];
 
-	//if (detJ > 100 || detJ < 0.001){
-	//	ofstream myfile;
-	//	string str;
-	//	str = "Entradas e Saídas/Debug_" + to_string(qnno()) + "n.txt";
-	//	myfile.open(str);			
-	//	myfile << "detJ = " << detJ << "\npg = " << pg << "\ntri = " << tri;
-	//	myfile.close();
-	//}
-
 	invJ[0][0] = J[1][1] / detJ;
 	invJ[1][1] = J[0][0] / detJ;
 	invJ[0][1] = -J[0][1] / detJ;
@@ -139,6 +82,59 @@ void elpol_quad_2d::monta_n()
 	for (n = 0; n < qnno(); n++)
 		dN[2 * n + i] += invJ[i][j] * dn[2 * n + j];
 	peso *= abs(detJ) * abs(detJ1);	// peso = peso * (detJ * detJ1)
+}
+
+void elpol_quad_2d::map2(double *r, double *s, double *detJ1) {
+	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do quadrado
+	// padrao para o elemento padrao (Mapeamento nivel 2)
+	double r1[4], r2[4], phi[4], dphi[8], J1[2][2];
+	const double pi = 3.14159265358979323846;
+	int p;
+	// Truque para obter os pontos de Gauss no quadrado padrão
+	p = sqrt(qptg());
+	*r = xpg[pg%p];
+	*s = xpg[pg / p];
+	peso = wpg[pg%p];
+	peso *= wpg[pg / p];
+	// Pontos das extremidades do quadrado (coordenadas do elemento padrao)
+	r1[1] = cos(2 * pi*(tri + 1) / qnno()); // Ponto do meio
+	r2[1] = sin(2 * pi*(tri + 1) / qnno());
+	r1[0] = (r1[1] + cos(2 * pi*tri / qnno())) / 2; // Ponto da direita
+	r2[0] = (r2[1] + sin(2 * pi*tri / qnno())) / 2;
+	r1[2] = (r1[1] + cos(2 * pi*(tri + 2) / qnno())) / 2; // Ponto da esquerda
+	r2[2] = (r2[1] + sin(2 * pi*(tri + 2) / qnno())) / 2;
+	r1[3] = r2[3] = 0; // Ponto central
+	// Funcoes de forma 2 e derivadas
+	phi[0] = (1 + *r)*(1 + *s) *0.25;
+	phi[1] = (1 - *r)*(1 + *s) *0.25;
+	phi[2] = (1 - *r)*(1 - *s) *0.25;
+	phi[3] = (1 + *r)*(1 - *s) *0.25;
+	dphi[0] = (1 + *s) *0.25;
+	dphi[1] = (1 + *r) *0.25;
+	dphi[2] = -(1 + *s) *0.25;
+	dphi[3] = (1 - *r) *0.25;
+	dphi[4] = -(1 - *s) *0.25;
+	dphi[5] = -(1 - *r) *0.25;
+	dphi[6] = (1 - *s) *0.25;
+	dphi[7] = -(1 + *r) *0.25;
+	// Determinante 2
+	J1[0][0] = J1[0][1] = J1[1][0] = J1[1][1] = 0.0;
+	for (int i = 0; i < 2; i++) {
+		for (int n = 0; n < 4; n++) {
+			J1[i][0] += dphi[2 * n + i] * r1[n];
+			J1[i][1] += dphi[2 * n + i] * r2[n];
+		}
+	}
+	*detJ1 = J1[0][0] * J1[1][1] - J1[1][0] * J1[0][1];
+
+	// Pontos de Gauss estão no sistema de coordenadas do quadrado,
+	// entao, eles sao transformados para o sistema de coordenadas do elemento.
+	// r e s: pontos de Gauss nas coordenadas do elemento.
+	*r = 0; *s = 0;
+	for (int n = 0; n < 4; n++) {
+		*r += r1[n] * phi[n];
+		*s += r2[n] * phi[n];
+	}
 }
 
 void elpol_quad_2d::monta_rigidez()
