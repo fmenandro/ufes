@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *   Copyright (C) 2005 by Fernando Cesar Meira Menandro                   *
 *   fcmm@npd.ufes.br                                                      *
 *																		  *
@@ -21,26 +21,36 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#ifndef ELEMENTO_POLIGONAL2D7N_H
-#define ELEMENTO_POLIGONAL2D7N_H
+#ifndef ELPOL_TRI_2D_H
+#define ELPOL_TRI_2D_H
 
-#include "elemento_poligonal2d.h"
+#include "isop2d.h"
 
-class elpol2D7N : public elpol2d
+class elpol_tri_2d : public isop2d
 {
 private:
-	const static int nno = 7;  //Numero de nos
+	const static int ptg = 6; // Numero de pontos de Gauss por sub-divisao
 public:
 #ifdef ALEATORIO
 	class aleatorio *yg;
+	void p_processa(aleatorio*);
 #else
 	double *yg;
+	void p_processa(double*);
 #endif
-	elpol2D7N();
-	~elpol2D7N();
+	double *rpg, *spg, *wpg;
 
-	int qnno();
-	void funcao_Forma(double, double, double*, double*);
+	elpol_tri_2d();
+	elpol_tri_2d(int);
+	~elpol_tri_2d();
+
+	int qptg();
+	void pontos_de_gauss(int, double*, double*, double*);
+	void monta_rigidez();
+	void monta_n();
+	void map2(double *r, double *s, double *detJ1);
+	virtual void funcao_Forma(double r, double s, double *N, double *dn) = 0;
+	int tri; // Contador da sub-divisao
 };
 
 #endif

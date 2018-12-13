@@ -123,21 +123,6 @@
     <ClCompile Include="elcal2d8n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="elemento_poligonal2d5n.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d6n.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d7n.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="elemento_poligonal2d8n.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="poligonal2d8n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -166,6 +151,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="elpol_quad_2d8n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_tri_2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_tri_2d5n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_tri_2d6n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_tri_2d7n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="elpol_tri_2d8n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -281,21 +281,6 @@
     <ClInclude Include="elcal2d8n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="elemento_poligonal2d5n.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d6n.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d7n.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="elemento_poligonal2d8n.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="poligonal2d8n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -324,6 +309,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="elpol_quad_2d8n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_tri_2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_tri_2d5n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_tri_2d6n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_tri_2d7n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="elpol_tri_2d8n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

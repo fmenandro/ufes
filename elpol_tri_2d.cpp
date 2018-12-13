@@ -21,9 +21,9 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#include "elemento_poligonal2d.h"
+#include "elpol_tri_2d.h"
 
-elpol2d::elpol2d(int nno)
+elpol_tri_2d::elpol_tri_2d(int nno)
 : isop2d(nno, ptg, 2) // 2 indica mapeamento em 2 niveis
 {
 	rpg = new double[qptg()];
@@ -31,15 +31,15 @@ elpol2d::elpol2d(int nno)
 	wpg = new double[qptg()];
 }
 
-elpol2d::~elpol2d()
+elpol_tri_2d::~elpol_tri_2d()
 {
 }
 
-int elpol2d::qptg(){
+int elpol_tri_2d::qptg(){
 	return ptg;
 }
 
-void elpol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
+void elpol_tri_2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	switch (p){
 	case 1:
 		r[0] = 1.0 / 3;
@@ -307,7 +307,7 @@ void elpol2d::pontos_de_gauss(const int p, double *r, double *s, double *w) {
 	}
 }
 
-void elpol2d::monta_n()
+void elpol_tri_2d::monta_n()
 {
 #ifdef ALEATORIO
 	aleatorio
@@ -353,7 +353,7 @@ void elpol2d::monta_n()
 	peso *= abs(detJ) * abs(detJ1);	// peso = peso * (detJ * detJ1)
 }
 
-void elpol2d::map2(double *r, double *s, double *detJ1) {
+void elpol_tri_2d::map2(double *r, double *s, double *detJ1) {
 	// Mudança de coordenadas dos pontos de Gauss. Coordenadas do triângulo
 	// padrao para o elemento padrao.
 	double r1[2], r2[2];
@@ -375,7 +375,7 @@ void elpol2d::map2(double *r, double *s, double *detJ1) {
 	peso = wpg[pg];
 }
 
-void elpol2d::monta_rigidez()
+void elpol_tri_2d::monta_rigidez()
 {
 #ifdef ALEATORIO
 	aleatorio *xx, *yy;
@@ -406,10 +406,10 @@ void elpol2d::monta_rigidez()
 
 
 #ifdef ALEATORIO
-void elpol2d::p_processa(aleatorio *xx)
+void elpol_tri_2d::p_processa(aleatorio *xx)
 {
 #else
-void elpol2d::p_processa(double *xx)
+void elpol_tri_2d::p_processa(double *xx)
 {
 #endif
 	pg = qptg();

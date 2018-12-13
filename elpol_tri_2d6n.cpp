@@ -21,24 +21,24 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#include "elemento_poligonal2d6n.h"
+#include "elpol_tri_2d6n.h"
 
-elpol2D6N::elpol2D6N()
-: elpol2d(nno)
+elpol_tri_2D6N::elpol_tri_2D6N()
+: elpol_tri_2d(nno)
 {
 }
 
-elpol2D6N::~elpol2D6N()
+elpol_tri_2D6N::~elpol_tri_2D6N()
 {
 }
 
-int elpol2D6N::qnno(){
+int elpol_tri_2D6N::qnno(){
 	return nno;
 }
 
 // CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
 // A. TABARRAEI and N. SUKUMAR, Application of polygonal finite elements in linear elasticity
-void elpol2D6N::funcao_Forma(double r, double s, double *N, double *dn){
+void elpol_tri_2D6N::funcao_Forma(double r, double s, double *N, double *dn){
 	double raiz3 = sqrt(3);
 	double A, B, C, D, E, F, G, H, I, c, e, den;
 	// Expres~soes que se repetem

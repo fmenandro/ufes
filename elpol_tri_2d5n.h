@@ -21,12 +21,12 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#ifndef ELEMENTO_POLIGONAL2D5N_H
-#define ELEMENTO_POLIGONAL2D5N_H
+#ifndef ELPOL_TRI_2D5N_H
+#define ELPOL_TRI_2D5N_H
 
-#include "elemento_poligonal2d.h"
+#include "elpol_tri_2d.h"
 
-class elpol2D5N : public elpol2d
+class elpol_tri_2D5N : public elpol_tri_2d
 {
 private:
 	const static int nno = 5;  //Numero de nos
@@ -37,8 +37,8 @@ public:
 #else
    double *yg;
 #endif
-	elpol2D5N();
-	~elpol2D5N();
+	elpol_tri_2D5N();
+	~elpol_tri_2D5N();
 
 	int qnno();
 	void funcao_Forma(double, double, double*, double*);

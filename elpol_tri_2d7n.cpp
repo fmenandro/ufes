@@ -21,23 +21,23 @@
 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
 ***************************************************************************/
 
-#include "elemento_poligonal2d7n.h"
+#include "elpol_tri_2d7n.h"
 
-elpol2D7N::elpol2D7N()
-: elpol2d(nno)
+elpol_tri_2D7N::elpol_tri_2D7N()
+: elpol_tri_2d(nno)
 {
 }
 
-elpol2D7N::~elpol2D7N()
+elpol_tri_2D7N::~elpol_tri_2D7N()
 {
 }
 
-int elpol2D7N::qnno(){
+int elpol_tri_2D7N::qnno(){
 	return nno;
 }
 
 // CALCULO DAS FUNCOES DE FORMA (N) E SUAS DERIVADAS (dn)
-void elpol2D7N::funcao_Forma(double r, double s, double *N, double *dn){
+void elpol_tri_2D7N::funcao_Forma(double r, double s, double *N, double *dn){
 	double b, b2, dbdr, dbds, A, B, C, D, E, F, G;
 	// Expressoes que se repetem	
 	A = (0.9009688679024191 + 1.*r);
