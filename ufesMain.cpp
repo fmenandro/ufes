@@ -523,6 +523,7 @@ void ufesFrame::OnRun(wxCommandEvent &event)
    case 1:
 	   // Loop para tirar a media dos tempos
 	   for (int i = 0; i < n; i++) {
+		   job.zerar();
 		   job.iniciarTempo();
 		   job.montaK();
 		   job.tempoK += job.finalizarTempo();
