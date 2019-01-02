@@ -178,6 +178,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co, analise& a)
   for (int i=0;i<a.ndof;i++)
      co<<"u["<<i<<"]="<<a.x[i]<<"\n";
   co << "\n\nTempo decorrido (ms): " << a.qtempo();
+  co << "\nTempo montar K (ms): " << a.qtempoK();
   return co;
 }
 
@@ -812,13 +813,16 @@ void analise::posprocessa()
 
 // Renan
 void analise::iniciarTempo() {
-	tempo = clock();
+	tempo0 = clock();
 }
-void analise::finalizarTempo() {
-	tempo = clock() - tempo;
+clock_t analise::finalizarTempo() {
+	return clock() - tempo0;
 }
 clock_t analise::qtempo() {
 	return tempo;
+}
+clock_t analise::qtempoK() {
+	return tempoK;
 }
 
 int analise::qpos(int i, int j)

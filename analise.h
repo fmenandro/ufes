@@ -84,8 +84,10 @@ using namespace std;
 class analise
 {
 private:
-	clock_t tempo; // Tempo decorrido
+	clock_t tempo0; // Tempo inicial
 public:
+   clock_t tempo; // Tempo decorrido
+   clock_t tempoK; // Tempo decorrido para montar a matriz de rigidez (K)
    int nn,ne,nm,nc,ndof;
    int fn,fe,fcc,fnn,fne,fnc,fnm,fro;
    class no **nos;
@@ -126,8 +128,9 @@ public:
    void visao(class wxString);
    // Para marcar tempo (Renan)
    void iniciarTempo();
-   void finalizarTempo();
+   clock_t finalizarTempo();
    clock_t qtempo();
+   clock_t qtempoK();
 #ifdef ALEATORIO
    friend bool operator>(aleatorio&, aleatorio&);
    friend bool operator<(aleatorio&, aleatorio&);

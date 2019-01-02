@@ -522,10 +522,11 @@ void ufesFrame::OnRun(wxCommandEvent &event)
    case 1:
 	  job.iniciarTempo();
       job.montaK();
+	  job.tempoK = job.finalizarTempo();
       job.impoeCC();
       job.resolve();
       job.posprocessa();
-	  job.finalizarTempo();
+	  job.tempo = job.finalizarTempo();
       break;
    case 2:
 	   jobt.roda();
