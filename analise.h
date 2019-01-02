@@ -86,8 +86,8 @@ class analise
 private:
 	clock_t tempo0; // Tempo inicial
 public:
-   clock_t tempo; // Tempo decorrido
-   clock_t tempoK; // Tempo decorrido para montar a matriz de rigidez (K)
+   clock_t tempo = 0; // Tempo decorrido
+   clock_t tempoK = 0; // Tempo decorrido para montar a matriz de rigidez (K)
    int nn,ne,nm,nc,ndof;
    int fn,fe,fcc,fnn,fne,fnc,fnm,fro;
    class no **nos;

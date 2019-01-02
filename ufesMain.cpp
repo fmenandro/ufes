@@ -516,18 +516,24 @@ Refresh();
 
 void ufesFrame::OnRun(wxCommandEvent &event)
 {
+   int n = 3; // Numero de vezes que o programa rodara para fazer a media dos tempos
    switch(tipo)
    {
    case 0:
    case 1:
-	  job.iniciarTempo();
-      job.montaK();
-	  job.tempoK = job.finalizarTempo();
-      job.impoeCC();
-      job.resolve();
-      job.posprocessa();
-	  job.tempo = job.finalizarTempo();
-      break;
+	   // Loop para tirar a media dos tempos
+	   for (int i = 0; i < n; i++) {
+		   job.iniciarTempo();
+		   job.montaK();
+		   job.tempoK += job.finalizarTempo();
+		   job.impoeCC();
+		   job.resolve();
+		   job.posprocessa();
+		   job.tempo += job.finalizarTempo();
+	   }
+	   job.tempoK = job.tempoK / n;
+	   job.tempo = job.tempo / n;
+	   break;
    case 2:
 	   jobt.roda();
        break;
