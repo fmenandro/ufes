@@ -1,20 +1,33 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ufes", "ufes.vcxproj", "{97556CB2-7F84-BB33-F657-483B00C67A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Ufes|Win32 = Ufes|Win32
+		Ufes|x64 = Ufes|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97556CB2-7F84-BB33-F657-483B00C67A39}.Debug|Win32.ActiveCfg = Debug|Win32
-		{97556CB2-7F84-BB33-F657-483B00C67A39}.Debug|Win32.Build.0 = Debug|Win32
-		{97556CB2-7F84-BB33-F657-483B00C67A39}.Release|Win32.ActiveCfg = Release|Win32
-		{97556CB2-7F84-BB33-F657-483B00C67A39}.Release|Win32.Build.0 = Release|Win32
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Debug|Win32.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Debug|x64.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Debug|x64.Build.0 = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Release|Win32.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Release|x64.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Ufes|Win32.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Ufes|x64.ActiveCfg = Debug|x64
+		{97556CB2-7F84-BB33-F657-483B00C67A39}.Ufes|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEEDF29E-6077-4D86-9D51-196329ABF587}
 	EndGlobalSection
 EndGlobal

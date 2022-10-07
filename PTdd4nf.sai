@@ -1,0 +1,302 @@
+
+Numero de nos = 6
+
+
+No 0:     (0.000000,0.000000)
+
+No 1:     (60.000000,0.000000)
+
+No 2:     (60.000000,60.000000)
+
+No 3:     (0.000000,60.000000)
+
+No 4:     (54.000000,6.000000)
+
+No 5:     (6.000000,54.000000)
+
+Numero de elementos = 3
+
+
+Elemento 0:
+  Numero de nos = 4
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 1
+    No 2 = 2
+    No 3 = 4
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000002
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = -0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = -0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = -0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = -0.000000
+  Deslocamentos Nodais
+ x[0] = -0.000000
+ x[1] = -0.000000
+ x[2] = -0.000150
+ x[3] = 0.000000
+ x[4] = -0.000150
+ x[5] = 0.000600
+ x[6] = -0.000135
+ x[7] = 0.000060
+  Forcas Nodais
+ f[0] = -0.000000
+ f[1] = -300.000000
+ f[2] = -0.000000
+ f[3] = -3000.000000
+ f[4] = -0.000000
+ f[5] = 300.000000
+ f[6] = 0.000000
+ f[7] = 3000.000000
+
+Elemento 1:
+  Numero de nos = 4
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 4
+    No 2 = 2
+    No 3 = 5
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+  Deslocamentos Nodais
+ x[0] = -0.000000
+ x[1] = -0.000000
+ x[2] = -0.000135
+ x[3] = 0.000060
+ x[4] = -0.000150
+ x[5] = 0.000600
+ x[6] = -0.000015
+ x[7] = 0.000540
+  Forcas Nodais
+ f[0] = 0.000000
+ f[1] = -2400.000000
+ f[2] = -0.000000
+ f[3] = -3000.000000
+ f[4] = -0.000000
+ f[5] = 2400.000000
+ f[6] = 0.000000
+ f[7] = 3000.000000
+
+Elemento 2:
+  Numero de nos = 4
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 5
+    No 2 = 2
+    No 3 = 3
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = 0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000003
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000002
+      Componente 1 = 0.000010
+      Componente 2 = -0.000000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 1:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 2:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+    Ponto de Gauss 3:
+      Componente 0 = -0.000000
+      Componente 1 = 10.000000
+      Componente 2 = 0.000000
+  Deslocamentos Nodais
+ x[0] = -0.000000
+ x[1] = -0.000000
+ x[2] = -0.000015
+ x[3] = 0.000540
+ x[4] = -0.000150
+ x[5] = 0.000600
+ x[6] = -0.000000
+ x[7] = 0.000600
+  Forcas Nodais
+ f[0] = 0.000000
+ f[1] = -300.000000
+ f[2] = -0.000000
+ f[3] = -3000.000000
+ f[4] = 0.000000
+ f[5] = 300.000000
+ f[6] = 0.000000
+ f[7] = 3000.000000
+
+Numero de materiais = 1
+
+
+Material 0:
+Linear Elastico
+Modulo de Elasticidade = 1000000.000000
+Coeficiente de Poisson = 0.250000
+
+Numero de Condicoes de Contorno = 8
+
+
+Condicao de contorno 0:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 1:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 2:
+Apoio:
+No[0] => 1
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 3:
+Forca:
+No[0] => 2
+Grau de Liberdade[0] => 1
+Valor[0] => 3000.000000
+
+Condicao de contorno 4:
+Forca:
+No[0] => 3
+Grau de Liberdade[0] => 1
+Valor[0] => 3000.000000
+
+Condicao de contorno 5:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 6:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 7:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Matriz de Rigidez = 
+
+	-5514285.714286     	2047619.047619     	5885714.285714     	-2952380.952381     	-2180952.380952     	1380952.380952     	0.000000     	0.000000     	1809523.809524     	-476190.476190     	0.000000     	0.000000     
+	0.000000     	-4753943.580887     	2185541.574143     	-1096307.262110     	571099.597006     	-1668163.500288     	-2952380.952381     	5885714.285714     	671930.257422     	-176823.751953     	-476190.476190     	1809523.809524     
+	4583928.571429     	1702149.642240     	-6240299.787324     	4083861.274116     	5377438.157980     	2077690.047148     	-3994896.072651     	-1648024.388500     	1682337.713714     	-1626930.977293     	3175419.988282     	-2886595.955472     
+	0.000000     	0.000000     	0.000000     	5885714.285714     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	-2749404.761905     	-2446531.375936     	5675223.825967     	867261.507985     	-6362819.561620     	613403.110175     	6853198.918414     	-1699886.076620     	-1191753.779368     	705548.263185     	701374.422574     	696544.767920     
+	-1425595.238095     	-3278770.869315     	-1648024.388500     	-5073418.452724     	657542.052015     	4892123.005484     	5847106.990195     	-5980735.228127     	-3454048.275554     	3677994.623012     	-2393058.714641     	2516651.607070     
+	-2180952.380952     	571099.597006     	-2065302.959006     	-315610.064660     	3281991.576833     	2756623.081647     	-4495278.369100     	6698353.449869     	2420666.701243     	-3392801.650479     	2074611.667858     	-4414457.874352     
+	2047619.047619     	4583928.571429     	2107380.177173     	322040.110910     	2366662.922066     	-678702.373868     	-835640.025251     	3789743.475448     	796082.528073     	-2254538.346576     	-796082.528073     	-3252692.909258     
+	2930357.142857     	-867227.979275     	4538569.779297     	1125062.744047     	5578201.987444     	1131675.059317     	2288617.632070     	1031172.349460     	2951414.302552     	-2388168.706455     	1632514.268877     	-1695097.112888     
+	-1955357.142857     	2204274.611399     	-1549879.303107     	1333812.635892     	-2252765.108321     	933987.310915     	-3919436.087059     	-958270.756319     	915230.057892     	-2298445.352999     	-1421470.787133     	1676853.604133     
+	2930357.142857     	-867227.979275     	2729045.969773     	417040.207697     	4018885.494209     	378874.457552     	4476818.303827     	2411496.460744     	-662983.460614     	1581618.426693     	4541472.142654     	-4541472.142654     
+	-1955357.142857     	2204274.611399     	-1073688.826916     	-164076.170331     	-1842418.662733     	1132092.732432     	-4450053.846079     	-3529154.121991     	-2133474.998071     	-1985466.228294     	51549.130237     	5093253.968254     
+
+Vetor de forcas = 
+
+f[0]=0.000000
+f[1]=0.000000
+f[2]=0.000000
+f[3]=0.000000
+f[4]=0.000000
+f[5]=3000.000000
+f[6]=0.000000
+f[7]=3000.000000
+f[8]=0.000000
+f[9]=0.000000
+f[10]=0.000000
+f[11]=0.000000
+
+Vetor de deslocamentos resultantes = 
+
+u[0]=-0.000000
+u[1]=-0.000000
+u[2]=-0.000150
+u[3]=0.000000
+u[4]=-0.000150
+u[5]=0.000600
+u[6]=-0.000000
+u[7]=0.000600
+u[8]=-0.000135
+u[9]=0.000060
+u[10]=-0.000015
+u[11]=0.000540

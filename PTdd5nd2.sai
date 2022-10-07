@@ -1,0 +1,1268 @@
+
+Numero de nos = 25
+
+
+No 0:     (0.000000,0.000000)
+
+No 1:     (20.000000,0.000000)
+
+No 2:     (40.000000,0.000000)
+
+No 3:     (60.000000,0.000000)
+
+No 4:     (20.000000,10.000000)
+
+No 5:     (40.000000,10.000000)
+
+No 6:     (0.000000,20.000000)
+
+No 7:     (10.000000,20.000000)
+
+No 8:     (30.000000,20.000000)
+
+No 9:     (50.000000,20.000000)
+
+No 10:     (60.000000,20.000000)
+
+No 11:     (20.000000,30.000000)
+
+No 12:     (30.000000,30.000000)
+
+No 13:     (40.000000,30.000000)
+
+No 14:     (0.000000,40.000000)
+
+No 15:     (10.000000,40.000000)
+
+No 16:     (30.000000,40.000000)
+
+No 17:     (50.000000,40.000000)
+
+No 18:     (60.000000,40.000000)
+
+No 19:     (20.000000,50.000000)
+
+No 20:     (40.000000,50.000000)
+
+No 21:     (0.000000,60.000000)
+
+No 22:     (20.000000,60.000000)
+
+No 23:     (40.000000,60.000000)
+
+No 24:     (60.000000,60.000000)
+
+Numero de elementos = 12
+
+
+Elemento 0:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 1
+    No 2 = 4
+    No 3 = 7
+    No 4 = 6
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.000000
+ x[1] = 0.000000
+ x[2] = 0.002000
+ x[3] = 0.001000
+ x[4] = 0.002500
+ x[5] = 0.002000
+ x[6] = 0.002000
+ x[7] = 0.002500
+ x[8] = 0.001000
+ x[9] = 0.002000
+  Forcas Nodais
+ f[0] = -173.333333
+ f[1] = -173.333333
+ f[2] = 26.666667
+ f[3] = -113.333333
+ f[4] = 153.333333
+ f[5] = 106.666667
+ f[6] = 106.666667
+ f[7] = 153.333333
+ f[8] = -113.333333
+ f[9] = 26.666667
+
+Elemento 1:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 1
+    No 1 = 2
+    No 2 = 5
+    No 3 = 8
+    No 4 = 4
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.002000
+ x[1] = 0.001000
+ x[2] = 0.004000
+ x[3] = 0.002000
+ x[4] = 0.004500
+ x[5] = 0.003000
+ x[6] = 0.004000
+ x[7] = 0.003500
+ x[8] = 0.002500
+ x[9] = 0.002000
+  Forcas Nodais
+ f[0] = -106.666667
+ f[1] = -153.333333
+ f[2] = 26.666667
+ f[3] = -113.333333
+ f[4] = 153.333333
+ f[5] = 106.666667
+ f[6] = 40.000000
+ f[7] = 133.333333
+ f[8] = -113.333333
+ f[9] = 26.666667
+
+Elemento 2:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 2
+    No 1 = 3
+    No 2 = 10
+    No 3 = 9
+    No 4 = 5
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.004000
+ x[1] = 0.002000
+ x[2] = 0.006000
+ x[3] = 0.003000
+ x[4] = 0.007000
+ x[5] = 0.005000
+ x[6] = 0.006000
+ x[7] = 0.004500
+ x[8] = 0.004500
+ x[9] = 0.003000
+  Forcas Nodais
+ f[0] = -106.666667
+ f[1] = -153.333333
+ f[2] = 93.333333
+ f[3] = -93.333333
+ f[4] = 153.333333
+ f[5] = 106.666667
+ f[6] = -26.666667
+ f[7] = 113.333333
+ f[8] = -113.333333
+ f[9] = 26.666667
+
+Elemento 3:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 4
+    No 1 = 8
+    No 2 = 12
+    No 3 = 11
+    No 4 = 7
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.002500
+ x[1] = 0.002000
+ x[2] = 0.004000
+ x[3] = 0.003500
+ x[4] = 0.004500
+ x[5] = 0.004500
+ x[6] = 0.003500
+ x[7] = 0.004000
+ x[8] = 0.002000
+ x[9] = 0.002500
+  Forcas Nodais
+ f[0] = -40.000000
+ f[1] = -133.333333
+ f[2] = 113.333333
+ f[3] = -26.666667
+ f[4] = 86.666667
+ f[5] = 86.666667
+ f[6] = -26.666667
+ f[7] = 113.333333
+ f[8] = -133.333333
+ f[9] = -40.000000
+
+Elemento 4:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 5
+    No 1 = 9
+    No 2 = 13
+    No 3 = 12
+    No 4 = 8
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.004500
+ x[1] = 0.003000
+ x[2] = 0.006000
+ x[3] = 0.004500
+ x[4] = 0.005500
+ x[5] = 0.005000
+ x[6] = 0.004500
+ x[7] = 0.004500
+ x[8] = 0.004000
+ x[9] = 0.003500
+  Forcas Nodais
+ f[0] = -40.000000
+ f[1] = -133.333333
+ f[2] = 133.333333
+ f[3] = 40.000000
+ f[4] = 106.666667
+ f[5] = 153.333333
+ f[6] = -46.666667
+ f[7] = 46.666667
+ f[8] = -153.333333
+ f[9] = -106.666667
+
+Elemento 5:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 6
+    No 1 = 7
+    No 2 = 11
+    No 3 = 15
+    No 4 = 14
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.001000
+ x[1] = 0.002000
+ x[2] = 0.002000
+ x[3] = 0.002500
+ x[4] = 0.003500
+ x[5] = 0.004000
+ x[6] = 0.003000
+ x[7] = 0.004500
+ x[8] = 0.002000
+ x[9] = 0.004000
+  Forcas Nodais
+ f[0] = -153.333333
+ f[1] = -106.666667
+ f[2] = 26.666667
+ f[3] = -113.333333
+ f[4] = 133.333333
+ f[5] = 40.000000
+ f[6] = 106.666667
+ f[7] = 153.333333
+ f[8] = -113.333333
+ f[9] = 26.666667
+
+Elemento 6:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 9
+    No 1 = 10
+    No 2 = 18
+    No 3 = 17
+    No 4 = 13
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.006000
+ x[1] = 0.004500
+ x[2] = 0.007000
+ x[3] = 0.005000
+ x[4] = 0.008000
+ x[5] = 0.007000
+ x[6] = 0.007000
+ x[7] = 0.006500
+ x[8] = 0.005500
+ x[9] = 0.005000
+  Forcas Nodais
+ f[0] = -106.666667
+ f[1] = -153.333333
+ f[2] = 113.333333
+ f[3] = -26.666667
+ f[4] = 153.333333
+ f[5] = 106.666667
+ f[6] = -26.666667
+ f[7] = 113.333333
+ f[8] = -133.333333
+ f[9] = -40.000000
+
+Elemento 7:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 11
+    No 1 = 12
+    No 2 = 16
+    No 3 = 19
+    No 4 = 15
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.003500
+ x[1] = 0.004000
+ x[2] = 0.004500
+ x[3] = 0.004500
+ x[4] = 0.005000
+ x[5] = 0.005500
+ x[6] = 0.004500
+ x[7] = 0.006000
+ x[8] = 0.003000
+ x[9] = 0.004500
+  Forcas Nodais
+ f[0] = -106.666667
+ f[1] = -153.333333
+ f[2] = 46.666667
+ f[3] = -46.666667
+ f[4] = 153.333333
+ f[5] = 106.666667
+ f[6] = 40.000000
+ f[7] = 133.333333
+ f[8] = -133.333333
+ f[9] = -40.000000
+
+Elemento 8:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 12
+    No 1 = 13
+    No 2 = 17
+    No 3 = 20
+    No 4 = 16
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.004500
+ x[1] = 0.004500
+ x[2] = 0.005500
+ x[3] = 0.005000
+ x[4] = 0.007000
+ x[5] = 0.006500
+ x[6] = 0.006500
+ x[7] = 0.007000
+ x[8] = 0.005000
+ x[9] = 0.005500
+  Forcas Nodais
+ f[0] = -86.666667
+ f[1] = -86.666667
+ f[2] = 26.666667
+ f[3] = -113.333333
+ f[4] = 133.333333
+ f[5] = 40.000000
+ f[6] = 40.000000
+ f[7] = 133.333333
+ f[8] = -113.333333
+ f[9] = 26.666667
+
+Elemento 9:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 14
+    No 1 = 15
+    No 2 = 19
+    No 3 = 22
+    No 4 = 21
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.002000
+ x[1] = 0.004000
+ x[2] = 0.003000
+ x[3] = 0.004500
+ x[4] = 0.004500
+ x[5] = 0.006000
+ x[6] = 0.005000
+ x[7] = 0.007000
+ x[8] = 0.003000
+ x[9] = 0.006000
+  Forcas Nodais
+ f[0] = -153.333333
+ f[1] = -106.666667
+ f[2] = 26.666667
+ f[3] = -113.333333
+ f[4] = 113.333333
+ f[5] = -26.666667
+ f[6] = 106.666667
+ f[7] = 153.333333
+ f[8] = -93.333333
+ f[9] = 93.333333
+
+Elemento 10:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 19
+    No 1 = 16
+    No 2 = 20
+    No 3 = 23
+    No 4 = 22
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.004500
+ x[1] = 0.006000
+ x[2] = 0.005000
+ x[3] = 0.005500
+ x[4] = 0.006500
+ x[5] = 0.007000
+ x[6] = 0.007000
+ x[7] = 0.008000
+ x[8] = 0.005000
+ x[9] = 0.007000
+  Forcas Nodais
+ f[0] = -153.333333
+ f[1] = -106.666667
+ f[2] = -40.000000
+ f[3] = -133.333333
+ f[4] = 113.333333
+ f[5] = -26.666667
+ f[6] = 106.666667
+ f[7] = 153.333333
+ f[8] = -26.666667
+ f[9] = 113.333333
+
+Elemento 11:
+  Numero de nos = 5
+  Material => 0
+  Nos =>
+    No 0 = 17
+    No 1 = 18
+    No 2 = 24
+    No 3 = 23
+    No 4 = 20
+  Propriedade 0 = 10.000000
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 1:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 2:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 3:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+    Ponto de Gauss 4:
+      Componente 0 = 0.001000
+      Componente 1 = 0.001000
+      Componente 2 = 0.001000
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 1:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 2:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 3:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+    Ponto de Gauss 4:
+      Componente 0 = 133.333333
+      Componente 1 = 133.333333
+      Componente 2 = 40.000000
+  Deslocamentos Nodais
+ x[0] = 0.007000
+ x[1] = 0.006500
+ x[2] = 0.008000
+ x[3] = 0.007000
+ x[4] = 0.009000
+ x[5] = 0.009000
+ x[6] = 0.007000
+ x[7] = 0.008000
+ x[8] = 0.006500
+ x[9] = 0.007000
+  Forcas Nodais
+ f[0] = -106.666667
+ f[1] = -153.333333
+ f[2] = 113.333333
+ f[3] = -26.666667
+ f[4] = 173.333333
+ f[5] = 173.333333
+ f[6] = -26.666667
+ f[7] = 113.333333
+ f[8] = -153.333333
+ f[9] = -106.666667
+
+Numero de materiais = 1
+
+
+Material 0:
+Linear Elastico
+Modulo de Elasticidade = 1000000.000000
+Coeficiente de Poisson = 0.250000
+
+Numero de Condicoes de Contorno = 24
+
+
+Condicao de contorno 0:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 1:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 2:
+Deslocamento:
+No[0] => 1
+Grau de Liberdade[0] => 0
+Valor[0] => 0.002000
+
+Condicao de contorno 3:
+Deslocamento:
+No[0] => 1
+Grau de Liberdade[0] => 1
+Valor[0] => 0.001000
+
+Condicao de contorno 4:
+Deslocamento:
+No[0] => 2
+Grau de Liberdade[0] => 0
+Valor[0] => 0.004000
+
+Condicao de contorno 5:
+Deslocamento:
+No[0] => 2
+Grau de Liberdade[0] => 1
+Valor[0] => 0.002000
+
+Condicao de contorno 6:
+Deslocamento:
+No[0] => 3
+Grau de Liberdade[0] => 0
+Valor[0] => 0.006000
+
+Condicao de contorno 7:
+Deslocamento:
+No[0] => 3
+Grau de Liberdade[0] => 1
+Valor[0] => 0.003000
+
+Condicao de contorno 8:
+Deslocamento:
+No[0] => 6
+Grau de Liberdade[0] => 0
+Valor[0] => 0.001000
+
+Condicao de contorno 9:
+Deslocamento:
+No[0] => 6
+Grau de Liberdade[0] => 1
+Valor[0] => 0.002000
+
+Condicao de contorno 10:
+Deslocamento:
+No[0] => 10
+Grau de Liberdade[0] => 0
+Valor[0] => 0.007000
+
+Condicao de contorno 11:
+Deslocamento:
+No[0] => 10
+Grau de Liberdade[0] => 1
+Valor[0] => 0.005000
+
+Condicao de contorno 12:
+Deslocamento:
+No[0] => 14
+Grau de Liberdade[0] => 0
+Valor[0] => 0.002000
+
+Condicao de contorno 13:
+Deslocamento:
+No[0] => 14
+Grau de Liberdade[0] => 1
+Valor[0] => 0.004000
+
+Condicao de contorno 14:
+Deslocamento:
+No[0] => 18
+Grau de Liberdade[0] => 0
+Valor[0] => 0.008000
+
+Condicao de contorno 15:
+Deslocamento:
+No[0] => 18
+Grau de Liberdade[0] => 1
+Valor[0] => 0.007000
+
+Condicao de contorno 16:
+Deslocamento:
+No[0] => 21
+Grau de Liberdade[0] => 0
+Valor[0] => 0.003000
+
+Condicao de contorno 17:
+Deslocamento:
+No[0] => 21
+Grau de Liberdade[0] => 1
+Valor[0] => 0.006000
+
+Condicao de contorno 18:
+Deslocamento:
+No[0] => 22
+Grau de Liberdade[0] => 0
+Valor[0] => 0.005000
+
+Condicao de contorno 19:
+Deslocamento:
+No[0] => 22
+Grau de Liberdade[0] => 1
+Valor[0] => 0.007000
+
+Condicao de contorno 20:
+Deslocamento:
+No[0] => 23
+Grau de Liberdade[0] => 0
+Valor[0] => 0.007000
+
+Condicao de contorno 21:
+Deslocamento:
+No[0] => 23
+Grau de Liberdade[0] => 1
+Valor[0] => 0.008000
+
+Condicao de contorno 22:
+Deslocamento:
+No[0] => 24
+Grau de Liberdade[0] => 0
+Valor[0] => 0.009000
+
+Condicao de contorno 23:
+Deslocamento:
+No[0] => 24
+Grau de Liberdade[0] => 1
+Valor[0] => 0.009000
+
+Matriz de Rigidez = 
+
+	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	-24266.666667     	-12000.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	229336.507937     	5142.857143     	-27244.444444     	-0.000000     	0.000000     	0.000000     	-37819.047619     	19809.523810     	-47031.746032     	-19428.571429     	0.000000     	0.000000     	0.000000     	0.000000     	-2276.190476     	5904.761905     	4990.476190     	-8761.904762     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	-12000.000000     	-10933.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	5142.857143     	245887.846347     	610.954998     	-2577.777778     	0.000000     	0.000000     	20657.613636     	-38263.274977     	-18373.887405     	-27262.728174     	0.000000     	0.000000     	0.000000     	0.000000     	5955.805337     	-29075.271067     	-8873.815885     	-8146.371965     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-27244.444444     	610.954998     	226098.436945     	-5136.452165     	0.000000     	0.000000     	-4544.109790     	2448.380505     	-52573.313792     	17188.258634     	-37819.047619     	-19809.523810     	0.000000     	0.000000     	-285.202485     	773.709876     	5605.377497     	7741.259676     	-2276.190476     	-5904.761905     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-0.000000     	-2577.777778     	-5136.452165     	245859.461602     	0.000000     	0.000000     	113.333108     	-345.513251     	18041.599421     	-27593.744003     	-20668.688214     	-38269.075814     	0.000000     	0.000000     	55.958825     	-287.235125     	8796.217334     	-8252.395896     	-5956.471875     	-29077.000163     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	-10933.333333     	-12000.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-37819.047619     	20657.613636     	-4544.109790     	113.333108     	0.000000     	0.000000     	237939.699394     	11673.527464     	-36219.988843     	5349.440793     	-750.556859     	-380.489573     	0.000000     	0.000000     	-28579.889897     	-15996.474702     	-6665.784157     	-9363.015408     	-43.000972     	-105.269933     	0.000000     	0.000000     	-2577.777778     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	-12000.000000     	-24266.666667     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	19809.523810     	-38263.274977     	2448.380505     	-345.513251     	0.000000     	0.000000     	11673.527464     	221071.445920     	9479.683629     	-5327.780455     	417.312542     	179.400409     	0.000000     	0.000000     	-16899.839493     	-51290.247819     	-10295.157341     	4843.560499     	18.387336     	28.243540     	0.000000     	0.000000     	126.468007     	-27244.444444     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-47031.746032     	-18373.887405     	-52573.313792     	18041.599421     	0.000000     	0.000000     	-36219.988843     	9479.683629     	210059.392435     	1042.768639     	-36352.135782     	-7768.311864     	0.000000     	0.000000     	-27289.453165     	13289.312413     	-42831.171782     	-1632.964935     	-23670.935333     	-13542.227434     	0.000000     	0.000000     	-397.821113     	1168.259035     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-19428.571429     	-27262.728174     	17188.258634     	-27593.744003     	0.000000     	0.000000     	5349.440793     	-5327.780455     	1042.768639     	218553.235630     	-5142.051511     	-5013.891301     	0.000000     	0.000000     	15151.922266     	-27328.381901     	114.371881     	-86101.053386     	-14662.277017     	-26315.691225     	0.000000     	0.000000     	62.977175     	-662.385436     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-37819.047619     	-20668.688214     	0.000000     	0.000000     	-750.556859     	417.312542     	-36352.135782     	-5142.051511     	231524.591426     	-13137.388169     	0.000000     	0.000000     	-4467.378482     	1808.458210     	-14076.896974     	7015.984084     	-33021.438052     	13033.372051     	0.000000     	0.000000     	-75.733880     	238.019224     	0.000000     	0.000000     	-2577.777778     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-19809.523810     	-38269.075814     	0.000000     	0.000000     	-380.489573     	179.400409     	-7768.311864     	-5013.891301     	-13137.388169     	220495.642165     	0.000000     	0.000000     	-963.358193     	6.249067     	8239.779896     	2727.749519     	15216.417972     	-52440.215584     	0.000000     	0.000000     	-21.789365     	63.622897     	0.000000     	0.000000     	-146.270714     	-27244.444444     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-2276.190476     	5955.805337     	-285.202485     	55.958825     	0.000000     	0.000000     	-28579.889897     	-16899.839493     	-27289.453165     	15151.922266     	-4467.378482     	-963.358193     	0.000000     	0.000000     	218301.264333     	-1422.386612     	-90402.198519     	5272.026085     	-2634.610462     	76.165329     	0.000000     	0.000000     	-28055.976811     	17548.430624     	-23571.428571     	-14285.714286     	-50.378529     	-119.032551     	0.000000     	0.000000     	-2276.190476     	-5904.761905     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	5904.761905     	-29075.271067     	773.709876     	-287.235125     	0.000000     	0.000000     	-15996.474702     	-51290.247819     	13289.312413     	-27328.381901     	1808.458210     	6.249067     	0.000000     	0.000000     	-1422.386612     	219696.489015     	-1778.694334     	-54239.216101     	-93.331673     	-2547.940604     	0.000000     	0.000000     	19135.441747     	-53396.919364     	-14439.298758     	-23664.510070     	19.811135     	-0.003446     	0.000000     	0.000000     	-5919.592890     	-28981.330829     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	4990.476190     	-8873.815885     	5605.377497     	8796.217334     	0.000000     	0.000000     	-6665.784157     	-10295.157341     	-42831.171782     	114.371881     	-14076.896974     	8239.779896     	0.000000     	0.000000     	-90402.198519     	-1778.694334     	217616.981487     	1744.105543     	-91493.990328     	1200.573130     	0.000000     	0.000000     	-19957.647397     	14578.586446     	-53154.415255     	-6107.544086     	-8514.824433     	-7793.090844     	0.000000     	0.000000     	3999.941835     	6082.007248     	4990.476190     	-8761.904762     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-8761.904762     	-8146.371965     	7741.259676     	-8252.395896     	0.000000     	0.000000     	-9363.015408     	4843.560499     	-1632.964935     	-86101.053386     	7015.984084     	2727.749519     	0.000000     	0.000000     	5272.026085     	-54239.216101     	1744.105543     	217181.678272     	-4498.157013     	-54914.070469     	0.000000     	0.000000     	14243.695498     	-8395.887116     	-2569.545022     	-88724.591011     	-8607.629504     	5392.849007     	0.000000     	0.000000     	7323.373665     	-15403.983519     	-8801.901260     	-8272.634284     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-2276.190476     	-5956.471875     	0.000000     	0.000000     	-43.000972     	18.387336     	-23670.935333     	-14662.277017     	-33021.438052     	15216.417972     	0.000000     	0.000000     	-2634.610462     	-93.331673     	-91493.990328     	-4498.157013     	179708.907144     	789.635009     	0.000000     	0.000000     	-8476.751429     	6263.604676     	-46263.282226     	9697.801646     	-31814.791093     	-20714.668355     	0.000000     	0.000000     	1803.411727     	2154.480026     	-360.315678     	2049.604022     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-5904.761905     	-29077.000163     	0.000000     	0.000000     	-105.269933     	28.243540     	-13542.227434     	-26315.691225     	13033.372051     	-52440.215584     	0.000000     	0.000000     	76.165329     	-2547.940604     	1200.573130     	-54914.070469     	789.635009     	205781.144751     	0.000000     	0.000000     	3960.422272     	-2855.462473     	13973.299606     	-46283.695015     	-21307.656779     	-52013.630921     	0.000000     	0.000000     	1753.854298     	-4271.947560     	3653.265225     	-30995.247910     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-2577.777778     	126.468007     	-397.821113     	62.977175     	-75.733880     	-21.789365     	0.000000     	0.000000     	-28055.976811     	19135.441747     	-19957.647397     	14243.695498     	-8476.751429     	3960.422272     	0.000000     	0.000000     	237461.407851     	4019.419543     	-37871.995607     	927.428213     	-1316.027306     	-1062.433579     	0.000000     	0.000000     	-37658.141239     	-16292.261564     	947.636589     	432.207143     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-27244.444444     	1168.259035     	-662.385436     	238.019224     	63.622897     	0.000000     	0.000000     	17548.430624     	-53396.919364     	14578.586446     	-8395.887116     	6263.604676     	-2855.462473     	0.000000     	0.000000     	4019.419543     	209954.295177     	-1610.399707     	-10896.180375     	1084.709476     	766.205934     	0.000000     	0.000000     	-20451.246666     	-45249.793278     	-627.377101     	-241.678989     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-23571.428571     	-14439.298758     	-53154.415255     	-2569.545022     	-46263.282226     	13973.299606     	0.000000     	0.000000     	-37871.995607     	-1610.399707     	205127.089998     	64.336385     	-38073.564807     	2087.877361     	0.000000     	0.000000     	-52420.602582     	16088.791372     	-46111.431010     	-18967.193556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-14285.714286     	-23664.510070     	-6107.544086     	-88724.591011     	9697.801646     	-46283.695015     	0.000000     	0.000000     	927.428213     	-10896.180375     	64.336385     	176475.226880     	-854.052780     	-10837.223103     	0.000000     	0.000000     	21145.342490     	-40695.663875     	-22064.998006     	-38414.162680     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-2577.777778     	-146.270714     	0.000000     	0.000000     	-50.378529     	19.811135     	-8514.824433     	-8607.629504     	-31814.791093     	-21307.656779     	0.000000     	0.000000     	-1316.027306     	1084.709476     	-38073.564807     	-854.052780     	230377.556534     	-3694.182792     	0.000000     	0.000000     	-8782.843965     	2500.566767     	-46315.157752     	12589.506037     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-27244.444444     	0.000000     	0.000000     	-119.032551     	-0.003446     	-7793.090844     	5392.849007     	-20714.668355     	-52013.630921     	0.000000     	0.000000     	-1062.433579     	766.205934     	2087.877361     	-10837.223103     	-3694.182792     	209268.785399     	0.000000     	0.000000     	2208.729998     	-2764.877132     	19466.868610     	-47486.804183     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-2276.190476     	-5919.592890     	3999.941835     	7323.373665     	1803.411727     	1753.854298     	0.000000     	0.000000     	-37658.141239     	-20451.246666     	-52420.602582     	21145.342490     	-8782.843965     	2208.729998     	0.000000     	0.000000     	204547.606610     	-3442.110142     	-38088.912792     	1465.465441     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-5904.761905     	-28981.330829     	6082.007248     	-15403.983519     	2154.480026     	-4271.947560     	0.000000     	0.000000     	-16292.261564     	-45249.793278     	16088.791372     	-40695.663875     	2500.566767     	-2764.877132     	0.000000     	0.000000     	-3442.110142     	219005.161129     	-2106.422503     	-11720.243911     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	4990.476190     	-8801.901260     	-360.315678     	3653.265225     	0.000000     	0.000000     	947.636589     	-627.377101     	-46111.431010     	-22064.998006     	-46315.157752     	19466.868610     	0.000000     	0.000000     	-38088.912792     	-2106.422503     	197434.791117     	3602.268241     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	-8761.904762     	-8272.634284     	2049.604022     	-30995.247910     	0.000000     	0.000000     	432.207143     	-241.678989     	-18967.193556     	-38414.162680     	12589.506037     	-47486.804183     	0.000000     	0.000000     	1465.465441     	-11720.243911     	3602.268241     	218359.642158     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	113255.555556     	0.000000     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	159422.222222     	0.000000     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     	0.000000     
+	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	0.000000     	55733.333333     
+
+Vetor de forcas = 
+
+f[0]=0.000000
+f[1]=0.000000
+f[2]=226.511111
+f[3]=159.422222
+f[4]=453.022222
+f[5]=318.844444
+f[6]=334.400000
+f[7]=167.200000
+f[8]=177.466667
+f[9]=95.466667
+f[10]=532.133333
+f[11]=226.133333
+f[12]=159.422222
+f[13]=226.511111
+f[14]=95.466667
+f[15]=177.466667
+f[16]=-12.133333
+f[17]=42.933333
+f[18]=1015.466667
+f[19]=523.466667
+f[20]=1115.955556
+f[21]=566.277778
+f[22]=42.933333
+f[23]=-12.133333
+f[24]=0.000000
+f[25]=0.000000
+f[26]=294.666667
+f[27]=-4.266667
+f[28]=318.844444
+f[29]=453.022222
+f[30]=226.133333
+f[31]=532.133333
+f[32]=-4.266667
+f[33]=294.666667
+f[34]=1194.133333
+f[35]=926.133333
+f[36]=1275.377778
+f[37]=792.788889
+f[38]=523.466667
+f[39]=1015.466667
+f[40]=926.133333
+f[41]=1194.133333
+f[42]=167.200000
+f[43]=334.400000
+f[44]=566.277778
+f[45]=1115.955556
+f[46]=792.788889
+f[47]=1275.377778
+f[48]=501.600000
+f[49]=501.600000
+
+Vetor de deslocamentos resultantes = 
+
+u[0]=0.000000
+u[1]=0.000000
+u[2]=0.002000
+u[3]=0.001000
+u[4]=0.004000
+u[5]=0.002000
+u[6]=0.006000
+u[7]=0.003000
+u[8]=0.002500
+u[9]=0.002000
+u[10]=0.004500
+u[11]=0.003000
+u[12]=0.001000
+u[13]=0.002000
+u[14]=0.002000
+u[15]=0.002500
+u[16]=0.004000
+u[17]=0.003500
+u[18]=0.006000
+u[19]=0.004500
+u[20]=0.007000
+u[21]=0.005000
+u[22]=0.003500
+u[23]=0.004000
+u[24]=0.004500
+u[25]=0.004500
+u[26]=0.005500
+u[27]=0.005000
+u[28]=0.002000
+u[29]=0.004000
+u[30]=0.003000
+u[31]=0.004500
+u[32]=0.005000
+u[33]=0.005500
+u[34]=0.007000
+u[35]=0.006500
+u[36]=0.008000
+u[37]=0.007000
+u[38]=0.004500
+u[39]=0.006000
+u[40]=0.006500
+u[41]=0.007000
+u[42]=0.003000
+u[43]=0.006000
+u[44]=0.005000
+u[45]=0.007000
+u[46]=0.007000
+u[47]=0.008000
+u[48]=0.009000
+u[49]=0.009000

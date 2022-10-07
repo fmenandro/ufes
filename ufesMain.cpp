@@ -539,7 +539,7 @@ void ufesFrame::OnRun(wxCommandEvent &event)
    switch(tipo)
    {
    case 0:
-   case 1:
+   case 3:
       job.montaK();
       job.impoeCC();
       job.resolve();

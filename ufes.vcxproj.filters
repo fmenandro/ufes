@@ -126,6 +126,24 @@
     <ClCompile Include="elemento_poligonal2d5n.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="elementodd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edd4n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edd5n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edd6n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edd7n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edd8n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aleatorio.h">
@@ -242,9 +260,27 @@
     <ClInclude Include="elemento_poligonal2d5n.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="elementodd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edd4n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edd5n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edd6n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edd7n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edd8n.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.0.2\samples\sample.rc">
+    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.0.5\samples\sample.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
