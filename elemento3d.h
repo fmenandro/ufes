@@ -29,7 +29,14 @@
 
 class elemento3D : public elemento
 {
-protected:
+private:
+    const static int dim = 3;  //Dimensao do problema
+    const static int ipn = 3;  //Numero de incognitas por no
+ //   const static int nno=3;  //Numero de nos
+    const static int prp = 0;  //Numero de propriedades do elemento (area,espessura)
+                             //Propriedade 0: espessura
+ //  const static int ptg=1;  //Numero de Pontos de Gauss nas diferentes direcoes
+    const static int nlb = 6;  //Numero de linhas da matriz B (componentes de deformacao)
 public:
    elemento3D():elemento(){};
    ~elemento3D();

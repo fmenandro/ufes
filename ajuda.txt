@@ -1,8 +1,10 @@
 
 Descrição do Arquivo de entrada:
 0. A linha zero contém 1 variável inteira:
-   0 -> Análise linear
+   0 -> Análise estrutural linear
    1 -> Análise iterativa
+   2 -> Análise térmica
+   3 -> Otimização topológica (2-D)
 
 1. A primeira linha contém 4 variáveis inteiras:
 
@@ -14,7 +16,7 @@ Descrição do Arquivo de entrada:
 2. A segunda e terceira linhas especificam o tipo e as propriedades dos materiais:
    Os materias possuem somente um tipo cadastrado, que corresponde ao
    material elástico linear.
-   (haverão tantas segundas linhas quanto materiais)
+   (haverão tantos conjuntos de segundas e terceiras linhas quanto materiais)
 2.1 Tipo (0 para térmico, 1 para elástico, 2 para térmico não-linear)
 Caso O
 3.1 Capacidade de calor
@@ -28,7 +30,7 @@ Caso 2   K= K1 + K2 T
 4.
 5. A quarta e a quinta linhas especificam a tabela de coordenadas nodais
    É necessário definir o tipo de nó (dimensionalidade: 1, 2 ou 3).
-   (haverão tantos conjuntos de terceiras e quartas linhas quanto nós)
+   (haverão tantos conjuntos de quartas e quintas linhas quanto nós)
 
 4.1 Tipo (1 corresponde a um nó unidimensional, 2 a um nó bidimensional e
     3 a um nó tridimensional).
@@ -38,7 +40,7 @@ Caso 2   K= K1 + K2 T
 6.
 7. A sexta e a sétima linhas especificam a tabela de conectividade
    É necessário definir o tipo de elemento.
-   (haverão tantos conjuntos de quintas e sextas linhas quanto elementos)
+   (haverão tantos conjuntos de sextas e sétimas linhas quanto elementos)
 
 6.1 Tipo:
 1  barra unidimensional;
@@ -53,6 +55,14 @@ Caso 2   K= K1 + K2 T
 10 Tubo;
 11 elemento de propagação de calor 2d 4 nós;
 12 elementos não-linear de calor 2d 4nós;
+13 elementos de propagação de calor 1d 2 nós;
+14 elementos de propagação de calor 2d 8 nós;
+15 elemento poligonal 2d 5 nós;
+24 elemento com derivadas descontínuas 2d 4 nós;
+25 elemento com derivadas descontínuas 2d 5 nós;
+26 elemento com derivadas descontínuas 2d 6 nós;
+27 elemento com derivadas descontínuas 2d 7 nós;
+28 elemento com derivadas descontínuas 2d 8 nós;
 
 
 7.1 A linha 7 é representada na realidade em 3 linhas

@@ -24,6 +24,13 @@ no2D::no2D():no(dim)
 {
 }
 
+no2D::no2D(double xx, double yy)
+{
+    x[0] = xx;
+    x[1] = yy;
+}
+
+
 no2D::~no2D()
 {
 }

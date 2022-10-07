@@ -45,6 +45,7 @@ public:
    int qnno(){return(nno);};
    int qprp(){return(prp);};
    int qptg(){return(ptg);};
+   int qptt() { return(ptg * ptg); };
    int qnlb(){return(nlb);};
    double qvol(){return(0.5*(pno[0]->qx(0)*pno[1]->qx(1)
                             +pno[1]->qx(0)*pno[2]->qx(1)

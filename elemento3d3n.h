@@ -25,13 +25,19 @@
 /**
 @author Fernando Cesar Meira Menandro
 */
-// Definicao da Classe elemento tridimensional com 3 nos
+// Definicao da Classe elemento tridimensional com 4 nos
 
-class elemento3D3N : public elemento3D
+class elemento3D4N : public elemento3D
 {
 protected:
+private:
+    const static int nno = 4;  //Numero de nos
+    const static int ptg = 1;  //Numero de Pontos de Gauss nas diferentes direcoes
 public:
-   elemento3D3N():elemento3D(){};
-   ~elemento3D3N();
+   elemento3D4N():elemento3D(){};
+   ~elemento3D4N();
+    int qnno() { return(nno); };
+    int qptg() { return(ptg); };
+   int qptt() { return(ptg * ptg * ptg); };
 };
 #endif

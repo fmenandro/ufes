@@ -63,6 +63,7 @@ public:
    virtual int qnno()=0;
    virtual int qprp()=0;
    virtual int qptg()=0;
+   virtual int qptt()=0;
    virtual int qnlb()=0;
    virtual double qvol()=0;
 #ifdef ALEATORIO

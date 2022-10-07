@@ -32,6 +32,7 @@ private:
    const static int dim=2;
 public:
     no2D();
+    no2D(double,double);
 
     ~no2D();
  int qdim();//{return(dim);};

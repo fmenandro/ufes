@@ -425,7 +425,22 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
 	case 15:
            n.elementos[i]=new class elpol2D5N;
            break;
-        case 106:
+    case 24:
+        n.elementos[i] = new class edd4N;
+        break;
+    case 25:
+        n.elementos[i] = new class edd5N;
+        break;
+    case 26:
+        n.elementos[i] = new class edd6N;
+        break;
+    case 27:
+        n.elementos[i] = new class edd7N;
+        break;
+    case 28:
+        n.elementos[i] = new class edd8N;
+        break;
+    case 106:
             int nx,ny;
             ci>>nx>>ny;
             int mat,n1,n2,n3,n4;

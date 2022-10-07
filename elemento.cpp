@@ -342,15 +342,13 @@ void elemento::p_processa(double *xx)
       f[i]=0.0;
       for (int n=0;n<qnno();n++)
          for (int j=0;j<qipn();j++)
-            f[j]+=qk(i,n*qipn()+j)*xx[qno(n)*qipn()+j];
+            f[i]+=qk(i,n*qipn()+j)*xx[qno(n)*qipn()+j];
    }
    for (int n=0;n<qnno();n++)
       for (int i=0;i<qipn();i++)
          x[n*qipn()+i]=xx[qno(n)*qipn()+i];
    pontos_de_gauss(pg,xpg,wpg);
-   int lpg=qptg();
-   if (qdim()==2) lpg*=lpg;
-   if (qdim()==3) lpg*=lpg*lpg;
+   int lpg=qptt();
    for(pg=0;pg<lpg;pg++)
    {
       monta_b();
@@ -377,21 +375,19 @@ ostream& operator<<(ostream& co,elemento& e)
    for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Deformacao calculada";
-   int lpg=e.qptg();
-   if (e.qdim()==2) lpg*=lpg;
-   if (e.qdim()==3) lpg*=lpg*lpg;
+   int lpg=e.qptt();
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)
-         co<<"\n      Componente "<<i<<" = "<<e.def[pg*e.qnlb()+i];
+         co<<"\n      Componente "<<i<<" = "<< e.def[pg*e.qnlb()+i];
    }
    co<<"\n  Tensao calculada";
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";
       for(int i=0;i<e.qnlb();i++)
-         co<<"\n      Componente "<<i<<" = "<<e.ten[pg*e.qnlb()+i];
+         co<<"\n      Componente "<<i<<" = "<< e.ten[pg*e.qnlb()+i];
    }
    co<<"\n  Deslocamentos Nodais";
    for(int i=0;i<e.qnno()*e.qipn();i++)
@@ -420,9 +416,7 @@ wxTextOutputStream& operator<<(wxTextOutputStream& co,elemento& e)
    for(int i=0;i<e.qprp();i++)
       co<<"\n  Propriedade "<<i<<" = "<<e.prop[i];
    co<<"\n  Deformacao calculada";
-   int lpg=e.qptg();
-   if (e.qdim()==2) lpg*=lpg;
-   if (e.qdim()==3) lpg*=lpg*lpg;
+   int lpg=e.qptt();
    for(int pg=0;pg<lpg;pg++)
    {
       co<<"\n    Ponto de Gauss "<<pg<<":";

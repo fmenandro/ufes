@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Fernando CÃ©sar Meira Menandro   *
+ *   Copyright (C) 2005 by Fernando César Meira Menandro   *
  *   menandro@localhost.localdomain   *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -17,22 +17,28 @@
  *   Free Software Foundation, Inc.,                                       *
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
-#ifndef ELCAL2D4NNL_H
-#define ELCAL2D4NNL_H
+#ifndef EDD4N_H
+#define EDD4N_H
 
-#include "elcal2d4n.h"
+#include "elementodd.h"
 
-/**
-@author Fernando Cesar Meira Menandro
-*/
-class elcal2d4nnl : public elcal2d4n
+ /**
+ @author Fernando Cesar Meira Menandro
+ */
+class edd4N : public elementodd
 {
+private:
+    const static int nno = 4;  //Numero de nos
+    const static int ptg = 4;  //Numero de Pontos de Gauss
 public:
-    elcal2d4nnl();
+    edd4N();
 
-    ~elcal2d4nnl();
-    void monta_c();
-
+    ~edd4N();
+    int qnno() { return(nno); };
+    int qptg() { return(ptg); };
+    int qptt() { return(ptg); };
+//    void monta_n();
 };
 
 #endif
+

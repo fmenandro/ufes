@@ -42,7 +42,8 @@ public:
 	int qnno();
 	int qptg();
         void pontos_de_gauss(int, int, double*, double*, double*);
-	void monta_n();
+		int qptt() { return(ptg * ptg); };
+		void monta_n();
    void monta_rigidez();
 };
 

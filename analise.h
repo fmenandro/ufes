@@ -44,6 +44,11 @@
 #include "nlcal2d4n.h"
 #include "elcal1d2n.h"
 #include "elemento_poligonal2d5n.h"
+#include "edd4n.h"
+#include "edd5n.h"
+#include "edd6n.h"
+#include "edd7n.h"
+#include "edd8n.h"
 #include "c_contorno.h"
 
 #include <iostream>

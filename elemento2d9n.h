@@ -36,6 +36,7 @@ public:
     ~elemento2D9N();
    int qnno(){return(nno);};
    int qptg(){return(ptg);};
+   int qptt() { return(ptg * ptg); };
    void monta_n();
 };
 

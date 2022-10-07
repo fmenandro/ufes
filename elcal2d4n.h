@@ -36,6 +36,7 @@ public:
     ~elcal2d4n();
    int qnno(){return(nno);};
    int qptg(){return(ptg);};
+   int qptt() { return(ptg * ptg); };
    void monta_n();
 };
 
