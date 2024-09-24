@@ -1,0 +1,242 @@
+
+Numero de nos = 8
+
+
+No 0:     (0,0)
+
+No 1:     (30,0)
+
+No 2:     (60,0)
+
+No 3:     (60,30)
+
+No 4:     (60,60)
+
+No 5:     (30,60)
+
+No 6:     (0,60)
+
+No 7:     (0,30)
+
+Numero de elementos = 1
+
+
+Elemento 0:
+  Numero de nos = 8
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 1
+    No 2 = 2
+    No 3 = 3
+    No 4 = 4
+    No 5 = 5
+    No 6 = 6
+    No 7 = 7
+  Propriedade 0 = 10
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 1:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 2:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 3:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 4:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 5:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 6:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 7:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 1:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 2:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 3:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 4:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 5:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 6:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+    Ponto de Gauss 7:
+      Componente 0 = -nan(ind)
+      Componente 1 = -nan(ind)
+      Componente 2 = -nan(ind)
+  Deslocamentos Nodais
+ x[0] = -nan(ind)
+ x[1] = -nan(ind)
+ x[2] = -nan(ind)
+ x[3] = -nan(ind)
+ x[4] = -nan(ind)
+ x[5] = -nan(ind)
+ x[6] = -nan(ind)
+ x[7] = -nan(ind)
+ x[8] = -nan(ind)
+ x[9] = -nan(ind)
+ x[10] = -nan(ind)
+ x[11] = -nan(ind)
+ x[12] = -nan(ind)
+ x[13] = -nan(ind)
+ x[14] = -nan(ind)
+ x[15] = -nan(ind)
+  Forcas Nodais
+ f[0] = -nan(ind)
+ f[1] = -nan(ind)
+ f[2] = -nan(ind)
+ f[3] = -nan(ind)
+ f[4] = -nan(ind)
+ f[5] = -nan(ind)
+ f[6] = -nan(ind)
+ f[7] = -nan(ind)
+ f[8] = -nan(ind)
+ f[9] = -nan(ind)
+ f[10] = -nan(ind)
+ f[11] = -nan(ind)
+ f[12] = -nan(ind)
+ f[13] = -nan(ind)
+ f[14] = -nan(ind)
+ f[15] = -nan(ind)
+
+Numero de materiais = 1
+
+
+Material 0:
+Linear Elastico
+Modulo de Elasticidade = 1e+06
+Coeficiente de Poisson = 0.25
+
+Numero de Condicoes de Contorno = 7
+
+
+Condicao de contorno 0:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 1:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 2:
+Apoio:
+No[0] => 1
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 3:
+Apoio:
+No[0] => 2
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 4:
+Forca:
+No[0] => 4
+Grau de Liberdade[0] => 1
+Valor[0] => 3000
+
+Condicao de contorno 5:
+Forca:
+No[0] => 5
+Grau de Liberdade[0] => 1
+Valor[0] => 6000
+
+Condicao de contorno 6:
+Forca:
+No[0] => 6
+Grau de Liberdade[0] => 1
+Valor[0] => 3000
+
+Matriz de Rigidez = 
+
+	-nan(ind)     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     
+	0     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	0     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	0     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     	-nan(ind)     
+
+Vetor de forcas = 
+
+f[0]=0
+f[1]=0
+f[2]=0
+f[3]=0
+f[4]=0
+f[5]=0
+f[6]=0
+f[7]=0
+f[8]=0
+f[9]=3000
+f[10]=0
+f[11]=6000
+f[12]=0
+f[13]=3000
+f[14]=0
+f[15]=0
+
+Vetor de deslocamentos resultantes = 
+
+u[0]=-nan(ind)
+u[1]=-nan(ind)
+u[2]=-nan(ind)
+u[3]=-nan(ind)
+u[4]=-nan(ind)
+u[5]=-nan(ind)
+u[6]=-nan(ind)
+u[7]=-nan(ind)
+u[8]=-nan(ind)
+u[9]=-nan(ind)
+u[10]=-nan(ind)
+u[11]=-nan(ind)
+u[12]=-nan(ind)
+u[13]=-nan(ind)
+u[14]=-nan(ind)
+u[15]=-nan(ind)

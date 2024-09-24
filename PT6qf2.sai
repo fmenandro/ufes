@@ -1,0 +1,312 @@
+
+Numero de nos = 9
+
+
+No 0:     (0,0)
+
+No 1:     (25,0)
+
+No 2:     (50,0)
+
+No 3:     (50,25)
+
+No 4:     (50,50)
+
+No 5:     (25,50)
+
+No 6:     (0,50)
+
+No 7:     (0,25)
+
+No 8:     (25,25)
+
+Numero de elementos = 2
+
+
+Elemento 0:
+  Numero de nos = 6
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 1
+    No 2 = 2
+    No 3 = 3
+    No 4 = 4
+    No 5 = 8
+  Propriedade 0 = 10
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -5.02364e-14
+    Ponto de Gauss 1:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -8.23439e-13
+    Ponto de Gauss 2:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = 1.50092e-12
+    Ponto de Gauss 3:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = 5.60054e-13
+    Ponto de Gauss 4:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -5.98975e-13
+    Ponto de Gauss 5:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = 5.40981e-14
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+    Ponto de Gauss 1:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+    Ponto de Gauss 2:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+    Ponto de Gauss 3:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+    Ponto de Gauss 4:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+    Ponto de Gauss 5:
+      Componente 0 = 10
+      Componente 1 = -6.10223e-08
+      Componente 2 = -2.00946e-08
+  Deslocamentos Nodais
+ x[0] = 0
+ x[1] = 0
+ x[2] = 0.00025
+ x[3] = -1.09215e-11
+ x[4] = 0.0005
+ x[5] = -2.07206e-11
+ x[6] = 0.0005
+ x[7] = -6.25e-05
+ x[8] = 0.0005
+ x[9] = -0.000125
+ x[10] = 0.00025
+ x[11] = -6.25e-05
+  Forcas Nodais
+ f[0] = -694.444
+ f[1] = -1.40268e-05
+ f[2] = -8.52651e-14
+ f[3] = 3.41061e-13
+ f[4] = 833.333
+ f[5] = -1.13687e-13
+ f[6] = 3333.33
+ f[7] = -4.54747e-13
+ f[8] = -0.000312016
+ f[9] = 1.78063e-05
+ f[10] = -3333.33
+ f[11] = -2.40966e-06
+
+Elemento 1:
+  Numero de nos = 6
+  Material => 0
+  Nos =>
+    No 0 = 0
+    No 1 = 8
+    No 2 = 4
+    No 3 = 5
+    No 4 = 6
+    No 5 = 7
+  Propriedade 0 = 10
+  Deformacao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -1.89994e-13
+    Ponto de Gauss 1:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -3.1826e-13
+    Ponto de Gauss 2:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -2.22379e-13
+    Ponto de Gauss 3:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = 4.97491e-14
+    Ponto de Gauss 4:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -1.98629e-13
+    Ponto de Gauss 5:
+      Componente 0 = 1e-05
+      Componente 1 = -2.5e-06
+      Componente 2 = -3.61914e-15
+  Tensao calculada
+    Ponto de Gauss 0:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+    Ponto de Gauss 1:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+    Ponto de Gauss 2:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+    Ponto de Gauss 3:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+    Ponto de Gauss 4:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+    Ponto de Gauss 5:
+      Componente 0 = 10
+      Componente 1 = -1.58299e-07
+      Componente 2 = -7.59974e-08
+  Deslocamentos Nodais
+ x[0] = 0
+ x[1] = 0
+ x[2] = 0.00025
+ x[3] = -6.25e-05
+ x[4] = 0.0005
+ x[5] = -0.000125
+ x[6] = 0.00025
+ x[7] = -0.000125
+ x[8] = 0
+ x[9] = -0.000125
+ x[10] = 0
+ x[11] = -6.25e-05
+  Forcas Nodais
+ f[0] = 138.889
+ f[1] = 1.53765e-05
+ f[2] = 3333.33
+ f[3] = 2.40966e-06
+ f[4] = 833.333
+ f[5] = -1.78063e-05
+ f[6] = 3.97904e-13
+ f[7] = -8.52651e-13
+ f[8] = -833.333
+ f[9] = 3.41061e-13
+ f[10] = -3333.33
+ f[11] = -2.27374e-13
+
+Numero de materiais = 1
+
+
+Material 0:
+Linear Elastico
+Modulo de Elasticidade = 1e+06
+Coeficiente de Poisson = 0.25
+
+Numero de Condicoes de Contorno = 7
+
+
+Condicao de contorno 0:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 1:
+Apoio:
+No[0] => 0
+Grau de Liberdade[0] => 1
+
+Condicao de contorno 2:
+Apoio:
+No[0] => 6
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 3:
+Apoio:
+No[0] => 7
+Grau de Liberdade[0] => 0
+
+Condicao de contorno 4:
+Forca:
+No[0] => 2
+Grau de Liberdade[0] => 0
+Valor[0] => 833.333
+
+Condicao de contorno 5:
+Forca:
+No[0] => 3
+Grau de Liberdade[0] => 0
+Valor[0] => 3333.33
+
+Condicao de contorno 6:
+Forca:
+No[0] => 4
+Grau de Liberdade[0] => 0
+Valor[0] => 833.333
+
+Matriz de Rigidez = 
+
+	1.91667e+07     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     
+	0     	1.85185e+07     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     
+	-3.51852e+06     	1.87963e+06     	1.28333e+07     	-1.25e+06     	-2.22222e+06     	-1.41667e+06     	-3.05556e+06     	-1.25e+06     	1.55556e+06     	-694444     	0     	0     	0     	0     	0     	0     	-5.38889e+06     	2.63889e+06     
+	990741     	-7.68519e+06     	-1.25e+06     	2.49338e+07     	-744228     	-4.02688e+06     	-1.54762e+06     	-3.17731e+06     	-542929     	-1.01209e+06     	0     	0     	0     	0     	0     	0     	2.114e+06     	-9.02074e+06     
+	759259     	-64814.8     	-2.22222e+06     	-744228     	5.09299e+06     	-504394     	-4.46418e+06     	-1.72795e+06     	2.75315e+06     	99541     	0     	0     	0     	0     	0     	0     	-3.31449e+06     	1.99325e+06     
+	157407     	2.7037e+06     	-1.41667e+06     	-4.02688e+06     	-504394     	4.64331e+06     	-1.55714e+06     	-3.04448e+06     	384475     	325300     	0     	0     	0     	0     	0     	0     	1.22384e+06     	-3.41261e+06     
+	-740741     	-787037     	-3.05556e+06     	-1.54762e+06     	-4.46418e+06     	-1.55714e+06     	1.97968e+07     	-4.28042e+06     	-5.01005e+06     	1.05151e+06     	0     	0     	0     	0     	0     	0     	-1.29245e+07     	3.31002e+06     
+	-787037     	1.75926e+06     	-1.25e+06     	-3.17731e+06     	-1.72795e+06     	-3.04448e+06     	-4.28042e+06     	8.79875e+06     	2.15747e+06     	-3.44441e+06     	0     	0     	0     	0     	0     	0     	-733229     	-7.12695e+06     
+	8.38889e+06     	-3.96296e+06     	1.55556e+06     	-542929     	2.75315e+06     	384475     	-5.01005e+06     	2.15747e+06     	-1.59792e+07     	6.56159e+06     	-5.38889e+06     	2.63889e+06     	-2.44444e+06     	1.80556e+06     	-9.27778e+06     	2.63889e+06     	5.13571e+07     	-2.13078e+07     
+	-4e+06     	8.11111e+06     	-694444     	-1.01209e+06     	99541     	325300     	1.05151e+06     	-3.44441e+06     	-3.63014e+06     	-1.51202e+07     	54628.1     	-8.01229e+06     	633314     	-1.57858e+06     	-1.8103e+06     	-4.1234e+06     	3.32068e+06     	4.11389e+07     
+	1.7037e+06     	-694444     	0     	0     	0     	0     	0     	0     	-3.72222e+06     	443756     	1.40902e+07     	-2.09986e+06     	-1.63422e+06     	-1.88358e+06     	-947504     	-1.98572e+06     	-1.72546e+07     	8.80973e+06     
+	-694444     	-888889     	0     	0     	0     	0     	0     	0     	1.08333e+06     	-7.44404e+06     	-1.64224e+06     	2.89344e+07     	-1.19577e+06     	-3.20884e+06     	-1.09818e+06     	-1.07803e+06     	2.4748e+06     	-2.99493e+07     
+	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	5.5e+06     	0     	0     	0     	0     	0     
+	101852     	722222     	0     	0     	0     	0     	0     	0     	250000     	2.60266e+06     	-1.49157e+06     	-5.44906e+06     	-466310     	4.45283e+06     	-1.29166e+06     	-3.30393e+06     	1.82016e+06     	-404116     
+	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	0     	2.50556e+07     	0     	0     	0     
+	1.97222e+06     	-4.33333e+06     	0     	0     	0     	0     	0     	0     	-694444     	1.27039e+06     	-1.01121e+06     	-3.99413e+06     	-1.53957e+06     	-3.01145e+06     	-2.09204e+06     	9.84643e+06     	1.02024e+06     	-4.78167e+06     
+	-1.73704e+07     	7.40741e+06     	-5.38889e+06     	2.114e+06     	-3.31449e+06     	1.22384e+06     	-1.29245e+07     	-733229     	1.23715e+07     	1.44998e+06     	-7.88918e+06     	1.18234e+06     	-2.1424e+06     	573015     	-8.62053e+06     	310624     	1.40726e+07     	1.47029e+06     
+	7.40741e+06     	-1.7463e+07     	2.63889e+06     	-9.02074e+06     	1.99325e+06     	-3.41261e+06     	3.31002e+06     	-7.12695e+06     	7.66288e+06     	1.28906e+07     	3.24304e+06     	-1.48359e+07     	886045     	-467779     	-610785     	-3.00213e+06     	3.46793e+06     	2.39996e+06     
+
+Vetor de forcas = 
+
+f[0]=0
+f[1]=0
+f[2]=0
+f[3]=0
+f[4]=833.333
+f[5]=0
+f[6]=3333.33
+f[7]=0
+f[8]=833.333
+f[9]=0
+f[10]=0
+f[11]=0
+f[12]=0
+f[13]=0
+f[14]=0
+f[15]=0
+f[16]=0
+f[17]=0
+
+Vetor de deslocamentos resultantes = 
+
+u[0]=0
+u[1]=0
+u[2]=0.00025
+u[3]=-1.09215e-11
+u[4]=0.0005
+u[5]=-2.07206e-11
+u[6]=0.0005
+u[7]=-6.25e-05
+u[8]=0.0005
+u[9]=-0.000125
+u[10]=0.00025
+u[11]=-0.000125
+u[12]=0
+u[13]=-0.000125
+u[14]=0
+u[15]=-6.25e-05
+u[16]=0.00025
+u[17]=-6.25e-05

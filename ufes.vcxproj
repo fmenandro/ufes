@@ -26,17 +26,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\wxWidgets-3.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\wxWidgets-3.0.5\lib;$(WXWIN)\lib\vc_x64_lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\wxWidgets-3.2.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\wxWidgets-3.2.5\lib;$(WXWIN)\lib\vc_x64_lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;WIN32;__WXMSW__;_WINDOWS;_DEBUG;__WXDEBUG__</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__WXMSW__;_WINDOWS;_DEBUG;__WXDEBUG__</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(WXWIN)\include;$(WXWIN)\include\msvc;$(WXWIN)\lib\vc_x64_lib\mswd</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WXWIN)\include;$(WXWIN)\include\msvc;$(WXWIN)\lib\vc_x64_lib\mswud</AdditionalIncludeDirectories>
       <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
@@ -68,6 +68,9 @@
     <ClCompile Include="edd6n.cpp" />
     <ClCompile Include="edd7n.cpp" />
     <ClCompile Include="edd8n.cpp" />
+    <ClCompile Include="eddq10n.cpp" />
+    <ClCompile Include="eddq6n.cpp" />
+    <ClCompile Include="eddq8N.cpp" />
     <ClCompile Include="elcal1d2n.cpp" />
     <ClCompile Include="elcal2d4n.cpp" />
     <ClCompile Include="elcal2d4nnl.cpp" />
@@ -80,6 +83,7 @@
     <ClCompile Include="elemento3d.cpp" />
     <ClCompile Include="elemento3d3n.cpp" />
     <ClCompile Include="elementodd.cpp" />
+    <ClCompile Include="elementoddq.cpp" />
     <ClCompile Include="elemento_poligonal2d5n.cpp" />
     <ClCompile Include="iscal1d.cpp" />
     <ClCompile Include="iscal2d.cpp" />
@@ -114,6 +118,9 @@
     <ClInclude Include="edd6n.h" />
     <ClInclude Include="edd7n.h" />
     <ClInclude Include="edd8n.h" />
+    <ClInclude Include="eddq10n.h" />
+    <ClInclude Include="eddq6n.h" />
+    <ClInclude Include="eddq8n.h" />
     <ClInclude Include="elcal1d2n.h" />
     <ClInclude Include="elcal2d4n.h" />
     <ClInclude Include="elcal2d4nnl.h" />
@@ -126,6 +133,7 @@
     <ClInclude Include="elemento3d.h" />
     <ClInclude Include="elemento3d3n.h" />
     <ClInclude Include="elementodd.h" />
+    <ClInclude Include="elementoddq.h" />
     <ClInclude Include="elemento_poligonal2d5n.h" />
     <ClInclude Include="iscal1d.h" />
     <ClInclude Include="iscal2d.h" />
@@ -146,7 +154,7 @@
     <ClInclude Include="viga3d.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.0.5\samples\sample.rc" />
+    <ResourceCompile Include="..\..\..\..\..\..\wxWidgets-3.2.5\samples\sample.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
