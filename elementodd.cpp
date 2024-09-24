@@ -1,6 +1,6 @@
 /***************************************************************************
  *   Copyright (C) 2005 by Fernando César Meira Menandro   *
- *   menandro@localhost.localdomain   *
+ *   fernando.menandro@ufes.br   *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -226,13 +226,13 @@ void elementodd::monta_n()
         b[2 * i] = b[2 * (ncb + i) + 1] = By;
         b[2 * (num + i) + 1] = b[2 * (ncb + i)] = Bx;
     }
-    int pgm1 = (pg == num-1) ? 0 : pg + 1;
-    N[pg] = N[pgm1] = (num + um) / (tres * num);
-    b[2 * (ncb + pg) + 1] = b[2 * pg] += (yy[pg + 1] - yyc) / A;
-    b[2 * (ncb + pgm1) + 1] = b[2 * pgm1] += (yyc - yy[pg]) / A;
-    b[2 * (ncb + pg)] = b[2 * (num + pg) + 1] += (xxc - xx[pg + 1]) / A;
-    b[2 * (ncb + pgm1)] = b[2 * (num + pgm1) + 1] += (xx[pg] - xxc) / A;
-    peso = A / 2.0;
+//    int pgm1 = (pg == num-1) ? 0 : pg + 1;
+//    N[pg] = N[pgm1] = (num + um) / (tres * num);
+//    b[2 * (ncb + pg) + 1] = b[2 * pg] += (yy[pg + 1] - yyc) / A;
+//    b[2 * (ncb + pgm1) + 1] = b[2 * pgm1] += (yyc - yy[pg]) / A;
+//    b[2 * (ncb + pg)] = b[2 * (num + pg) + 1] += (xxc - xx[pg + 1]) / A;
+//    b[2 * (ncb + pgm1)] = b[2 * (num + pgm1) + 1] += (xx[pg] - xxc) / A;
+//    peso = A / 2.0;
 };
 /*ostream& operator<<(ostream& co, elementodd& e)
 {

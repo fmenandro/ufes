@@ -49,6 +49,9 @@
 #include "edd6n.h"
 #include "edd7n.h"
 #include "edd8n.h"
+#include "eddq6n.h"
+#include "eddq8n.h"
+#include "eddq10n.h"
 #include "c_contorno.h"
 
 #include <iostream>

@@ -440,6 +440,15 @@ wxTextInputStream& operator>>(wxTextInputStream& ci, analise& n)
     case 28:
         n.elementos[i] = new class edd8N;
         break;
+    case 36:
+        n.elementos[i] = new class eddq6N;
+        break;
+    case 38:
+        n.elementos[i] = new class eddq8N;
+        break;
+    case 40:
+        n.elementos[i] = new class eddq10N;
+        break;
     case 106:
             int nx,ny;
             ci>>nx>>ny;
